@@ -19,6 +19,7 @@ This page is dedicated to my special interests. These are things that I was real
 - Half Life (1998)
 - Outcast (1999)
 - Sim City 2000
+- Vector Man
 - Chips Challenge
 ### Modern(ish) Games
 - Minecraft
@@ -55,11 +56,12 @@ This page is dedicated to my special interests. These are things that I was real
 - Spider-Man 2 (2004)
 - The Matrix
 - Cast Away
-- Barbie
+- Barbie (movie)
 - The Grinch
 - Men in Black
 - The Lion King
 - Beauty and the Beast
+- Disney Robin Hood
 ### Music
 - The Red Hot Chili Peppers
 - Ed Sheeran
