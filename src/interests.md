@@ -47,8 +47,10 @@ This page is dedicated to my special interests. These are things that I was real
 - Parks and Recreation
 - Avatar the Last Airbender
 - Helluva Boss + Hasbin Hotel
+- Our Flag Means Death
 - Beastars
 - Card Captor Sakura
+- Critical Role (twitch stream)
 ### Movies
 - Inside Out (1 and 2)
 - Harry Potter Order of the Phoenix
@@ -114,3 +116,7 @@ This page is dedicated to my special interests. These are things that I was real
 - Speks Magnet Balls
 - Lego
 - K'Nex
+
+## People & Pets
+- My Wonderful Wife
+- My 2 Adorable Cats

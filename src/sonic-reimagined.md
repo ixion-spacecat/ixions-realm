@@ -128,7 +128,7 @@ My main criticism would have to be the lack of new content. Only having one new 
 
 I do think Lava Island Zone would be a pretty cool place to explore. The dynamic background of exploding volcanoes looks awesome! And having to deal with both lava and water in a single zone would pose an interesting challenge for the player.
 
-I imagine that Gills would be a controversial character. One the one hand, he would make water levels trivial to traverse and some would say that this ruins the intended gameplay of these Zones. On the other hand, water levels suck. Giving the player the option to skip these slow-moving sections would be a relief for players who are not averse to tweaking the difficulty. But on the other-other hand, the only new level is a water level. Maybe Gills would make water levels actually fun to play? I sure hope so!
+I imagine that Gills would be a controversial character. On the one hand, he would make water levels trivial to traverse and some would say that this ruins the intended gameplay of these Zones. On the other hand, water levels suck. Giving the player the option to skip these slow-moving sections would be a relief for players who are not averse to tweaking the difficulty. But on the other-other hand, the only new level is a water level. Maybe Gills would make water levels actually fun to play? I sure hope so!
 
 Overall, I enjoyed seeing a fresh take on the classic sonic games. I wish there was more new content, but the inclusion of levels from the classic games would ensure it has strong gameplay regardless.
 
