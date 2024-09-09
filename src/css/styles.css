@@ -52,7 +52,7 @@ body {
 }
 
 #container {
-  max-width: 42em;
+  max-width: 40em;
   margin: 0 auto;
   padding: 0;
   font-size: 1.15rem;
@@ -82,7 +82,7 @@ nav {
   border-bottom: 1px solid var(--border);
   font-size: 1rem;
   line-height: 2;
-  padding: 1rem 0;
+  padding: 1rem 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +117,7 @@ nav a:last-child {
 
 /* Add a little padding to ensure spacing is correct between content and nav */
 main {
-  padding: 0 2em;
+  padding: 0 1em;
   padding-bottom: 4em;
   padding-top: 0.001rem; /* Weird Hack to prevent margin overflow */
   background: var(--bg);
