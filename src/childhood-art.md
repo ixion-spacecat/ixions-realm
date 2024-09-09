@@ -7,5 +7,12 @@ When I was a kid, I dreamed of being a game developer. As an adult, I work a pro
 
 ## Game Designs
 
-<a href="/terminal-frog/"><img src="/img/art-terminal-frog-cube.jpg"><br></a>
-<a href="/terminal-frog/">Terminal Frog</a> - 2D Platformer inspired by Vectorman
+<a href="/sonic-reimagined/"><h3>Sonic: Reimagined</h3></a>
+<a href="/sonic-reimagined/"><img src="/img/art-sonic-happy.jpg" width=200px><br></a>
+Classic Sonic the Hegehog, but more awesome! 😄
+
+---
+
+<a href="/terminal-frog/"><h3>Terminal Frog</h3></a>
+<a href="/terminal-frog/"><img src="/img/art-terminal-frog-cube.jpg" width=200px><br></a>
+2D Platformer inspired by Vectorman
