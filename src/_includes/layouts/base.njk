@@ -9,16 +9,32 @@
 </head>
 
 <body>
-  <div id="container">
-    <header>{% include '../partials/header.njk' %}</header>
+  <div class="page">
+    <div class="background-overlay"></div>
 
-    <nav>{% include '../partials/navigation.njk' %}</nav>
+    <header class="page__header">{% include '../partials/header.njk' %}</header>
 
-    <main>
-      <h1>{{ title }}</h1>
-      {{ content | safe }}
-    </main>
+    <div class="page__layout" >
+      <aside class="navbar region flex-stretch" >
+        <div class="navbar--title region--title" >
+          Navigation
+        </div>
+        <div class="navbar--content region--content" >
+          {% include '../partials/navigation.njk' %}
+        </div>
+      </aside>
+      <main class="main region flex-stretch">
+        <div class="main--title region--title">
+          {{ title }}
+        </div>
+        <div class="main--content region--content">
+          {{ content | safe }}
+        </div>
+      </main>
+    </div>
 
-    <footer>{% include '../partials/footer.njk' %}</footer>
+    <footer class="page__footer region--content">
+      {% include '../partials/footer.njk' %}
+    </footer>
   </div>
 </body>
