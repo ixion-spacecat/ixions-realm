@@ -3,6 +3,8 @@ title: Interests
 layout: layouts/base.njk
 ---
 
+# Interests
+
 This page is dedicated to my special interests. These are things that I was really into at some point in time. Some day I may be struck by a strange mood and dedicate a shrine to something from this page.
 
 ## Games

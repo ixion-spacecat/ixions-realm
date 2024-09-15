@@ -3,6 +3,8 @@ title: Links
 layout: layouts/base.njk
 ---
 
+# Links
+
 Some cool websites that inspired me to build this site
 - [Lost Letters](https://lostletters.neocities.org)
 - [fLaMEdFury](fLaMEdFury.com)

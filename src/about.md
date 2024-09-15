@@ -3,6 +3,10 @@ title: About Me
 layout: layouts/base.njk
 ---
 
+<img src="/img/ixion-portrait.png" width=300px class="float-right border-image">
+
+# About Me
+
 ## Basics
 
 call me: ixion (he/him)

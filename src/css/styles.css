@@ -9,6 +9,7 @@
   --bg: #1c1636ee;
   --accent-bg: #2b2b2b;
   --border: #292172;
+  --border2: #080713;
   --text: #cecece;
   --text-light: #a3a3a3;
   --title-text: #101332;
@@ -48,6 +49,14 @@ body {
 
 .layer-container {
   display: grid;
+}
+
+.float-right {
+  float: right;
+}
+
+.border-image {
+  border: 2px solid var(--border2);
 }
 
 .layer-container > * {
@@ -274,6 +283,10 @@ h3 {
 
 /* Mobile Layout */
 @media only screen and (max-width: 600px) {
+  .float-right {
+    float: none;
+  }
+
   .header__content {
     justify-content: center;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;

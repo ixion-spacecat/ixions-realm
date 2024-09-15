@@ -3,6 +3,8 @@ title: "🔵 Sonic: Reimagined 🔵"
 layout: layouts/base.njk
 ---
 
+# 🔵 Sonic: Reimagined 🔵
+
 {% gallery 2,
   "/img/art-sonic-happy.jpg"
 %}
