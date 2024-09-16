@@ -1,13 +1,12 @@
 ---
 title: "🔵 Sonic: Reimagined 🔵"
 layout: layouts/base.njk
+lightbox: true
 ---
 
 # 🔵 Sonic: Reimagined 🔵
 
-{% gallery 2,
-  "/img/art-sonic-happy.jpg"
-%}
+<img src="/img/art-sonic-happy.jpg" width=350px/>
 
 This is my review of "Sonic: Reimagined" - a mash-up of classic sonic games that lives only in the head of my 10-year old self.
 
@@ -17,28 +16,27 @@ There are several original characters as well as a brand new zone added to the c
 
 When I was around 10 years old, I got Sonic 2 for the Sega Genesis. The game was a bit difficult, but I had already cut my teeth on the original Sonic The Hedgehog and I was ready for the challenge.
 
-My original Sonic 2 Poster from the game cartridge box<br>
-{% gallery 2,
-  "/img/sonic-2-poster-front.jpg"
-%}
+{% gallery "poster" %}
+{% galleryImage "/img/sonic-2-poster-front.jpg", "My original Sonic 2 Poster from the game cartridge box" %}
+{% endgallery %}
 
 While playing the game, I became enchanted by the beautiful detailed environments and the dynamic poses of the characters. The graphics were absolutely gorgeous and I wanted to learn how to re-create what I saw on screen. So what did I do? I paused the game and tried to draw it!
 
 What follows is a list of hand-drawn screenshots from Sonic 2.
 
-{% gallery 2,
-  "/img/art-sonic-2-title.jpg",
-  "/img/art-sonic-2-emerald-hill-boss.jpg",
-  "/img/art-sonic-2-chemical-plant.jpg",
-  "/img/art-sonic-2-aquatic-ruin.jpg",
-  "/img/art-sonic-2-casino-night-boss.jpg",
-  "/img/art-sonic-2-hill-top.jpg",
-  "/img/art-sonic-2-mystic-cave.jpg",
-  "/img/art-sonic-2-oil-ocean.jpg",
-  "/img/art-sonic-2-metropolis-zone.jpg",
-  "/img/art-sonic-2-winged-fortress.jpg",
-  "/img/art-sonic-2-mecha-sonic.jpg"
-%}
+{% gallery "sonic-2-drawings" %}
+{% galleryImage "/img/art-sonic-2-title.jpg", "Sonic the Hedgehog 2 title screen", "The word hedgehog is misspelled." %}
+{% galleryImage "/img/art-sonic-2-emerald-hill-boss.jpg", "Emerald Hill Zone", "Robotnick is driving a drill-car towards Sonic." %}
+{% galleryImage "/img/art-sonic-2-chemical-plant.jpg", "Chemical Plant Zone", "The words of the title screen didn't quite fit on the page." %}
+{% galleryImage "/img/art-sonic-2-aquatic-ruin.jpg", "Aquatic Ruin Zone", "Sonic is breaking through a pillar." %}
+{% galleryImage "/img/art-sonic-2-casino-night-boss.jpg", "Casino Night Zone", "Sonic and Tails are fighting Robotnick." %}
+{% galleryImage "/img/art-sonic-2-hill-top.jpg", "Hill Top Zone", "Sonic is launching from a see-saw." %}
+{% galleryImage "/img/art-sonic-2-mystic-cave.jpg", "Mystic Cave Zone", "Sonic is hanging from a vine over a crevasse while Tails waits on the other side." %}
+{% galleryImage "/img/art-sonic-2-oil-ocean.jpg", "Oil Ocean Zone", "Sonic and tails are jumping across a gap." %}
+{% galleryImage "/img/art-sonic-2-metropolis-zone.jpg", "Metropolis Zone", "The words of the title screen just barely fit this time." %}
+{% galleryImage "/img/art-sonic-2-winged-fortress.jpg", "Winged Fortress Zone", "Sonic is standing on the giant tail wing facing backwards." %}
+{% galleryImage "/img/art-sonic-2-mecha-sonic.jpg", "Death Egg Zone", "Sonic is confronting Metal Sonic. He looks so happy! 😄" %}
+{% endgallery %}
 
 A few interesting notes:
 - In the title screen, the word Hedgehog is misspelled, however we can see from the eraser mark that I tried to correct the spelling by adding a "D".
@@ -46,29 +44,24 @@ A few interesting notes:
 - The title for Chemical Plant doesn't fit on the page. I did a much better job with the title of Metropolis Zone later on.
 - I started off freehanding the characters, but later moved on to using stencils to have more control over the shapes. This gives the characters a very geometric look that I haven't seen in any other Sonic Game.
 
-He looks so happy! 😄<br>
-{% gallery 1,
-  "/img/art-sonic-2-mecha-sonic-cropped.jpg"
-%}
-
 I also drew sonic from a few other games. Here's a screen from sonic 1 where sonic has just picked up a shield. It's partially colored.
 
-{% gallery 2,
-  "/img/art-sonic-1-shield.jpg"
-%}
+{% gallery "sonic-1-drawings" %}
+{% galleryImage "/img/art-sonic-1-shield.jpg", "Sonic standing with a shield near a swinging platform in Green Hill zone" %}
+{% endgallery %}
 
 Here are a couple screenshots that I believe are from sonic CD. Interestingly I've never played sonic CD so I must have drawn these from screenshots in a magazine.
 
-{% gallery 2,
-  "/img/art-sonic-cd.jpg",
-  "/img/art-sonic-breaking-pipe.jpg"
-%}
+{% gallery "sonic-cd-drawings" %}
+{% galleryImage "/img/art-sonic-cd.jpg", "Sonic CD", "Sonic is jumping through a goal post that reads 'past'." %}
+{% galleryImage "/img/art-sonic-breaking-pipe.jpg", "Special Effects", "Sonic and tails are breaking through a vertical tube in the ground." %}
+{% endgallery %}
 
 And finally here's one screen from Sonic 3 Ice Cap Zone (Still one of my favorite zones from any sonic game).
 
-{% gallery 2,
-  "/img/art-sonic-3-ice-cap.jpg"
-%}
+{% gallery "sonic-3-drawings" %}
+{% galleryImage "/img/art-sonic-3-ice-cap.jpg", "Sonic running up a snowy quarter-pipe in Ice Cap Zone" %}
+{% endgallery %}
 
 ## Mash-Up
 
@@ -84,17 +77,17 @@ What's better than having one fox in the sonic franchise? How about 3?!
 
 This is my character design for Spikes the Fox! He's just like Tails, but has spikes on his ears for some reason.
 
-{% gallery 1,
-  "/img/art-sonic-spikes-the-fox.jpg"
-%}
+{% gallery "spikes-the-fox" %}
+{% galleryImage "/img/art-sonic-spikes-the-fox.jpg", "Spikes the fox", "He is posing on a platform surrounded by lava under a banner that reads 'Spikes the Fox'. In the background, Robotnick and a team of robots are fighting with each other like the 3 stooges." %}
+{% endgallery %}
 
 ### Gills the Fox
 
 The second addition is Gills the Fox! He has gills so he can't drown in those annoying water levels! Also he probably swims faster than Tails. He is the only character who has an actual head of hair, sporting a luxurious mullet.
 
-{% gallery 1,
-  "/img/art-sonic-gills-the-fox.jpg"
-%}
+{% gallery "gills-the-fox" %}
+{% galleryImage "/img/art-sonic-gills-the-fox.jpg", "Gills the fox", "He is posing on a platform surrounded by lava under a banner that reads 'Gills the Fox'. Robotnick and 2 other robots are nearby." %}
+{% endgallery %}
 
 Note: It looks like I might have scribbled over the drawing of Gills. Maybe my 10 year old self became embarrassed of the drawing and wanted to remove him from the game? Or maybe my 2 year old brother just got a hold of my colored pencils. But in hindsight, I think Gills adds to the quirky charm of the design and deserves to be included in the game. Long live Gills the Fox! 🦊
 
@@ -104,23 +97,11 @@ Note: It looks like I might have scribbled over the drawing of Gills. Maybe my 1
 
 I could only find artwork for one new zone called "Lava Island". This appears to be a water level that features erupting volcanoes spilling lava into ocean.
 
-In the first picture, we see gills the fox getting ready to take the plunge into the water below. Watch out gills! You're not immune to lava! 🔥🔥🔥
-
-{% gallery 1,
-  "/img/art-sonic-gills-lava-island.jpg"
-%}
-
-The next 2 pictures show Sonic in a canoe paddling between volcanoes. Maybe this was supposed to be an animated sequence?
-
-{% gallery 1,
-  "/img/art-sonic-in-a-canoe.jpg"
-%}
-
-Finally we see that there is an underwater section reminiscent of Sonic 3's Hydrocity Zone. In the background there seems to be a locked door that can only be opened by acquiring all 6 chaos emeralds. 💎
-
-{% gallery 1,
-  "/img/art-sonic-loop.jpg"
-%}
+{% gallery "lava-island" %}
+{% galleryImage "/img/art-sonic-gills-lava-island.jpg", "Lava Island Zone Act 1 Title Screen", "Gills the fox is getting ready to take the plunge into the water below. Watch out gills! You're not immune to lava! 🔥🔥🔥" %}
+{% galleryImage "/img/art-sonic-in-a-canoe.jpg", "Sonic in a canoe paddling between volcanoes", "Maybe this was supposed to be an animated sequence?" %}
+{% galleryImage "/img/art-sonic-loop.jpg", "Sonic running towards a loop", "This is an underwater section reminiscent of Sonic 3's Hydrocity Zone. In the background there seems to be a locked door that can only be opened by acquiring all 6 chaos emeralds. 💎" %}
+{% endgallery %}
 
 ## Conclusion
 

@@ -1,22 +1,23 @@
 ---
 title: Terminal Frog 🐸
 layout: layouts/base.njk
+lightbox: true
+lightboxDesc: right
 ---
 
 # Terminal Frog 🐸
 
 This is my review of "Terminal Frog", a 2D action platformer game from my imagination as a 10-year old kid. The game only exists as some sketches on wide-ruled notebook paper, but we can fill in the blanks by comparing it to similar games of the time.
 
-{% gallery 2,
-  "/img/art-terminal-frog-cube.jpg"
-%}
+<img src="/img/art-terminal-frog-cube.jpg" width=350px/>
 
 ## Inspired by Vectorman
 
 Terminal frog is a 2D platformer game inspired by "Vectorman" (Sega Genesys 1995). Unfortunately I couldn't find a detailed drawing of the titular "Terminal Frog" but I assume they would have been a little green frog dude made of 3d-rendered balls like Vectorman.
 
-Vectorman standing on the SEGA logo
-<img src="/img/vectorman-sega.jpg" alt="Vectorman standing on the SEGA logo">
+{% gallery "vectorman" %}
+{% galleryImage "/img/vectorman-sega.jpg", "Vectorman standing on the SEGA logo" %}
+{% endgallery %}
 
 [Vectorman gameplay on youtube](https://www.youtube.com/watch?v=XY0CjXG--S8).
 
@@ -24,9 +25,10 @@ Vectorman standing on the SEGA logo
 
 ### Controls
 
-{% gallery 2,
-  "/img/art-terminal-frog-controls.jpg"
-%}
+
+{% gallery "controls-and-options" %}
+{% galleryImage "/img/art-terminal-frog-controls.jpg", "Controls" %}
+{% endgallery %}
 
 The controls give us a window into the kinds of things Terminal Frog can do. Their main actions are jump, ram (attack), snatch (presumably with a long sticky tongue), shield, pick up, and throw. They can also rear back for a super jump. The movement controls indicate that there may be some top-view levels in addition to the normal side-scrolling action.
 
@@ -36,9 +38,9 @@ Note: I don't know of any game controller that has a "D" button, so it's entirel
 
 ### Views and Power Ups
 
-{% gallery 2,
-  "/img/art-terminal-frog-options.jpg"
-%}
+{% gallery "controls-and-options" %}
+{% galleryImage "/img/art-terminal-frog-options.jpg", "Views and Power Ups" %}
+{% endgallery %}
 
 I think these views were intended to be a part of the options menu.
 - Jump Range Indicator: an accessability option?
@@ -58,11 +60,9 @@ Jump booster and ram booster most likely just increase your jump distance and at
 
 ## Levels
 
-We see here an unfinished chart with storyboards for the beginning, middle, and end of each level. There are spaces for up to 7 levels plus an intro sequence, but only the first two rows have complete storyboards.
-
-{% gallery 2,
-  "/img/art-terminal-frog-levels.jpg"
-%}
+{% gallery "levels" %}
+{% galleryImage "/img/art-terminal-frog-levels.jpg", "Level storyboards", "We see here an unfinished chart with storyboards for the beginning, middle, and end of each level. There are spaces for up to 7 levels plus an intro sequence, but only the first two rows have complete storyboards." %}
+{% endgallery %}
 
 Level 0 seems to be some sort of intro sequence. First we see something falling off an assembly line. Then there seems to be a giant lizard stealing a house?! Finally it's revealed that there's a mastermind robot controlling the giant lizard or something! 🤖
 
@@ -70,53 +70,29 @@ Level 1 is named "Sunshine Valley" (spelled incorrectly). It seems Terminal frog
 
 The next 2 levels are listed as "Skyscraper" and "Aircraft" but unfortunately there are no storyboards for these.
 
+## Enemies
+
 Next we get a list of enemies that can be seen in each of the first 5 levels.
 
-### Level 1 Enemies
+{% gallery "enemies" %}
 
-{% gallery 2,
-  "/img/art-terminal-frog-enemies-1.jpg"
-%}
+{% galleryImage "/img/art-terminal-frog-enemies-1.jpg", "Level 1 Enemies", "Level 1 'Sunshine Valley' is the first time we see the walking robot enemy which is referred to as a drone (spelled 'Droan'). We can see from the listed stats that it's transportation is 'legs'. There's also a tiny mouse named 'Nips' that can bite you. Lastly, there's a stationary trap called a 'Bush Saw' that is described as an 'invertant buzz saw' (Sounds scary! 😬). For some reason there's no boss in level 1." %}
 
-Level 1 "Sunshine Valley" is the first time we see the walking robot enemy which is referred to as a drone (spelled "Droan"). We can see from the listed stats that it's transportation is "legs". There's also a tiny mouse named "Nips" that can bite you. Lastly, there's a stationary trap called a "Bush Saw" that is described as an<br>"invertant buzz saw" (Sounds scary! 😬). For some reason there's no boss in level 1.
+{% galleryImage "/img/art-terminal-frog-enemies-2.jpg", "Level 2 Enemies", "Level 2 'Skyscraper' gives us 2 new enemies. First there's a wall spider, which presumably climbs walls. It shoots venom from it's 'gun form' so I assume that it is some kind of transformer. There's also an enemy called a 'Bomber Beetle' that is essentially a small helicopter that shoots missiles and bombs. This level sees the return of the drone but this time without the wind-up key. The boss of the skyscraper is the 'Boss Spider' which has a venom gun and infinite missiles. It takes 10 hits to kill." %}
 
-### Level 2 Enemies
+{% galleryImage "/img/art-terminal-frog-enemies-3.jpg", "Level 3 Enemies", "Level 3 'Aircraft' might be some kind of aircraft carrier. There is only 1 new enemy, the 'Foul Falcon' (pun intentional?) which flies with medium/fast speed and fires 2 bombs and 2 lasers. The drone has gotten an upgrade and now has a jetpack. The drone's speed is listed as 'Medium, Fast, or M/S', which I can only assume means that it is fast while flying but still medium slow while walking. The Bomber Beetle is the same as in level 2." %}
 
-{% gallery 2,
-  "/img/art-terminal-frog-enemies-2.jpg"
-%}
+{% galleryImage "/img/art-terminal-frog-enemies-4.jpg", "Level 4 Enemies", "Level 4 is unnamed, but we can infer from the enemies that it takes place underwater. The drone now has flippers and travels with a medium speed. There's a new 'Torpedo Shark' that has '2 torpedoes, infinite shark torpedoes (which are apparently different from regular torpedoes), and a harpoon gun. Unsurprisingly, the shark's transportation is 'fins'. There's also a puffer fish themed enemy named 'Puffs' who is concealing a laser and has dangerous 'Expandable spikes'. Finally we see that the boss of this level is a robotic kraken named 'Octo-Major'. It has 8 arms with tentacles and a laser. It takes 5 hits on the nose and 10 hits in the eye to kill it." %}
 
-Level 2 "Skyscraper" gives us 2 new enemies. First there's a wall spider, which presumably climbs walls. It shoots venom from it's "gun form" so I assume that it is some kind of transformer. There's also an enemy called a "Bomber Beetle" that is essentially a small helicopter that shoots missiles and bombs. This level sees the return of the drone but this time without the wind-up key. The boss of the skyscraper is the "Boss Spider" which has a venom gun and infinite missiles. It takes 10 hits to kill.
+{% galleryImage "/img/art-terminal-frog-enemies-5.jpg", "Level 5 Enemies", "Level 5 is unnamed. I assume it takes place at least partially in the water because we see the torpedo shark has returned. The drone is now walking again and seems to have reverted back to its form from level 2. There's a new 2-legged enemy called a 'Spere Cannon' that attacks with a 'top-firing cannon'. Maybe this enemy walks in the shallow water and fires spears up to hit the player on a platform above. The final boss of this level is also unnamed, but it appears to be a hovering airplane with a multi-phase design that requires the wings to be hit first before the other targets become available." %}
 
-### Level 3 Enemies
-
-{% gallery 2,
-  "/img/art-terminal-frog-enemies-3.jpg"
-%}
-
-Level 3 "Aircraft" might be some kind of aircraft carrier. There is only 1 new enemy, the "Foul Falcon" (pun intentional?) which flies with medium/fast speed and fires 2 bombs and 2 lasers. The drone has gotten an upgrade and now has a jetpack. The drone's speed is listed as "Medium, Fast, or M/S", which I can only assume means that it is fast while flying but still medium slow while walking. The Bomber Beetle is the same as in level 2.
-
-### Level 4 Enemies
-
-{% gallery 2,
-  "/img/art-terminal-frog-enemies-4.jpg"
-%}
-
-Level 4 is unnamed, but we can infer from the enemies that it takes place underwater. The drone now has flippers and travels with a medium speed. There's a new "Torpedo Shark" that has "2 torpedoes, infinite shark torpedoes (which are apparently different from regular torpedoes), and a harpoon gun. Unsurprisingly, the shark's transportation is "fins". There's also a puffer fish themed enemy named "Puffs" who is concealing a laser and has dangerous "Expandable spikes". Finally we see that the boss of this level is a robotic kraken named "Octo-Major". It has 8 arms with tentacles and a laser. It takes 5 hits on the nose and 10 hits in the eye to kill it.
-
-### Level 5 Enemies
-
-{% gallery 2,
-  "/img/art-terminal-frog-enemies-5.jpg"
-%}
-
-Level 5 is unnamed. I assume it takes place at least partially in the water because we see the torpedo shark has returned. The drone is now walking again and seems to have reverted back to its form from level 2. There's a new 2-legged enemy called a "Spere Cannon" that attacks with a "top-firing cannon". Maybe this enemy walks in the shallow water and fires spears up to hit the player on a platform above. The final boss of this level is also unnamed, but it appears to be a hovering airplane with a multi-phase design that requires the wings to be hit first before the other targets become available.
+{% endgallery %}
 
 Note: This last boss is reminiscent of the VTOL Boss from the first level of Vectorman
 
-{% gallery 2,
-  "/img/vectorman-vtol-boss.jpg"
-%}
+{% gallery "vtol" %}
+{% galleryImage "/img/vectorman-vtol-boss.jpg", "Vectorman Boss" %}
+{% endgallery %}
 
 ## Conclusion
 

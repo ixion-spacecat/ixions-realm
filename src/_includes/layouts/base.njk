@@ -5,6 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/styles.css" />
+  {% if lightbox %}
+  <link rel="stylesheet" href="/css/glightbox.min.css" />
+  <script type="module">
+    import "/js/glightbox.min.js";
+    const lightbox = GLightbox({
+      selector: ".glightbox",
+      {% if lightboxDesc %}
+      descPosition: "{{ lightboxDesc }}",
+      {% endif %}
+      moreLength: 0,
+      slideEffect: "none",
+      skin: "custom"
+    });
+  </script>
+  {% endif %}
   <title>🌌 Ixion's Realm</title>
 </head>
 
