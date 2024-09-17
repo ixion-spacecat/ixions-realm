@@ -1,11 +1,11 @@
 ---
-title: Terminal Frog 🐸
+title: Terminal Frog
 layout: layouts/base.njk
 lightbox: true
 lightboxDesc: right
 ---
 
-# Terminal Frog 🐸
+# 🐸 Terminal Frog
 
 This is my review of "Terminal Frog", a 2D action platformer game from my imagination as a 10-year old kid. The game only exists as some sketches on wide-ruled notebook paper, but we can fill in the blanks by comparing it to similar games of the time.
 

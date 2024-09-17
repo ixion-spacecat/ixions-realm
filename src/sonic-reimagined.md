@@ -1,10 +1,10 @@
 ---
-title: "🔵 Sonic: Reimagined 🔵"
+title: "Sonic: Reimagined"
 layout: layouts/base.njk
 lightbox: true
 ---
 
-# 🔵 Sonic: Reimagined 🔵
+# 🔵 Sonic: Reimagined
 
 <img src="/img/art-sonic-happy.jpg" width=350px/>
 

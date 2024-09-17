@@ -5,15 +5,27 @@ layout: layouts/base.njk
 
 # Links
 
-Some cool websites that inspired me to build this site
+## Cool websites
+- [32-Bit Cafe](https://32bit.cafe)
 - [Lost Letters](https://lostletters.neocities.org)
 - [fLaMEdFury](fLaMEdFury.com)
+- [Keenan](https://gkeenan.co)
 - [Kalechips](https://kalechips.net)
-- [feelingmachine](https://feelingmachine.moe/)
-- Lots more cool pages on [Neocities](https://neocities.org)
+- [Frills](https://frills.dev)
+- [Inkcaps](https://inkcaps.neocities.org)
+- [Sadgrl](https://goblin-heart.net/sadgrl)
+- [Goblin Heart](https://goblin-heart.net)
+- [Museum of Alexandra](https://xandra.cc)
 
-How to build and host a personal site
-- [fLaMEdFury.com: Create A Static Site Using 11ty & Deploy to Neocities](https://flamedfury.com/guides/11ty-homepage-neocities/)
+Lots more cool pages on [Neocities](https://neocities.org)
+
+## How to build a personal website
+
+Beginner: 
+1. Get a free page on [Neocities](https://neocities.org)
+2. Use Sadgrl's [Layout Builder](https://goblin-heart.net/sadgrl/projects/layout-builder/)
+3. Customize with [HTML and CSS](https://neocities.org/tutorials)
+
+Intermediate/Advanced:
+- [Create A Static Site Using 11ty](https://flamedfury.com/guides/11ty-homepage-neocities/)
 - [Deploy to Neocities](https://github.com/marketplace/actions/deploy-to-neocities)
-- Static site generation with [11ty](https://11ty.dev)
-- Free hosting on [Neocities](https://neocities.org)
