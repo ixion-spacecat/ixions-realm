@@ -17,7 +17,7 @@ This page is here to celebrate the creativity of my childhood self and some of t
 
 <a href="/sonic-reimagined/"><h3>Sonic: Reimagined</h3></a>
 <a href="/sonic-reimagined/"><img src="/img/art-sonic-happy.jpg" width=200px><br></a>
-Classic Sonic the Hegehog, but more awesome! 😄
+Classic Sonic the Hedgehog, but more awesome! 😄
 
 ---
 

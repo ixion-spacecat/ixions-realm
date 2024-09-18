@@ -13,7 +13,7 @@ This is my review of "Terminal Frog", a 2D action platformer game from my imagin
 
 ## Inspired by Vectorman
 
-Terminal frog is a 2D platformer game inspired by "Vectorman" (Sega Genesys 1995). Unfortunately I couldn't find a detailed drawing of the titular "Terminal Frog" but I assume they would have been a little green frog dude made of 3d-rendered balls like Vectorman.
+Terminal frog is a 2D platformer game inspired by "Vectorman" (Sega Genesis 1995). Unfortunately I couldn't find a detailed drawing of the titular "Terminal Frog" but I assume they would have been a little green frog dude made of 3d-rendered balls like Vectorman.
 
 {% gallery "vectorman" %}
 {% galleryImage "/img/vectorman-sega.jpg", "Vectorman standing on the SEGA logo" %}

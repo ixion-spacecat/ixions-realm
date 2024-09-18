@@ -26,10 +26,10 @@ What follows is a list of hand-drawn screenshots from Sonic 2.
 
 {% gallery "sonic-2-drawings" %}
 {% galleryImage "/img/art-sonic-2-title.jpg", "Sonic the Hedgehog 2 title screen", "The word hedgehog is misspelled." %}
-{% galleryImage "/img/art-sonic-2-emerald-hill-boss.jpg", "Emerald Hill Zone", "Robotnick is driving a drill-car towards Sonic." %}
+{% galleryImage "/img/art-sonic-2-emerald-hill-boss.jpg", "Emerald Hill Zone", "Robotnik is driving a drill-car towards Sonic." %}
 {% galleryImage "/img/art-sonic-2-chemical-plant.jpg", "Chemical Plant Zone", "The words of the title screen didn't quite fit on the page." %}
 {% galleryImage "/img/art-sonic-2-aquatic-ruin.jpg", "Aquatic Ruin Zone", "Sonic is breaking through a pillar." %}
-{% galleryImage "/img/art-sonic-2-casino-night-boss.jpg", "Casino Night Zone", "Sonic and Tails are fighting Robotnick." %}
+{% galleryImage "/img/art-sonic-2-casino-night-boss.jpg", "Casino Night Zone", "Sonic and Tails are fighting Robotnik." %}
 {% galleryImage "/img/art-sonic-2-hill-top.jpg", "Hill Top Zone", "Sonic is launching from a see-saw." %}
 {% galleryImage "/img/art-sonic-2-mystic-cave.jpg", "Mystic Cave Zone", "Sonic is hanging from a vine over a crevasse while Tails waits on the other side." %}
 {% galleryImage "/img/art-sonic-2-oil-ocean.jpg", "Oil Ocean Zone", "Sonic and tails are jumping across a gap." %}
@@ -78,7 +78,7 @@ What's better than having one fox in the sonic franchise? How about 3?!
 This is my character design for Spikes the Fox! He's just like Tails, but has spikes on his ears for some reason.
 
 {% gallery "spikes-the-fox" %}
-{% galleryImage "/img/art-sonic-spikes-the-fox.jpg", "Spikes the fox", "He is posing on a platform surrounded by lava under a banner that reads 'Spikes the Fox'. In the background, Robotnick and a team of robots are fighting with each other like the 3 stooges." %}
+{% galleryImage "/img/art-sonic-spikes-the-fox.jpg", "Spikes the fox", "He is posing on a platform surrounded by lava under a banner that reads 'Spikes the Fox'. In the background, Robotnik and a team of robots are fighting with each other like the 3 stooges." %}
 {% endgallery %}
 
 ### Gills the Fox
@@ -86,7 +86,7 @@ This is my character design for Spikes the Fox! He's just like Tails, but has sp
 The second addition is Gills the Fox! He has gills so he can't drown in those annoying water levels! Also he probably swims faster than Tails. He is the only character who has an actual head of hair, sporting a luxurious mullet.
 
 {% gallery "gills-the-fox" %}
-{% galleryImage "/img/art-sonic-gills-the-fox.jpg", "Gills the fox", "He is posing on a platform surrounded by lava under a banner that reads 'Gills the Fox'. Robotnick and 2 other robots are nearby." %}
+{% galleryImage "/img/art-sonic-gills-the-fox.jpg", "Gills the fox", "He is posing on a platform surrounded by lava under a banner that reads 'Gills the Fox'. Robotnik and 2 other robots are nearby." %}
 {% endgallery %}
 
 Note: It looks like I might have scribbled over the drawing of Gills. Maybe my 10 year old self became embarrassed of the drawing and wanted to remove him from the game? Or maybe my 2 year old brother just got a hold of my colored pencils. But in hindsight, I think Gills adds to the quirky charm of the design and deserves to be included in the game. Long live Gills the Fox! 🦊
