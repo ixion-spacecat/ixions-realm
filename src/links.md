@@ -19,6 +19,10 @@ layout: layouts/base.njk
 
 Lots more cool pages on [Neocities](https://neocities.org)
 
+## Cool Stuff
+
+Get your own [Web Neko](https://webneko.net) (the little cat in the top left corner)
+
 ## How to build a personal website
 
 Beginner: 
