@@ -6,7 +6,7 @@ lightbox: true
 
 # 🔵 Sonic: Reimagined
 
-<img src="/img/art-sonic-happy.jpg" width=350px/>
+<img src="/img/art-sonic-happy.jpg" alt="" eleventy:widths="350"/>
 
 This is my review of "Sonic: Reimagined" - a mash-up of classic sonic games that lives only in the head of my 10-year old self.
 

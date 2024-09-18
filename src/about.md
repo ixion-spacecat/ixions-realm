@@ -3,7 +3,7 @@ title: About Me
 layout: layouts/base.njk
 ---
 
-<img src="/img/ixion-portrait.png" width=300px class="float-right border-image">
+<img src="/img/ixion-portrait.png" alt="" eleventy:widths="300" eleventy:formats="png" class="float-right border-image">
 
 # About Me
 

@@ -1,3 +1,5 @@
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+
 const removeLineBreaks = (text) => text.replaceAll(/(\r\n|\n|\r)/gm, "");
 
 function galleryShortcode(content, name) {
@@ -19,7 +21,7 @@ function galleryImageShortcode(src, title, description) {
       data-title="${title}"
       data-description="${description}"
     >
-      <img src="${src}" alt="${title}" class="gallery-item-image"/>
+      <img src="${src}" alt="${title}" eleventy:widths="800px" class="gallery-item-image"/>
     </a>
   `;
   const titleElement = title ? `<p class="gallery-item-title">${title}</p>` : '';
@@ -39,6 +41,25 @@ function galleryImageShortcode(src, title, description) {
 }
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		// which file extensions to process
+		extensions: "html",
+
+		// Add any other Image utility options here:
+
+		// optional, output image formats
+		formats: ["webp", "jpeg"],
+		// formats: ["auto"],
+
+		// optional, output image widths
+		// widths: ["auto"],
+
+		// optional, attributes assigned on <img> override these values.
+		defaultAttributes: {
+			loading: "lazy",
+			decoding: "async",
+		},
+	});
   
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("./src/img");

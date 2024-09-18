@@ -3,7 +3,7 @@ title: Welcome!
 layout: layouts/base.njk
 ---
 
-<img src="/img/ixion-portrait.png" width=250px class="float-right border-image">
+<img src="/img/ixion-portrait.png" alt="Ixion Space Cat" eleventy:widths="250" eleventy:formats="png" class="float-right border-image">
 
 # Welcome!
 
