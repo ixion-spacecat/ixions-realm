@@ -2,13 +2,14 @@
   "name": "ixions-realm",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "start": "node remove-exif.js && npx @11ty/eleventy --serve",
+    "build": "node remove-exif.js && npx @11ty/eleventy"
   },
   "author": "ixion-spacecat",
   "license": "UNLICENSED",
   "description": "My personal website",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "exif-be-gone": "^1.5.1"
   }
 }
