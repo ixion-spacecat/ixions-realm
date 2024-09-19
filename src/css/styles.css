@@ -229,10 +229,21 @@ html.glightbox-open {
   overflow: initial;
 }
 
-.gslide-description {
+.glightbox-container .gslide-description {
   background: var(--gallery-bg);
   color: var(--text);
-  padding: 0.5em;
+  padding: 0.5em 0.5em 2em 0.5em !important;
+}
+
+.glightbox-container .gslide-title {
+  color: var(--text);
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.glightbox-container .gslide-desc {
+  color: var(--text);
+  margin-top: 1em !important;
 }
 
 .flex-last {
