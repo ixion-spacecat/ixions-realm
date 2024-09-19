@@ -40,11 +40,11 @@ What follows is a list of hand-drawn screenshots from Sonic 2.
 
 A few interesting notes:
 - In the title screen, the word Hedgehog is misspelled, however we can see from the eraser mark that I tried to correct the spelling by adding a "D".
-- I drew exactly one picture from each zone, with the exception of "Sky Chase Zone" which is only one act.
+- I drew exactly one picture from each zone (not counting the short Sky Chase Zone).
 - The title for Chemical Plant doesn't fit on the page. I did a much better job with the title of Metropolis Zone later on.
 - I started off freehanding the characters, but later moved on to using stencils to have more control over the shapes. This gives the characters a very geometric look that I haven't seen in any other Sonic Game.
 
-I also drew sonic from a few other games. Here's a screen from sonic 1 where sonic has just picked up a shield. It's partially colored.
+I also drew sonic from a few other games. Here's a screen from sonic 1 where sonic has just picked up a shield.
 
 {% gallery "sonic-1-drawings" %}
 {% galleryImage "/img/art-sonic-1-shield.jpg", "Sonic standing with a shield near a swinging platform in Green Hill zone" %}
@@ -83,7 +83,7 @@ This is my character design for Spikes the Fox! He's just like Tails, but has sp
 
 ### Gills the Fox
 
-The second addition is Gills the Fox! He has gills so he can't drown in those annoying water levels! Also he probably swims faster than Tails. He is the only character who has an actual head of hair, sporting a luxurious mullet.
+The second addition is Gills the Fox! He has gills so he can't drown in those annoying water levels! Also he probably swims faster than Tails. He is the only character who has an actual head of hair, sporting a luxurious mullet. ✨
 
 {% gallery "gills-the-fox" %}
 {% galleryImage "/img/art-sonic-gills-the-fox.jpg", "Gills the fox", "He is posing on a platform surrounded by lava under a banner that reads 'Gills the Fox'. Robotnik and 2 other robots are nearby." %}
