@@ -3,7 +3,7 @@ title: Welcome!
 layout: layouts/base.njk
 ---
 
-<img src="/img/ixion-portrait.png" width=250px class="float-right border-image">
+<img src="/img/ixion-portrait.png" alt="Self-portrait of Ixion Space-Cat" width=250px class="float-right border-image">
 
 # Welcome!
 

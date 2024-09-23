@@ -9,7 +9,7 @@ lightboxDesc: right
 
 This is my review of "Terminal Frog", a 2D action platformer game from my imagination as a 10-year old kid. The game only exists as some sketches on wide-ruled notebook paper, but we can fill in the blanks by comparing it to similar games of the time.
 
-<img src="/img/art-terminal-frog-cube.jpg" width=350px/>
+<img src="/img/art-terminal-frog-cube.jpg" alt="Childish drawing of a frog in a cube" width=350px/>
 
 ## Inspired by Vectorman
 
