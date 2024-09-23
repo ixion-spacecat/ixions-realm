@@ -5,7 +5,7 @@ layout: layouts/base.njk
 
 # Interests
 
-This page is dedicated to my special interests. These are things that I was really into at some point in time. Some day I may be struck by a [strange mood](https://dwarffortresswiki.org/index.php/DF2014:Strange_mood) and dedicate a shrine to something from this page.
+This page is dedicated to my special interests. These are things that I was really into at some point in time. Some day I may be struck by a <a href="https://dwarffortresswiki.org/index.php/DF2014:Strange_mood" target="_blank">strange mood</a> and dedicate a shrine to something from this page.
 
 ## Games
 ### Retro Video-Games
