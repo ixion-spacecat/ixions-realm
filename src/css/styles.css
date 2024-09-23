@@ -114,7 +114,6 @@ body {
   z-index: 1;
   padding-left: 50%;
 }
-
 .header__lightning--image {
   background-image: url("/img/sonic-electric-arc-1.png");
   image-rendering: pixelated;
@@ -256,6 +255,11 @@ html.glightbox-open {
 .flex-stretch {
   align-self: stretch;
 }
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
 
 /* Format navigation */
 .navbar {
