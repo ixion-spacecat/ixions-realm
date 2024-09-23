@@ -1,6 +1,7 @@
 ---
 title: Art
 layout: layouts/base.njk
+lightbox: true
 ---
 
 # Art
@@ -29,4 +30,6 @@ Classic Sonic the Hedgehog, but more awesome! 😄
 
 ## Recent Art
 
-Coming soon...
+{% gallery "my-art" %}
+{% galleryImage "/img/ixion-portrait.png", "Self Portrait of Ixion SpaceCat", "This took me about 30 hours including revisions. 100% hand-painted in Krita. AI was used only to create reference images for pose and lighting." %}
+{% endgallery %}
