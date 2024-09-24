@@ -3,7 +3,7 @@ title: About Me
 layout: layouts/base.njk
 ---
 
-<img src="/img/ixion-portrait.png" alt="Self-portrait of Ixion Space-Cat" width=300px class="float-right border-image">
+<img src="/img/ixion-portrait-500.jpg" alt="Self-portrait of Ixion Space-Cat" width=300px class="float-right border-image">
 
 # About Me
 
