@@ -79,10 +79,10 @@ This page is dedicated to my special interests. These are things that I was real
 - Ne-Yo
 - Frank Sinatra
 - The Beatles
-- Wolfgun
-- Rchetype
-- cYsmix
-- Kubbi
+- {%link "https://wolfgun.bandcamp.com"%}Wolfgun{%endlink%}
+- {%link "https://open.spotify.com/artist/1UG4Tq3PFnzYkmxMh7H5QZ" %}Rchetype{%endlink%}
+- {%link "https://open.spotify.com/artist/01D5XnAKpuAbd9PrYSRCuR" %}cYsmix{%endlink%}
+- {%link "https://open.spotify.com/artist/38dW24ZxoRfXGe1lJXXFNg" %}Kubbi{%endlink%}
 
 ## Hobbies
 ### Game Development
@@ -112,12 +112,12 @@ This page is dedicated to my special interests. These are things that I was real
 
 ## Toys
 ### Fidget Toys
-- ONO Roller
-- NeeDoh Nice Cube
+- {%link "https://onoroller.com/" %}ONO Roller{%endlink%}
+- {%link "https://schylling.com/product/needoh-nice-cube/" %}NeeDoh Nice Cube{%endlink%}
 ### Building Toys
-- Speks Magnet Balls
-- Lego
-- K'Nex
+- {%link "https://www.getspeks.com/products/speks" %}Speks Magnet Balls{%endlink%}
+- {%link "https://lego.com" %}Lego{%endlink%}
+- {%link "https://www.basicfun.com/knex/" %}K'Nex{%endlink%}
 
 ## People & Pets
 - My Wonderful Wife
