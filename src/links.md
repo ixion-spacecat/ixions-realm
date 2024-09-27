@@ -6,30 +6,30 @@ layout: layouts/base.njk
 # Links
 
 ## Cool websites
-- <a href="https://32bit.cafe" target="_blank">32-Bit Cafe</a>
-- <a href="https://lostletters.neocities.org" target="_blank">Lost Letters</a>
-- <a href="https://flamedfury.com" target="_blank">fLaMEdFury</a>
-- <a href="https://gkeenan.co" target="_blank">Keenan</a>
-- <a href="https://kalechips.net" target="_blank">Kalechips</a>
-- <a href="https://frills.dev" target="_blank">Frills</a>
-- <a href="https://inkcaps.neocities.org" target="_blank">Inkcaps</a>
-- <a href="https://goblin-heart.net/sadgrl" target="_blank">Sadgrl</a>
-- <a href="https://goblin-heart.net" target="_blank">Goblin Heart</a>
-- <a href="https://xandra.cc" target="_blank">Museum of Alexandra</a>
+- {%link "https://32bit.cafe" %}32-Bit Cafe{%endlink%}
+- {%link "https://lostletters.neocities.org" %}Lost Letters{%endlink%}
+- {%link "https://flamedfury.com" %}fLaMEdFury{%endlink%}
+- {%link "https://gkeenan.co" %}Keenan{%endlink%}
+- {%link "https://kalechips.net" %}Kalechips{%endlink%}
+- {%link "https://frills.dev" %}Frills{%endlink%}
+- {%link "https://inkcaps.neocities.org" %}Inkcaps{%endlink%}
+- {%link "https://goblin-heart.net/sadgrl" %}Sadgrl{%endlink%}
+- {%link "https://goblin-heart.net" %}Goblin Heart{%endlink%}
+- {%link "https://xandra.cc" %}Museum of Alexandra{%endlink%}
 
-Lots more cool pages on <a href="https://neocities.org" target="_blank">Neocities</a>
+Lots more cool pages on {%link "https://neocities.org" %}Neocities{%endlink%}
 
 ## Cool Stuff
 
-Get your own <a href="https://webneko.net" target="_blank">Web Neko</a> (the little cat in the top left corner)
+Get your own {%link "https://webneko.net" %}Web Neko{%endlink%} (the little cat in the top left corner)
 
 ## How to build a personal website
 
 Beginner: 
-1. Get a free page on <a href="https://neocities.org" target="_blank">Neocities</a>
-2. Use Sadgrl's <a href="https://goblin-heart.net/sadgrl/projects/layout-builder/" target="_blank">Layout Builder</a>
-3. Customize with <a href="https://neocities.org/tutorials" target="_blank">HTML and CSS</a>
+1. Get a free page on {%link "https://neocities.org" %}Neocities{%endlink%}
+2. Use Sadgrl's {%link "https://goblin-heart.net/sadgrl/projects/layout-builder/" %}Layout Builder{%endlink%}
+3. Customize with {%link "https://neocities.org/tutorials" %}HTML and CSS{%endlink%}
 
 Intermediate/Advanced:
-- <a href="https://flamedfury.com/guides/11ty-homepage-neocities/" target="_blank">Create A Static Site Using 11ty</a>
-- <a href="https://github.com/marketplace/actions/deploy-to-neocities" target="_blank">Deploy to Neocities</a>
+- {%link "https://flamedfury.com/guides/11ty-homepage-neocities/" %}Create A Static Site Using 11ty{%endlink%}
+- {%link "https://github.com/marketplace/actions/deploy-to-neocities" %}Deploy to Neocities{%endlink%}

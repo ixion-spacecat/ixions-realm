@@ -257,6 +257,14 @@ html.glightbox-open {
   align-self: stretch;
 }
 
+.external-link {
+  background-image: url("/img/external-link.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 0.857em;
+  padding-right: 1em;
+}
+
 /* Format navigation */
 .navbar {
   min-width: 220px;

@@ -19,7 +19,7 @@ Terminal frog is a 2D platformer game inspired by "Vectorman" (Sega Genesis 1995
 {% galleryImage "/img/vectorman-sega.jpg", "Vectorman standing on the SEGA logo" %}
 {% endgallery %}
 
-<a href="https://www.youtube.com/watch?v=XY0CjXG--S8" target="_blank">Vectorman gameplay on youtube</a>
+{%link "https://www.youtube.com/watch?v=XY0CjXG--S8" %}Vectorman gameplay on youtube{%endlink%}
 
 ## Game Play
 

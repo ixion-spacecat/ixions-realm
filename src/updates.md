@@ -10,7 +10,7 @@ lightbox: true
 "Ixion's Realm" is born!
 
 It's taken over a month, but I've completely rebuilt the website from the ground up.
-- Brand new static site built on <a href="https://www.11ty.dev/" target="_blank">11ty</a>
+- Brand new static site built on {%link "https://www.11ty.dev/" %}11ty{%endlink%}
 - Responsive 2-column layout
 - Embedded image galleries that work on desktop and mobile
 - Cool new theme inspired by Sega Genesis

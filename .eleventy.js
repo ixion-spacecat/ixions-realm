@@ -38,6 +38,12 @@ function galleryImageShortcode(src, title, description) {
   return removeLineBreaks(element);
 }
 
+function outlinkShortcode(content, url) {
+  return removeLineBreaks(`
+    <a href="${url}" rel="external" target="_blank" class="external-link">${content}</a>
+  `);
+}
+
 module.exports = function (eleventyConfig) {
   
   eleventyConfig.addPassthroughCopy("./src/css");
@@ -47,6 +53,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPairedShortcode("gallery", galleryShortcode);
   eleventyConfig.addShortcode("galleryImage", galleryImageShortcode);
+  eleventyConfig.addPairedShortcode("link", outlinkShortcode);
 
   return {
     passthroughFileCopy: true,

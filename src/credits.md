@@ -8,7 +8,7 @@ lightbox: true
 
 ## From Sonic 3 & Knuckles
 
-<a href="https://www.spriters-resource.com/sega_genesis_32x/snk/" target="_blank">Sprite sheets</a>
+{%link "https://www.spriters-resource.com/sega_genesis_32x/snk/" %}Sprite sheets{%endlink%}
 
 {% gallery "snk" %}
 {% galleryImage "/img/earth-surface.png", "Earth surface from background of Death Egg Zone" %}
@@ -17,7 +17,7 @@ lightbox: true
 
 ## From Sadgrl
 
-<a href="https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs" target="_blank">Tiled backgrounds</a>
+{%link "https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs" %}Tiled backgrounds{%endlink%}
 
 {% gallery "snk" %}
 {% galleryImage "/img/purpdimond.gif", "Purple diamond background" %}
@@ -25,4 +25,8 @@ lightbox: true
 
 ## Widgets
 
-The little cat in the top left corner is a <a href="https://webneko.net" target="_blank">Web Neko</a>
+The little cat in the top left corner is a {%link "https://webneko.net" %}Web Neko{%endlink%}
+
+## Icons
+
+External Link Icon <img src="/img/external-link.svg"> from Wikipedia
