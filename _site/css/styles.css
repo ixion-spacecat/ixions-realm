@@ -33,7 +33,7 @@ html {
 body {
   margin: 0;
   background-color: black;
-  background-image: url("/img/black-grid-background.png");
+  background-image: url("/images/black-grid-background.png");
   background-size: 48px;
   height: 100vh;
 }
@@ -84,7 +84,7 @@ body {
 .header--container {
   display: grid;
   width: 100%;
-  background: url("/img/purplediamond-gradient.png");
+  background: url("/images/purplediamond-gradient.png");
 }
 
 .header--container > * {
@@ -99,7 +99,7 @@ body {
 }
 
 .header__planet--image {
-  background-image: url("/img/earth-surface.png");
+  background-image: url("/images/earth-surface.png");
   image-rendering: pixelated;
   width: 100%;
   max-width: 820px;
@@ -116,7 +116,7 @@ body {
 }
 
 .header__lightning--image {
-  background-image: url("/img/sonic-electric-arc-1.png");
+  background-image: url("/images/sonic-electric-arc-1.png");
   image-rendering: pixelated;
   width: 60px;
   min-height: 140px;
@@ -166,7 +166,7 @@ body {
 }
 
 .region--title {
-  background-image: url("/img/metal-title-bar.png");
+  background-image: url("/images/metal-title-bar.png");
   min-height: 36px;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -258,7 +258,7 @@ html.glightbox-open {
 }
 
 .external-link {
-  background-image: url("/img/external-link.svg");
+  background-image: url("/images/external-link.svg");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 0.857em;

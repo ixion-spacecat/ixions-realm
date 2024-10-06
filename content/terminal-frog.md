@@ -9,14 +9,14 @@ lightboxDesc: right
 
 This is my review of "Terminal Frog", a 2D action platformer game from my imagination as a 10-year old kid. The game only exists as some sketches on wide-ruled notebook paper, but we can fill in the blanks by comparing it to similar games of the time.
 
-<img src="/img/art-terminal-frog-cube.jpg" alt="Childish drawing of a frog in a cube" width=350px/>
+<img src="/images/art-terminal-frog-cube.jpg" alt="Childish drawing of a frog in a cube" width=350px/>
 
 ## Inspired by Vectorman
 
 Terminal frog is a 2D platformer game inspired by "Vectorman" (Sega Genesis 1995). Unfortunately I couldn't find a detailed drawing of the titular "Terminal Frog" but I assume they would have been a little green frog dude made of 3d-rendered balls like Vectorman.
 
 {% gallery "vectorman" %}
-{% galleryImage "/img/vectorman-sega.jpg", "Vectorman standing on the SEGA logo" %}
+{% galleryImage "/images/vectorman-sega.jpg", "Vectorman standing on the SEGA logo" %}
 {% endgallery %}
 
 {%link "https://www.youtube.com/watch?v=XY0CjXG--S8" %}Vectorman gameplay on youtube{%endlink%}
@@ -26,8 +26,8 @@ Terminal frog is a 2D platformer game inspired by "Vectorman" (Sega Genesis 1995
 We don't have any drawings of levels, but we can get an idea of how the game would play by looking at the controls and options.
 
 {% gallery "controls-and-options" %}
-{% galleryImage "/img/art-terminal-frog-controls.jpg", "Controls" %}
-{% galleryImage "/img/art-terminal-frog-options.jpg", "Views and Power Ups" %}
+{% galleryImage "/images/art-terminal-frog-controls.jpg", "Controls" %}
+{% galleryImage "/images/art-terminal-frog-options.jpg", "Views and Power Ups" %}
 {% endgallery %}
 
 It appears the gameplay consists mostly of jumping and ramming into enemies. There's also a 'snatch' move which I assume is a long sticky tongue like Yoshi from Super Mario World. There's a dedicated button to rear back and do a super jump, which must be useful somehow. And at the risk of including too many actions, there are additional buttons to deploy a shield, pick up and throw objects.
@@ -57,12 +57,12 @@ The chart below shows storyboards for the beginning of the game. It looks like a
 After that we see a list of enemy designs for the first 5 levels.
 
 {% gallery "levels" %}
-{% galleryImage "/img/art-terminal-frog-levels.jpg", "Level storyboards", "Unfinished chart with storyboards for the beginning, middle, and end of each level. Only the first two rows are filled in." %}
-{% galleryImage "/img/art-terminal-frog-enemies-1.jpg", "Level 1 Enemies (Sunshine Valley)", "A walking drone robot, a small biting mouse, and bush that contains an 'invertant buzz saw.' (Sounds scary! 😬)" %}
-{% galleryImage "/img/art-terminal-frog-enemies-2.jpg", "Level 2 Enemies (Skyscraper)", "A wall spider, a flying Bomber Beetle and another walking drone. The boss is big spider that shoots venom from a gun." %}
-{% galleryImage "/img/art-terminal-frog-enemies-3.jpg", "Level 3 Enemies (Aircraft)", "The Foul Falcon is the only new enemy here. It flies and shoots 2 bombs and 2 lasers. The drone has a jetpack now." %}
-{% galleryImage "/img/art-terminal-frog-enemies-4.jpg", "Level 4 Enemies (Underwater)", "A torpedo shark, a puffer fish with a laser, and a really cool looking robotic octopus named 'Octo-Major'." %}
-{% galleryImage "/img/art-terminal-frog-enemies-5.jpg", "Level 5 Enemies (Coastline?)", "The torpedo shark returns, along with the normal drone, and a new walking spear cannon. The boss is a hovering airplane." %}
+{% galleryImage "/images/art-terminal-frog-levels.jpg", "Level storyboards", "Unfinished chart with storyboards for the beginning, middle, and end of each level. Only the first two rows are filled in." %}
+{% galleryImage "/images/art-terminal-frog-enemies-1.jpg", "Level 1 Enemies (Sunshine Valley)", "A walking drone robot, a small biting mouse, and bush that contains an 'invertant buzz saw.' (Sounds scary! 😬)" %}
+{% galleryImage "/images/art-terminal-frog-enemies-2.jpg", "Level 2 Enemies (Skyscraper)", "A wall spider, a flying Bomber Beetle and another walking drone. The boss is big spider that shoots venom from a gun." %}
+{% galleryImage "/images/art-terminal-frog-enemies-3.jpg", "Level 3 Enemies (Aircraft)", "The Foul Falcon is the only new enemy here. It flies and shoots 2 bombs and 2 lasers. The drone has a jetpack now." %}
+{% galleryImage "/images/art-terminal-frog-enemies-4.jpg", "Level 4 Enemies (Underwater)", "A torpedo shark, a puffer fish with a laser, and a really cool looking robotic octopus named 'Octo-Major'." %}
+{% galleryImage "/images/art-terminal-frog-enemies-5.jpg", "Level 5 Enemies (Coastline?)", "The torpedo shark returns, along with the normal drone, and a new walking spear cannon. The boss is a hovering airplane." %}
 {% endgallery %}
 
 I have to give my 10 year old self credit for consistency here. Every enemy has the same stat block of "Name, Danger, Transportation, and Speed". This gives a way to compare the speed and armaments of every enemy and shows a trend towards increasing firepower in the later levels. Interestingly, several enemies appear to have a limited supply of ammunition which makes me wonder what happens when they run out. 
@@ -76,7 +76,7 @@ The bosses of the game are all robotic and have multiple weapons. The boss spide
 This last boss may have been inspired by the VTOL Boss from the first level of Vectorman.
 
 {% gallery "vtol" %}
-{% galleryImage "/img/vectorman-vtol-boss.jpg", "The VTOL boss from vectorman" %}
+{% galleryImage "/images/vectorman-vtol-boss.jpg", "The VTOL boss from vectorman" %}
 {% endgallery %}
 
 ## Conclusion

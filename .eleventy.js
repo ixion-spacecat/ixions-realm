@@ -46,10 +46,8 @@ function outlinkShortcode(content, url) {
 
 module.exports = function (eleventyConfig) {
   
-  eleventyConfig.addPassthroughCopy("./src/css");
-  eleventyConfig.addPassthroughCopy("./src/img");
-  eleventyConfig.addPassthroughCopy("./src/fonts");
-  eleventyConfig.addPassthroughCopy("./src/js");
+  eleventyConfig.addPassthroughCopy({"./assets/": "/"});
+	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
 
   eleventyConfig.addPairedShortcode("gallery", galleryShortcode);
   eleventyConfig.addShortcode("galleryImage", galleryImageShortcode);
@@ -60,9 +58,10 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dir: {
-      input: "src",
-      output: "public",
-      includes: "_includes",
+      input: "content",
+      output: "_site",
+      includes: "../structure",
     },
+    pathPrefix: "/",
   };
 };
