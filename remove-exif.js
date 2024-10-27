@@ -1,21 +1,23 @@
-const path = require('path');
+const path = require("path");
 const fs = require("fs");
 const fsp = require("fs/promises");
-const { pipeline } = require('node:stream/promises');
-const ExifTransformer = require('exif-be-gone');
+const { pipeline } = require("node:stream/promises");
+const ExifTransformer = require("exif-be-gone");
 
-const srcDir = "src";
+const srcDir = "assets";
 const extensions = ["png", "jpg", "jpeg"];
 
 const results = {
-  fileCount: 0
+  fileCount: 0,
 };
 
 run();
 
 async function run() {
   await processDirectoryRecursively(srcDir);
-  console.log(`Removed EXIF data from ${results.fileCount} files in ${srcDir} and subdirectories.`);
+  console.log(
+    `Removed EXIF data from ${results.fileCount} files in ${srcDir} and subdirectories.`
+  );
 }
 
 async function processDirectoryRecursively(dirPath) {
@@ -26,11 +28,20 @@ async function processDirectoryRecursively(dirPath) {
       if (entry.isDirectory()) {
         // console.log("dir:", entryPath);
         await processDirectoryRecursively(entryPath);
-      } else if (entry.isFile() && extensions.some(ext => entry.name.endsWith(ext))) {
+      } else if (
+        entry.isFile() &&
+        extensions.some((ext) => entry.name.endsWith(ext))
+      ) {
         // console.log("file:", entryPath);
         const tempPath = `${entryPath}_temp`;
-        const reader = fs.createReadStream(entryPath, { autoClose: true, flush: true });
-        const writer = fs.createWriteStream(`${entryPath}_temp`, { autoClose: true, flush: true });
+        const reader = fs.createReadStream(entryPath, {
+          autoClose: true,
+          flush: true,
+        });
+        const writer = fs.createWriteStream(`${entryPath}_temp`, {
+          autoClose: true,
+          flush: true,
+        });
         await pipeline(reader, new ExifTransformer(), writer);
 
         await fsp.rm(entryPath);
@@ -40,6 +51,6 @@ async function processDirectoryRecursively(dirPath) {
       }
     }
   } catch (err) {
-    console.error(err)
+    console.error(err);
   }
 }
