@@ -9,7 +9,7 @@ layout: layouts/base.njk
 
 ## Basics
 
-call me: ixion (he/them)
+call me: ixion (he/him)
 
 age: millennial
 
@@ -20,7 +20,6 @@ neurotype: autistic + ADHD
 identities: atheist, demi-pansexual, polyamorous
 
 relationship: partnered
-
 
 ## Ixion (Fursona)
 
