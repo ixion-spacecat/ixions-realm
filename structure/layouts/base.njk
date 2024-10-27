@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  {% if lightbox %}
-  <link rel="stylesheet" href="/css/glightbox.min.css" />
-  <script type="module">
-    import "/js/glightbox.min.js";
-    const lightbox = GLightbox({
-      selector: ".glightbox",
-      {% if lightboxDesc %}
-      descPosition: "{{ lightboxDesc }}",
-      {% endif %}
-      moreLength: 0,
-      slideEffect: "none",
-    });
-  </script>
-  {% endif %}
-  <link rel="stylesheet" href="/css/styles.css" />
-  <title>🌌 Ixion's Realm</title>
-</head>
-
-<body>
-  <script>NekoType = "jess"</script>
-  <script src="https://webneko.net/n20171213.js"></script>
-
-  <div class="page">
-    <div class="background-overlay"></div>
-
-    <header class="page__header">{% include '../partials/header.njk' %}</header>
-
-    <div class="page__layout" >
-      <aside class="navbar region flex-stretch" >
-        <div class="navbar--title region--title" >
-          navigation
-        </div>
-        <div class="navbar--content region--content" >
-          {% include '../partials/navigation.njk' %}
-        </div>
-      </aside>
-      <main class="main region flex-stretch">
-        <div class="main--title region--title">
-          ⋆✧:°* ⛧★☆(=^ｪ^=)☆★⛧ *°:✧⋆
-        </div>
-        <div class="main--content region--content">
-          {{ content | safe }}
-        </div>
-      </main>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    {% if lightbox %}
+      <link rel="stylesheet" href="/css/glightbox.min.css"/>
+      <script type="module">
+        import "/js/glightbox.min.js";
+        const lightbox = GLightbox(
+          {selector: ".glightbox",{% if lightboxDesc %}descPosition : "{{ lightboxDesc }}",{% endif %}moreLength: 0, slideEffect: "none"}
+        );
+      </script>
+    {% endif %}
+    {# {% set theme="halloween" %} #}
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <title>🌌 Ixion's Realm</title>
+  </head>
+  <body {% if theme %} class="theme--{{ theme }}" {% endif %}>
+    <script>
+      NekoType = "jess"
+    </script>
+    <script src="https://webneko.net/n20171213.js"></script>
+    <div class="page">
+      <div class="background-overlay"></div>
+      <div class="background-decor">
+        <div class="page__top-left-corner"></div>
+        <div class="page__top-right-corner"></div>
+      </div>
+      <header class="page__header">{% include '../partials/header.njk' %}</header>
+      <div class="page__layout">
+        <aside class="navbar region flex-stretch">
+          <div class="navbar--title region--title">
+            navigation
+          </div>
+          <div class="navbar--content region--content">
+            {% include '../partials/navigation.njk' %}
+          </div>
+        </aside>
+        <main class="main region flex-stretch">
+          <div class="main--title region--title">
+            ⋆✧:°* ⛧★☆(=^ｪ^=)☆★⛧ *°:✧⋆
+          </div>
+          <div class="main--content region--content">
+            {{ content | safe }}
+          </div>
+        </main>
+      </div>
+      <footer class="page__footer region--content">
+        {% include '../partials/footer.njk' %}
+      </footer>
     </div>
-
-    <footer class="page__footer region--content">
-      {% include '../partials/footer.njk' %}
-    </footer>
-  </div>
-</body>
+  </body>
+</html>

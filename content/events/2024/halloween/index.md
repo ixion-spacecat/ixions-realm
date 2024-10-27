@@ -1,6 +1,7 @@
 ---
 title: Happy Halloween
 layout: layouts/base.njk
+theme: halloween
 ---
 
 (This page is UNDER CONSTRUCTION)

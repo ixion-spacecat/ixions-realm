@@ -19,6 +19,14 @@
   --header-border: #4f9eff;
 }
 
+/* Theme Overrides */
+.theme--halloween {
+  --bg: #291a41ee;
+  --border: #412b2c;
+  --text: #baa0d8;
+  --header-border: #4f9eff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -50,6 +58,14 @@ body {
     rgb(126, 19, 197)
   );
   mix-blend-mode: multiply;
+  z-index: -2;
+}
+
+.background-decor {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
 }
 
@@ -420,4 +436,48 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+}
+
+/* Halloween Theme */
+body.theme--halloween {
+  background-image: url("/images/common/castlebrick.jpg");
+}
+
+.theme--halloween .background-overlay {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(132, 250, 244),
+    rgb(79, 84, 92),
+    rgb(153, 17, 17)
+  );
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+
+.theme--halloween .page__top-left-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/images/common/spiderweb-corner-left.png");
+  width: 200px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+
+.theme--halloween .page__top-right-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("/images/common/spiderweb-corner-right.png");
+  width: 200px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
 }
