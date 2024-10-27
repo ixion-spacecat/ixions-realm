@@ -22,8 +22,12 @@ function galleryImageShortcode(src, title, description) {
       <img src="${src}" alt="${title}" class="gallery-item-image"/>
     </a>
   `;
-  const titleElement = title ? `<p class="gallery-item-title">${title}</p>` : '';
-  const descriptionElement = description ? `<p class="gallery-item-description">${description}</p>` : '';
+  const titleElement = title
+    ? `<p class="gallery-item-title">${title}</p>`
+    : "";
+  const descriptionElement = description
+    ? `<p class="gallery-item-description">${description}</p>`
+    : "";
   const element = `
     <div class="gallery-item">
       <div class="gallery-item-image-container">
@@ -45,9 +49,11 @@ function outlinkShortcode(content, url) {
 }
 
 module.exports = function (eleventyConfig) {
-  
-  eleventyConfig.addPassthroughCopy({"./assets/": "/"});
-	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
+  eleventyConfig.addPassthroughCopy({ "./assets/": "/" });
+  eleventyConfig.addPassthroughCopy(
+    "./content/events/2024/halloween/game/**/*"
+  );
+  eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
 
   eleventyConfig.addPairedShortcode("gallery", galleryShortcode);
   eleventyConfig.addShortcode("galleryImage", galleryImageShortcode);
