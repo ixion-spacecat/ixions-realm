@@ -7,9 +7,11 @@ lightbox: true
 # Updates
 
 ## 22 Sept 2024
+
 "Ixion's Realm" is born!
 
 It's taken over a month, but I've completely rebuilt the website from the ground up.
+
 - Brand new static site built on {%link "https://www.11ty.dev/" %}11ty{%endlink%}
 - Responsive 2-column layout
 - Embedded image galleries that work on desktop and mobile
@@ -21,5 +23,5 @@ It's taken over a month, but I've completely rebuilt the website from the ground
 ## Old Designs
 
 {% gallery "history" %}
-{% galleryImage "/images/history-self-in-progress.png", "Placeholder page called 'self-in-progress'", "This was the first incarnation of the webiste. It only contained a list of things I like, and a webneko named Lucy." %}
+{% galleryImage "/images/history/self-in-progress.png", "Placeholder page called 'self-in-progress'", "This was the first incarnation of the webiste. It only contained a list of things I like, and a webneko named Lucy." %}
 {% endgallery %}

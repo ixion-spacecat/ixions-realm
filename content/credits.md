@@ -11,8 +11,8 @@ lightbox: true
 {%link "https://www.spriters-resource.com/sega_genesis_32x/snk/" %}Sprite sheets{%endlink%}
 
 {% gallery "snk" %}
-{% galleryImage "/images/earth-surface.png", "Earth surface from background of Death Egg Zone" %}
-{% galleryImage "/images/sonic-electric-arc-1.png", "Electric arc from Flying Battery Zone" %}
+{% galleryImage "/images/common/earth-surface.png", "Earth surface from background of Death Egg Zone" %}
+{% galleryImage "/images/common/sonic-electric-arc-1.png", "Electric arc from Flying Battery Zone" %}
 {% endgallery %}
 
 ## From Sadgrl
@@ -29,4 +29,4 @@ The little cat in the top left corner is a {%link "https://webneko.net" %}Web Ne
 
 ## Icons
 
-External Link Icon <img src="/images/external-link.svg"> from Wikipedia
+External Link Icon <img src="/images/common/external-link.svg"> from Wikipedia
