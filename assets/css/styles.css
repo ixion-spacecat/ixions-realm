@@ -24,6 +24,7 @@
   --bg: #291a41ee;
   --border: #412b2c;
   --text: #baa0d8;
+  --accent: #ff8135;
   --header-border: #4f9eff;
 }
 
@@ -480,4 +481,33 @@ body.theme--halloween {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
+}
+
+.flip-horizontally {
+  transform: scaleX(-1);
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pixelart {
+  image-rendering: pixelated;
+}
+
+@font-face {
+  font-family: "CFHalloween";
+  src: url(/fonts/CFHalloween-Regular.ttf);
+}
+
+.halloween-font {
+  font-family: CFHalloween;
+  text-transform: uppercase;
+  color: var(--accent);
 }

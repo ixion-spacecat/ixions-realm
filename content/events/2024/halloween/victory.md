@@ -3,8 +3,19 @@ title: Haunted Fun Run
 layout: layouts/base.njk
 ---
 
-(This page is UNDER CONSTRUCTION)
+# Thanks for Playing!
 
-# Victory!
+<p style="font-size:1.5em">Congratulations on getting to the end!</p>
 
-[Click here to claim your treats!](/events/2024/halloween/treats/)
+I had a lot of fun making this game and I hope you had fun playing ^.^
+
+- Programming and Art by ixion-spacecat (me)
+- Music is 'Halloween Walz' by dAmbient on freesounds.org
+- Sounds by fupicat, jofae, plasterbrain, peridactyloptrix and stwime on freesounds.org
+- Made with phaser.js
+
+## More Treats
+
+I'm giving away my sprites from the game!
+
+[click here to go to the treats page and download the sprites](/events/2024/halloween/treats/)

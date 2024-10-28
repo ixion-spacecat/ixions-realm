@@ -11,6 +11,10 @@ I'm **Ixion**, and this is my little corner of the internet!
 
 I'm on a personal mission to rediscover the creative spark that burned inside me as a kid. Somewhere along the way, I forgot it existed. Now I'm ready to get it back!
 
+## Happy Halloween!
+
+[Click here to visit my Halloween page](/events/2024/halloween/) for the 32-bit cafe October event
+
 ## What's here now?
 
 - The portrait of my sona you see on this page (I drew it myself ^.^)
