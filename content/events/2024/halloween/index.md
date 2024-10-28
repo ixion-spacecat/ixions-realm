@@ -49,12 +49,20 @@ by Ixion" width=512 height=448 style="image-rendering: pixelated; border: 4px so
 
 </div>
 
-## 🍬 Web Goodies
+## 🍬 Web Goodies for You
 
 <span style="font-size:1.2em">
 
 I'm giving away my sprites from the game!
 
-go to the <a href="/events/2024/halloween/treats/">treats page</a> to download the sprites
+- go to the <a href="/events/2024/halloween/treats/">treats page</a> to download the sprites
 
 </span>
+Other halloween gifs came from these websites:
+
+- {%link "https://graphic.neocities.org" %}graphic.neocities.org{%endlink%}
+- {%link "https://jansgraphics.com" %}jansgraphics.com{%endlink%}
+- {%link "https://castlecyberskull.neocities.org" %}castlecyberskull.neocities.org{%endlink%}
+- {%link "https://goblin-heart.net/sadgrl/cyberspace/" %}goblin-heart.net/sadgrl{%endlink%}
+- {%link "https://glitter-graphics.com" %}glitter-graphics.com{%endlink%}
+- {%link "https://etc.usf.edu" %}etc.usf.edu{%endlink%}
