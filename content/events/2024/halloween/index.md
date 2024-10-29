@@ -4,9 +4,42 @@ layout: layouts/base.njk
 theme: halloween
 ---
 
-<div style="text-align: center; font-size:1.1em;">
+<style>
+  .halloween-title {
+    font-size:3em;
+  }
 
-<h1 class="halloween-font" style="font-size:3em;">HAPPY HALLOWEEN!</h1>
+  .game-screenshot {
+    image-rendering: pixelated;
+    border: 4px solid #aa2222;
+  }
+
+  .font-big1 {
+    font-size:1.1em;
+  }
+
+  .font-big2 {
+    font-size:1.2em;
+  }
+
+  .font-big3 {
+    font-size:1.5em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .halloween-title {
+      font-size:2em;
+    }
+
+    .game-screenshot {
+      image-rendering: inherit;
+    }
+  }
+</style>
+
+<div class="text-center font-big1">
+
+<h1 class="halloween-font halloween-title">HAPPY HALLOWEEN!</h1>
 
 <!-- <img src="/images/web/hga.gif" alt="Happy Halloween!"> -->
 
@@ -15,9 +48,9 @@ from Ixi and Ellie!
 <img src="/images/share/ixi-halloween-wave.gif" alt="" width=120 class="pixelart">
 <img src="/images/share/ellie-halloween-wave.gif" alt="" width=120 class="pixelart">
 
-<p style="font-size:1.5em">we invite you to play our halloween mini-game!!</p>
+<p class="font-big3">we invite you to play our halloween mini-game!!</p>
 
-<p style="font-size:1em">it contains both tricks 🎃👻 and treats 🍫🍭</p>
+<p>it contains both tricks 🎃👻 and treats 🍫🍭</p>
 
 (click the image below to play)
 
@@ -25,11 +58,11 @@ from Ixi and Ellie!
 <!-- <img src="/images/common/skeleton-arm-pointing.gif" alt="" class="center"> -->
 <a href="/events/2024/halloween/game/">
 <img src="/images/common/halloween-fun-run-title.png" alt="The Halloween Fun Run Mini-Game created 
-by Ixion" width=512 height=448 style="image-rendering: pixelated; border: 4px solid #aa2222;" class="center">
+by Ixion" width=512 class="game-screenshot center max100">
 </div>
 </a>
 
-<ul style="display: inline-block; text-align: left">
+<ul>
   <li>🕐 play Time: 3-5 minutes</li>
   <li>🔊 has Music</li>
   <li>📱 should work on mobile</li>
@@ -45,13 +78,13 @@ by Ixion" width=512 height=448 style="image-rendering: pixelated; border: 4px so
 <img src="/images/web/candlew2l.gif" alt="">
 </div>
 
-<img src="/images/web/boneline.gif" alt="" class="center">
+<img src="/images/web/boneline.gif" alt="" class="center max100">
 
 </div>
 
 ## 🍬 Web Goodies for You
 
-<span style="font-size:1.2em">
+<span class="font-big2">
 
 I'm giving away my sprites from the game!
 

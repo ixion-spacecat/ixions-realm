@@ -501,6 +501,10 @@ body.theme--halloween {
   image-rendering: pixelated;
 }
 
+.max100 {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "CFHalloween";
   src: url(/fonts/CFHalloween-Regular.ttf);
@@ -510,4 +514,13 @@ body.theme--halloween {
   font-family: CFHalloween;
   text-transform: uppercase;
   color: var(--accent);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center ul {
+  display: inline-block;
+  text-align: left;
 }
