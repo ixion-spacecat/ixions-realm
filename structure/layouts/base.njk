@@ -38,7 +38,11 @@
         </aside>
         <main class="main region flex-stretch">
           <div class="main--title region--title">
-            ⋆✧:°* ⛧★☆(=^ｪ^=)☆★⛧ *°:✧⋆
+            {% if (theme=="halloween") %}
+              🎃🦇👻🍬(=^ｪ^=)🍭🐈‍⬛🪦🥀
+            {% else %}
+              ⋆✧:°* ⛧★☆(=^ｪ^=)☆★⛧ *°:✧⋆
+            {% endif %}
           </div>
           <div class="main--content region--content">
             {{ content | safe }}

@@ -483,6 +483,10 @@ body.theme--halloween {
   background-size: contain;
 }
 
+.theme--halloween .region--title {
+  background-image: url("/images/common/metal-title-bar-orange.png");
+}
+
 .flip-horizontally {
   transform: scaleX(-1);
 }
