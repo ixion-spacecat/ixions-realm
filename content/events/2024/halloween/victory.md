@@ -13,6 +13,7 @@ I had a lot of fun making this game and I hope you had fun playing ^.^
 - Music is 'Halloween Walz' by dAmbient on freesounds.org
 - Sounds by fupicat, jofae, plasterbrain, peridactyloptrix and stwime on freesounds.org
 - Made with phaser.js
+- Special Thanks to Ellie for design and playtesting
 
 ## More Treats
 

@@ -37,6 +37,6 @@ Feel free to download these images and use them on your own site
 <img src="/images/share/ellie-halloween-dance.gif" alt="">
 <img src="/images/share/ixi-halloween-dance.gif" alt="">
 
-Ixion and Ellie are my OC's that belong to my wife and I. You can download these sprites but I ask that you only use my OC's to directly reference me or my page ^.^
+Ixion and Ellie are my OC's that belong to my partner and I. You can download these sprites but I ask that you only use my OC's to directly reference me or my page ^.^
 
 [Back to Halloween page](/events/2024/halloween/)
