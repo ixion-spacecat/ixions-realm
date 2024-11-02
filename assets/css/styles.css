@@ -17,10 +17,11 @@
   --accent: #4f9eff;
   --logo-color: #4f9eff;
   --header-border: #4f9eff;
+  color-scheme: dark;
 }
 
 /* Theme Overrides */
-.theme--halloween {
+html[data-theme="halloween"] {
   --bg: #291a41ee;
   --border: #412b2c;
   --text: #baa0d8;
@@ -316,6 +317,21 @@ html.glightbox-open {
   margin-right: 0;
 }
 
+.theme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar--subheading {
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+.navbar--theme-label {
+  display: none;
+}
+
 .main {
   flex-grow: 1;
 }
@@ -343,7 +359,10 @@ html.glightbox-open {
 
   .navbar--content {
     font-size: 1rem;
-    line-height: 1;
+  }
+
+  .navbar--subheading {
+    display: none;
   }
 
   .navbar ul {
@@ -351,12 +370,29 @@ html.glightbox-open {
     flex-wrap: wrap;
     padding-left: 0;
     justify-content: center;
+    line-height: 1;
     gap: 20px;
   }
 
   .navbar a {
     border: none;
     padding-left: 0.5rem;
+  }
+
+  .navbar--theme-label {
+    display: inherit;
+    margin-right: 0.25em;
+  }
+
+  .theme-picker {
+    max-width: 3em;
+  }
+
+  .theme-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
   }
 
   .main--content {
@@ -440,11 +476,11 @@ a:hover {
 }
 
 /* Halloween Theme */
-body.theme--halloween {
+html[data-theme="halloween"] body {
   background-image: url("/images/common/castlebrick.jpg");
 }
 
-.theme--halloween .background-overlay {
+html[data-theme="halloween"] .background-overlay {
   position: fixed;
   left: 0;
   width: 100vw;
@@ -459,7 +495,7 @@ body.theme--halloween {
   z-index: -1;
 }
 
-.theme--halloween .page__top-left-corner {
+html[data-theme="halloween"] .page__top-left-corner {
   position: absolute;
   top: 0;
   left: 0;
@@ -471,7 +507,7 @@ body.theme--halloween {
   background-size: contain;
 }
 
-.theme--halloween .page__top-right-corner {
+html[data-theme="halloween"] .page__top-right-corner {
   position: absolute;
   top: 0;
   right: 0;
@@ -483,7 +519,7 @@ body.theme--halloween {
   background-size: contain;
 }
 
-.theme--halloween .region--title {
+html[data-theme="halloween"] .region--title {
   background-image: url("/images/common/metal-title-bar-orange.png");
 }
 
@@ -527,4 +563,12 @@ body.theme--halloween {
 .text-center ul {
   display: inline-block;
   text-align: left;
+}
+
+.main--title::after {
+  content: "⋆✧:°* ⛧★☆(=^ｪ^=)☆★⛧ *°:✧⋆";
+}
+
+html[data-theme="halloween"] .main--title::after {
+  content: "🎃🦇👻🍬(=^ｪ^=)🍭🐈‍⬛🪦🥀";
 }

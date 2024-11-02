@@ -1,6 +1,7 @@
 ---
-title: Haunted Fun Run
+title: Victory
 layout: layouts/base.njk
+theme: halloween
 ---
 
 # Thanks for Playing!

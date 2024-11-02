@@ -9,6 +9,12 @@ theme: halloween
     font-size:3em;
   }
 
+  .game-screenshot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .game-screenshot {
     image-rendering: pixelated;
     border: 4px solid #aa2222;
@@ -54,7 +60,7 @@ from Ixi and Ellie!
 
 (click the image below to play)
 
-<div>
+<div class="game-screenshot-container">
 <!-- <img src="/images/common/skeleton-arm-pointing.gif" alt="" class="center"> -->
 <a href="/events/2024/halloween/game/">
 <img src="/images/common/halloween-fun-run-title.png" alt="The Halloween Fun Run Mini-Game created 

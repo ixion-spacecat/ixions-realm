@@ -1,7 +1,27 @@
 <ul>
-<li>🎑<a href="/">home</a></li>
-<li>🌠<a href="/interests/">interests</a></li>
-<li>🎨<a href="/art/">art</a></li>
-<li>🔗<a href="/links/">links</a></li>
-<li>🦄<a href="/about/">about</a></li>
+  <li class="navbar--subheading">
+    pages
+  </li>
+  <li>🎑<a href="/">home</a>
+  </li>
+  <li>🌠<a href="/interests/">interests</a>
+  </li>
+  <li>🎨<a href="/art/">art</a>
+  </li>
+  <li>🔗<a href="/links/">links</a>
+  </li>
+  <li>🦄<a href="/about/">about</a>
+  </li>
+  {% if not theme %}
+    <li class="navbar--subheading" style="margin-top: 1em">
+      theme
+    </li>
+    <li class="theme-container">
+      <label class="navbar--theme-label">theme</label>
+      <select name="theme" id="theme-picker" class="theme-picker">
+        <option value="default" selected="selected">🎮 genesis</option>
+        <option value="halloween">🎃 halloween</option>
+      </select>
+    </li>
+  {% endif %}
 </ul>

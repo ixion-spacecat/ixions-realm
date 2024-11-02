@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" {% if theme %} data-theme="{{ theme }}" {% endif %}>
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,10 +12,24 @@
         );
       </script>
     {% endif %}
-    {% set theme="halloween" %} <link rel="stylesheet" href="/css/styles.css"/>
+    <style>
+      body {
+        background-color: black;
+        color-scheme: dark;
+      }
+    </style>
+    <script>{% include '../scripts/theme-picker.js' %}</script>
+    <noscript>
+      <style>
+        #theme-picker {
+          display: none;
+        }
+      </style>
+    </noscript>
+    <link rel="stylesheet" href="/css/styles.css"/>
     <title>🌌 Ixion's Realm</title>
   </head>
-  <body {% if theme %} class="theme--{{ theme }}" {% endif %}>
+  <body>
     <script>
       NekoType = "jess"
     </script>
@@ -29,21 +43,13 @@
       <header class="page__header">{% include '../partials/header.njk' %}</header>
       <div class="page__layout">
         <aside class="navbar region flex-stretch">
-          <div class="navbar--title region--title">
-            navigation
-          </div>
+          <div class="navbar--title region--title"></div>
           <div class="navbar--content region--content">
             {% include '../partials/navigation.njk' %}
           </div>
         </aside>
         <main class="main region flex-stretch">
-          <div class="main--title region--title">
-            {% if (theme=="halloween") %}
-              🎃🦇👻🍬(=^ｪ^=)🍭🐈‍⬛🪦🥀
-            {% else %}
-              ⋆✧:°* ⛧★☆(=^ｪ^=)☆★⛧ *°:✧⋆
-            {% endif %}
-          </div>
+          <div class="main--title region--title"></div>
           <div class="main--content region--content">
             {{ content | safe }}
           </div>
