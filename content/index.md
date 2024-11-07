@@ -11,11 +11,18 @@ I'm **Ixion**, and this is my little corner of the internet!
 
 I'm on a personal mission to rediscover the creative spark that burned inside me as a kid. Somewhere along the way, I forgot it existed. Now I'm ready to get it back!
 
-## Happy Halloween!
+## 🎃 Halloween Event
 
-[Click here to visit my Halloween page](/events/2024/halloween/) for the 32-bit cafe October event
+This year I participated in the 32-bit cafe Halloween event! I went a little overboard and created a mini game with original pixel-art!
 
-## What's here now?
+<img src="/images/share/ghost.gif" alt="">
+<img src="/images/share/pumpkin1.png" alt="">
+<img src="/images/share/zombie.gif" alt="">
+<img src="/images/share/skeleton.gif" alt="">
+
+You can play the mini-game on my [Halloween page](/events/2024/halloween/)
+
+## What else is here?
 
 - The portrait of my sona you see on this page (I drew it myself ^.^)
 - An [art page](/art/) with some game designs from when I was a child.

@@ -1,11 +1,15 @@
 // Theme Picker based on https://www.aleksandrhovhannisyan.com/blog/the-perfect-theme-switch/
 (function () {
-  const THEME_STORAGE_KEY = "theme";
   const THEME_OWNER = document.documentElement;
+  const THEME_KEY = "theme";
+  const THEME_SELECTED_DATE_KEY = "theme_selected_date";
   const DEFAULT_THEME = "default";
-  const cachedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+  const cachedTheme = localStorage.getItem(THEME_KEY);
+  const cachedThemeSelectedDate = Date.parse(
+    localStorage.getItem(THEME_SELECTED_DATE_KEY)
+  );
   if (cachedTheme) {
-    THEME_OWNER.dataset[THEME_STORAGE_KEY] = cachedTheme;
+    THEME_OWNER.dataset[THEME_KEY] = cachedTheme;
   }
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -23,11 +27,11 @@
     themePicker.addEventListener("change", (e) => {
       const theme = e.target.value;
       if (theme === DEFAULT_THEME) {
-        delete THEME_OWNER.dataset[THEME_STORAGE_KEY];
-        localStorage.removeItem(THEME_STORAGE_KEY);
+        delete THEME_OWNER.dataset[THEME_KEY];
+        localStorage.removeItem(THEME_KEY);
       } else {
-        THEME_OWNER.dataset[THEME_STORAGE_KEY] = theme;
-        localStorage.setItem(THEME_STORAGE_KEY, theme);
+        THEME_OWNER.dataset[THEME_KEY] = theme;
+        localStorage.setItem(THEME_KEY, theme);
       }
     });
   });
