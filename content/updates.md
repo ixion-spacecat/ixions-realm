@@ -6,6 +6,16 @@ lightbox: true
 
 # Updates
 
+## 06 Nov 2024
+
+- Added a theme switcher to the sidebar
+- Reverted back to the original default theme
+
+## 27 Oct 2024
+
+- Added a [halloween page](/events/2024/halloween/) for the 32-bit cafe halloween event.
+- Decorated the website for halloween.
+
 ## 22 Sept 2024
 
 "Ixion's Realm" is born!
