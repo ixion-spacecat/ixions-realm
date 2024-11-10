@@ -1,39 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" {% if theme %} data-theme="{{ theme }}" {% endif %}>
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    {% if lightbox %}
-      <link rel="stylesheet" href="/css/glightbox.min.css"/>
-      <script type="module">
-        import "/js/glightbox.min.js";
-        const lightbox = GLightbox(
-          {selector: ".glightbox",{% if lightboxDesc %}descPosition : "{{ lightboxDesc }}",{% endif %}moreLength: 0, slideEffect: "none"}
-        );
-      </script>
-    {% endif %}
-    <style>
-      body {
-        background-color: black;
-        color-scheme: dark;
-      }
-    </style>
-    <script>{% include '../scripts/theme-picker.js' %}</script>
-    <noscript>
-      <style>
-        #theme-picker {
-          display: none;
-        }
-      </style>
-    </noscript>
+    {% include '../partials/head-common.njk' %}
+    {#  #}
     <link rel="stylesheet" href="/css/styles.css"/>
     <title>🌌 Ixion's Realm</title>
   </head>
   <body>
-    <script>
-      NekoType = "jess"
-    </script>
-    <script src="https://webneko.net/n20171213.js"></script>
+    {% include '../partials/neko.njk' %}
     <div class="page">
       <div class="background-overlay"></div>
       <div class="background-decor">

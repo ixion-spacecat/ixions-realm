@@ -16,12 +16,6 @@
     <li class="navbar--subheading" style="margin-top: 1em">
       theme
     </li>
-    <li class="theme-container">
-      <label class="navbar--theme-label">theme</label>
-      <select name="theme" id="theme-picker" class="theme-picker">
-        <option value="default" selected="selected">🎮 genesis</option>
-        <option value="halloween">🎃 halloween</option>
-      </select>
-    </li>
+    <li class="theme-container">{% include '../partials/theme.njk' %}</li>
   {% endif %}
 </ul>
