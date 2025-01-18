@@ -67,6 +67,7 @@ module.exports = function (eleventyConfig) {
       input: "content",
       output: "_site",
       includes: "../structure",
+      data: "../data",
     },
     pathPrefix: "/",
   };

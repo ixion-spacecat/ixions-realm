@@ -1,6 +1,5 @@
 ---
 title: Updates
-layout: layouts/base.njk
 lightbox: true
 ---
 

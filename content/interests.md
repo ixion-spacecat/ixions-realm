@@ -1,6 +1,5 @@
 ---
 title: Interests
-layout: layouts/base.njk
 ---
 
 # Interests

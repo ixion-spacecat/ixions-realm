@@ -1,6 +1,5 @@
 ---
 title: Happy Halloween
-layout: layouts/base.njk
 theme: halloween
 ---
 

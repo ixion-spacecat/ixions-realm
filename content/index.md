@@ -1,6 +1,6 @@
 ---
-title: Welcome!
-layout: layouts/base.njk
+title: Home
+hideTitle: true
 ---
 
 <img src="/images/art/ixion-portrait-500.jpg" alt="Self-portrait of Ixion Space-Cat" width=250px class="float-right border-image">

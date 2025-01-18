@@ -1,5 +1,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{{ title | safe + ' ~ ' if title and not hideTitle }}{{ metadata.title }}</title>
+<meta name="description" content="{{ description | safe if description else metadata.description }}"/>
+<meta name="robots" content="noindex"/>
 {% if lightbox %}
   <link rel="stylesheet" href="/css/glightbox.min.css"/>
   <script type="module">

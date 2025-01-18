@@ -1,6 +1,5 @@
 ---
 title: "Sonic: Reimagined"
-layout: layouts/base.njk
 lightbox: true
 ---
 

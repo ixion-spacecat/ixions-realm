@@ -1,6 +1,5 @@
 ---
 title: 2024 in Summary
-layout: layouts/base.njk
 ---
 
 This is my submission for the 32 bit cafe {%link "https://32bit.cafe/newyear25/" %}32-Bit Cafe's Year In Review event{%endlink%}.

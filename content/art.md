@@ -1,6 +1,5 @@
 ---
 title: Art
-layout: layouts/base.njk
 lightbox: true
 ---
 

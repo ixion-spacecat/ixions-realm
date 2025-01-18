@@ -1,6 +1,5 @@
 ---
-title: Creditsw
-layout: layouts/base.njk
+title: Credits
 lightbox: true
 ---
 

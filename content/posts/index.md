@@ -1,6 +1,5 @@
 ---
 title: Blog
-layout: layouts/base.njk
 ---
 
 # Blog Posts
