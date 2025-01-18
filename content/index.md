@@ -11,9 +11,13 @@ I'm **Ixion**, and this is my little corner of the internet!
 
 I'm on a personal mission to rediscover the creative spark that burned inside me as a kid. Somewhere along the way, I forgot it existed. Now I'm ready to get it back!
 
+## Yay Blog!
+
+I have a [blog](/posts/) now and I actually posted something! 😁
+
 ## 🎃 Halloween Event
 
-This year I participated in the 32-bit cafe Halloween event! I went a little overboard and created a mini game with original pixel-art!
+Last year I participated in the 32-bit cafe Halloween event! I went a little overboard and created a mini game with original pixel-art!
 
 <img src="/images/share/ghost.gif" alt="">
 <img src="/images/share/pumpkin1.png" alt="">
@@ -34,5 +38,4 @@ You can play the mini-game on my [Halloween page](/events/2024/halloween/)
 - More art
 - My music
 - Shrines
-- A blog... about stuff!
 - Special projects (to be announced)
