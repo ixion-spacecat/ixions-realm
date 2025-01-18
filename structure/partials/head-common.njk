@@ -3,6 +3,7 @@
 <title>{{ title | safe + ' ~ ' if title and not hideTitle }}{{ metadata.title }}</title>
 <meta name="description" content="{{ description | safe if description else metadata.description }}"/>
 <meta name="robots" content="noindex"/>
+<meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate"/>
 <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96"/>
 {% if lightbox %}
   <link rel="stylesheet" href="/css/glightbox.min.css"/>
