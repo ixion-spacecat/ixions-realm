@@ -11,20 +11,21 @@ I'm **Ixion**, and this is my little corner of the internet!
 
 I'm on a personal mission to rediscover the creative spark that burned inside me as a kid. Somewhere along the way, I forgot it existed. Now I'm ready to get it back!
 
-## Yay Blog!
+## Yay Blog! 📖
 
-I have a [blog](/posts/) now and I actually posted something! 😁
+I have a [blog](/posts/) now!!!
 
-## 🎃 Halloween Event
+My first [post](/posts/2025/01-15-2024-in-summary/) is a summary of 2024 and my goals for the year to come.
 
-Last year I participated in the 32-bit cafe Halloween event! I went a little overboard and created a mini game with original pixel-art!
+## Halloween Mini-Game 🎃
+
+I made a run-and-jump mini-game for last year's 32-bit cafe Halloween event, complete with original pixel art!
+You can play it on my [Halloween page](/events/2024/halloween/)
 
 <img src="/images/share/ghost.gif" alt="">
 <img src="/images/share/pumpkin1.png" alt="">
 <img src="/images/share/zombie.gif" alt="">
 <img src="/images/share/skeleton.gif" alt="">
-
-You can play the mini-game on my [Halloween page](/events/2024/halloween/)
 
 ## What else is here?
 
@@ -35,7 +36,8 @@ You can play the mini-game on my [Halloween page](/events/2024/halloween/)
 
 ## What's to come?
 
-- More art
-- My music
+- An RSS feed
+- More art (and possibly music)
+- More games
 - Shrines
-- Special projects (to be announced)
+- More cool things TBD
