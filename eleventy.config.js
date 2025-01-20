@@ -48,7 +48,7 @@ function outlinkShortcode(content, url) {
   `);
 }
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./assets/": "/" });
   eleventyConfig.addPassthroughCopy(
     "./content/events/2024/halloween/game/**/*"
@@ -58,17 +58,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedShortcode("gallery", galleryShortcode);
   eleventyConfig.addShortcode("galleryImage", galleryImageShortcode);
   eleventyConfig.addPairedShortcode("link", outlinkShortcode);
+}
 
-  return {
-    passthroughFileCopy: true,
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
-    dir: {
-      input: "content",
-      output: "_site",
-      includes: "../structure",
-      data: "../data",
-    },
-    pathPrefix: "/",
-  };
+export const config = {
+  passthroughFileCopy: true,
+  markdownTemplateEngine: "njk",
+  htmlTemplateEngine: "njk",
+  dir: {
+    input: "content",
+    output: "_site",
+    includes: "../structure",
+    data: "../data",
+  },
+  pathPrefix: "/",
 };
