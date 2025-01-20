@@ -1,8 +1,8 @@
-const path = require("path");
-const fs = require("fs");
-const fsp = require("fs/promises");
-const { pipeline } = require("node:stream/promises");
-const ExifTransformer = require("exif-be-gone");
+import path from "path";
+import fs from "fs";
+import fsp from "fs/promises";
+import { pipeline } from "node:stream/promises";
+import ExifTransformer from "exif-be-gone";
 
 const srcDir = "assets";
 const extensions = ["png", "jpg", "jpeg"];
