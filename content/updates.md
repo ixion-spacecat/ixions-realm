@@ -5,6 +5,10 @@ lightbox: true
 
 # Updates
 
+## 15 Jan 2025
+
+- Started a [blog](/posts/) and made my first [post](/posts/2025/01-15-2024-in-summary/) for the {%link "https://32bit.cafe/newyear25/" %}32-Bit Cafe's Year In Review event{%endlink%}
+
 ## 06 Nov 2024
 
 - Added a theme switcher to the sidebar
