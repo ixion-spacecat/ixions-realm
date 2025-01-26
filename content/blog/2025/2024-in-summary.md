@@ -10,7 +10,7 @@ This is also my first blog post! Yay blog! 😁
 
 # 2024 in Summary...
 
-<img src="/images/posts/titanic-felt-cute.webp" alt="" style="max-width: 100%"/>
+<img src="/images/blog/titanic-felt-cute.webp" alt="" style="max-width: 100%"/>
 
 2024 was the year that was fine, until it wasn't. At least that's how it felt to me. Myself and a lot of my friends here in the United States spent the end of the year feeling rather depressed. I don't want this to be a political post, so I'll just say that people who care about human rights, economic fairness and climate change were disappointed to find out that we are in the minority.
 

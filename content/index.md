@@ -13,9 +13,9 @@ I'm on a personal mission to rediscover the creative spark that burned inside me
 
 ## Yay Blog! 📖
 
-I have a [blog](/posts/) now!!!
+I have a [blog](/blog/) now!!!
 
-My first [post](/posts/2025/01-15-2024-in-summary/) is a summary of 2024 and my goals for the year to come.
+My first [post](/blog/2025/2024-in-summary/) is a summary of 2024 and my goals for the year to come.
 
 ## Halloween Mini-Game 🎃
 
