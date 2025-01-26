@@ -1,5 +1,6 @@
 ---
 title: 2024 in Summary
+redirect_from: /posts/2025/01-15-2024-in-summary
 ---
 
 This is my submission for the 32 bit cafe {%link "https://32bit.cafe/newyear25/" %}32-Bit Cafe's Year In Review event{%endlink%}.

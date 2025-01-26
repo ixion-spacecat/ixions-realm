@@ -1,5 +1,6 @@
 ---
 title: Blog
+redirect_from: /posts
 ---
 
 # Blog Posts
