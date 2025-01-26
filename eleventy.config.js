@@ -1,3 +1,6 @@
+import { DateTime } from "luxon";
+import readingTime from "eleventy-plugin-reading-time";
+
 const removeLineBreaks = (text) => text.replaceAll(/(\r\n|\n|\r)/gm, "");
 
 function galleryShortcode(content, name) {
@@ -49,15 +52,41 @@ function outlinkShortcode(content, url) {
 }
 
 export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(readingTime);
+
   eleventyConfig.addPassthroughCopy({ "./assets/": "/" });
   eleventyConfig.addPassthroughCopy(
     "./content/events/2024/halloween/game/**/*"
   );
   eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
 
+  console.log("process.env.ELEVENTY_RUN_MODE", process.env.ELEVENTY_RUN_MODE);
+
+  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+    if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+      return false;
+    }
+  });
+
   eleventyConfig.addPairedShortcode("gallery", galleryShortcode);
   eleventyConfig.addShortcode("galleryImage", galleryImageShortcode);
   eleventyConfig.addPairedShortcode("link", outlinkShortcode);
+
+  eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
+    return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
+      format || "LLLL dd, yyyy"
+    );
+  });
+  eleventyConfig.addFilter("monthAndDay", (dateObj, format, zone) => {
+    return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
+      format || "LLLL dd"
+    );
+  });
+  eleventyConfig.addFilter("hyphenatedDate", (dateObj, format, zone) => {
+    return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
+      format || "yyyy-LL-dd"
+    );
+  });
 }
 
 export const config = {

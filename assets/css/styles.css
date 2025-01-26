@@ -11,8 +11,10 @@
   --border2: #080713;
   --gallery-bg: #312e46ee;
   --gallery-border: #0d0b1aee;
+  --item-bg: #18122bee;
+  --item-border: #080713; /* 403555ee */
   --text: #cecece;
-  --text-light: #7c7c7c;
+  --text-light: #636694;
   --title-text: #101332;
   --accent: #4f9eff;
   --logo-color: #4f9eff;
@@ -358,6 +360,80 @@ a[rel*="external"]:not(:has(img))::after {
   margin-bottom: 0.5em;
 }
 
+ul.blog--list {
+  padding-left: 0;
+  border: solid var(--item-border);
+  border-width: 1px;
+  margin: 0;
+}
+
+ul.blog--list li {
+  list-style: none;
+  padding-inline-start: 0;
+  padding: 0 1rem;
+}
+
+ul.blog--list hr {
+  margin: 0;
+}
+
+.blog--item {
+  border: solid var(--item-border);
+  border-width: 1px;
+  background-color: var(--item-bg);
+}
+
+.blog--item--container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.blog--item--title {
+  flex-basis: 70%;
+  margin: 0;
+}
+
+.blog--item--title a {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.blog--item--subtitle {
+  flex-basis: 70%;
+  font-size: 1.1em;
+  color: rgb(174, 173, 192);
+}
+
+.blog--item--date {
+  font-size: 1.1em;
+  flex-basis: 30%;
+  text-align: right;
+  color: var(--text-light);
+}
+
+.blog--item--readtime {
+  font-size: 1em;
+  flex-basis: 30%;
+  text-align: right;
+  color: var(--text-light);
+}
+
+.blog--item--readtime::before {
+  display: inline-block;
+  inline-size: 1em;
+  block-size: 1em;
+  margin-right: 0.2em;
+  content: "";
+  background-color: currentColor;
+  mask-image: url("/images/common/clock.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100%;
+  transform: translateY(0.18em);
+}
+
 /* 1 Column Layout */
 @media only screen and (max-width: 960px) {
   .page {
@@ -454,6 +530,37 @@ h3 {
 
   .gallery-item {
     width: 100%;
+  }
+
+  .blog--item--container {
+    padding: 0.4rem 0;
+  }
+
+  .blog--item--title {
+    flex-basis: 100%;
+    font-size: 1em;
+    line-height: 1.7em;
+    margin-top: 0.2rem;
+  }
+
+  .blog--item--subtitle {
+    order: 2;
+    flex-basis: 100%;
+    font-size: 1em;
+    padding-bottom: 0.4rem;
+  }
+
+  .blog--item--readtime {
+    order: 4;
+    flex-basis: 50%;
+    font-size: 1em;
+  }
+
+  .blog--item--date {
+    order: 3;
+    flex-basis: 50%;
+    font-size: 1em;
+    text-align: left;
   }
 
   :root {

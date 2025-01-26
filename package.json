@@ -12,5 +12,9 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "exif-be-gone": "^1.5.1"
+  },
+  "dependencies": {
+    "eleventy-plugin-reading-time": "^0.0.1",
+    "luxon": "^3.5.0"
   }
 }
