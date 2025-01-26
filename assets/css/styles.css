@@ -12,9 +12,8 @@
   --gallery-bg: #312e46ee;
   --gallery-border: #0d0b1aee;
   --text: #cecece;
-  --text-light: #a3a3a3;
+  --text-light: #7c7c7c;
   --title-text: #101332;
-  --external-link: #7c7c7c;
   --accent: #4f9eff;
   --logo-color: #4f9eff;
   --header-border: #4f9eff;
@@ -26,6 +25,7 @@ html[data-theme="halloween"] {
   --bg: #291a41ee;
   --border: #412b2c;
   --text: #baa0d8;
+  --text-light: #716085;
   --accent: #ff8135;
   --header-border: #4f9eff;
 }
@@ -281,21 +281,13 @@ html.glightbox-open {
   align-self: stretch;
 }
 
-/* .external-link {
-  background-image: url("/images/common/external-link.svg");
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-size: 0.857em;
-  padding-right: 1em;
-} */
-
 a[rel*="external"]:not(:has(img))::after {
   display: inline-block;
   inline-size: 1em;
   block-size: 1em;
   content: "";
-  background-color: var(--external-link);
-  mask-image: url("/images/common/external-link-min.svg");
+  background-color: var(--text-light);
+  mask-image: url("/images/common/external-link.svg");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: 60% auto;
@@ -357,6 +349,13 @@ a[rel*="external"]:not(:has(img))::after {
   color: var(--text-light);
   font-size: 0.9rem;
   text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.page__footer p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* 1 Column Layout */
