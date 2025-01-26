@@ -44,7 +44,7 @@ function galleryImageShortcode(src, title, description) {
 
 function outlinkShortcode(content, url) {
   return removeLineBreaks(`
-    <a href="${url}" rel="external" target="_blank" class="external-link">${content}</a>
+    <a href="${url}" rel="external" target="_blank" >${content}</a>
   `);
 }
 

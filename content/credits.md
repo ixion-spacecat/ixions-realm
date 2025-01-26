@@ -19,13 +19,9 @@ lightbox: true
 {%link "https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs" %}Tiled backgrounds{%endlink%}
 
 {% gallery "snk" %}
-{% galleryImage "/images/purpdimond.gif", "Purple diamond background" %}
+{% galleryImage "/images/common/purplediamond-gradient.png", "Purple diamond background (edited)" %}
 {% endgallery %}
 
 ## Widgets
 
 The little cat in the top left corner is a {%link "https://webneko.net" %}Web Neko{%endlink%}
-
-## Icons
-
-External Link Icon <img src="/images/common/external-link.svg"> from Wikipedia
