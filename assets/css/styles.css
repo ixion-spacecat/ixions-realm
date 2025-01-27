@@ -400,7 +400,7 @@ ul.blog--list hr {
   font-weight: bold;
 }
 
-.blog--item--subtitle {
+.blog--item--description {
   flex-basis: 70%;
   font-size: 1.1em;
   color: rgb(174, 173, 192);
@@ -420,14 +420,83 @@ ul.blog--list hr {
   color: var(--text-light);
 }
 
-.blog--item--readtime::before {
+.blog--post--meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 0 2rem 0;
+}
+
+.blog--post--title {
+  margin: 0;
+}
+
+.blog--post--date {
+  font-size: 1.1em;
+  flex-basis: 70%;
+  color: var(--text-light);
+}
+
+.blog--post--readtime {
+  font-size: 1em;
+  flex-basis: 30%;
+  text-align: right;
+  color: var(--text-light);
+}
+
+.blog--post--bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.blog--post--previous {
+  min-width: 30%;
+  color: var(--text-light);
+}
+
+.blog--post--next {
+  min-width: 30%;
+  text-align: right;
+  color: var(--text-light);
+}
+
+.readtime::before {
   display: inline-block;
   inline-size: 1em;
   block-size: 1em;
   margin-right: 0.2em;
   content: "";
   background-color: currentColor;
-  mask-image: url("/images/common/clock.svg");
+  mask-image: url("/images/phosphor-icons/clock.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100%;
+  transform: translateY(0.18em);
+}
+
+.previous-link::before {
+  display: inline-block;
+  inline-size: 1em;
+  block-size: 1em;
+  margin-right: 0.1em;
+  content: "";
+  background-color: currentColor;
+  mask-image: url("/images/phosphor-icons/caret-left-fill.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100%;
+  transform: translateY(0.18em);
+}
+
+.next-link::after {
+  display: inline-block;
+  inline-size: 1em;
+  block-size: 1em;
+  margin-left: 0.1em;
+  content: "";
+  background-color: currentColor;
+  mask-image: url("/images/phosphor-icons/caret-right-fill.svg");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: 100%;
@@ -543,7 +612,7 @@ h3 {
     margin-top: 0.2rem;
   }
 
-  .blog--item--subtitle {
+  .blog--item--description {
     order: 2;
     flex-basis: 100%;
     font-size: 1em;
@@ -559,6 +628,28 @@ h3 {
   .blog--item--date {
     order: 3;
     flex-basis: 50%;
+    font-size: 1em;
+    text-align: left;
+  }
+
+  /* .blog--post--title {
+    font-size: 2em;
+    line-height: 1.7em;
+    margin-top: 0.2rem;
+  } */
+
+  /* .blog--post--meta {
+    flex-basis: 50%;
+    font-size: 1em;
+  } */
+
+  .blog--post--date {
+    flex-basis: 100%;
+    font-size: 1em;
+  }
+
+  .blog--post--readtime {
+    flex-basis: 100%;
     font-size: 1em;
     text-align: left;
   }

@@ -1,17 +1,10 @@
 ---
 title: 2024 in Summary
-subtitle: The good, the bad, and the therapy
+displayTitle: 2024 in Summary...
+description: The good, the bad, and the therapy
 redirect_from: /posts/2025/01-15-2024-in-summary
 date: 2025-01-15
 ---
-
-This is my submission for the 32 bit cafe {%link "https://32bit.cafe/newyear25/" %}32-Bit Cafe's Year In Review event{%endlink%}.
-
-This is also my first blog post! Yay blog! 😁
-
----
-
-# 2024 in Summary...
 
 <img src="/images/blog/titanic-felt-cute.webp" alt="An illustration of the Titanic sailing confidently forward against the sunset, with the caption 'Felt cute, might hit an iceburg later and sink, IDK'" style="max-width: 100%"/>
 
@@ -104,7 +97,10 @@ If I can accomplish even a few of these goals, 2025 will be a good year! 🙂
 
 ---
 
+This is my submission for the 32 bit cafe {%link "https://32bit.cafe/newyear25/" %}32-Bit Cafe's Year In Review event{%endlink%}.
+
 Thank you to xandra and the entire team at 32-bit Cafe! Doing this exercise has given me a new appreciation for the good things that happened last year! 😊
+
 
 Sources:
 

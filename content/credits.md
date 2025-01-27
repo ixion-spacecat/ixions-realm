@@ -26,3 +26,7 @@ lightbox: true
 ## Widgets
 
 The little cat in the top left corner is a {%link "https://webneko.net" %}Web Neko{%endlink%}
+
+## Icons
+
+Some icons are from the {%link "https://phosphoricons.com/" %}phosphor-icons{%endlink%} pack

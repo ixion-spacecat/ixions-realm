@@ -6,7 +6,7 @@
     {#  #}
   </div>
   <div class="navbar--content region--content">
-    {%- block nav_content -%}
+    {%- block nav -%}
       {% include 'global/navigation.njk' %}
     {%- endblock %}
   </div>
@@ -17,7 +17,7 @@
     {#  #}
   </div>
   <div class="main--content region--content">
-    {%- block main_content -%}
+    {%- block main -%}
       {{- content | safe -}}
     {%- endblock %}
   </div>
