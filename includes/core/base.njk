@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.language }}" {% if theme %} data-theme="{{ theme }}" {% endif %}>
+  <head>
+    {% include '../core/_head.njk' %}
+  </head>
+  <body>
+    {% include '../components/neko.njk' %}
+
+    <div class="page">
+
+      {% block page_background %}
+        <div class="background-overlay"></div>
+        <div class="background-decor">
+          <div class="page__top-left-corner"></div>
+          <div class="page__top-right-corner"></div>
+        </div>
+      {% endblock %}
+
+      <header class="page__header">
+        {% block page_header %}
+          {% include '../global/header.njk' %}
+        {% endblock %}
+      </header>
+
+      <div class="page__layout">
+        {% block page_content %}
+          {{ content | safe }}
+        {% endblock %}
+      </div>
+
+      <footer class="page__footer region--content">
+        {% block page_footer %}
+          {% include '../global/footer.njk' %}
+        {% endblock %}
+      </footer>
+    </div>
+  </body>
+</html>

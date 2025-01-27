@@ -1,4 +1,5 @@
 {
+  "layout": "layouts/blog-post.njk",
   "tags": ["post"],
   "date": "git Last Modified"
 }

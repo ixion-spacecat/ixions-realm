@@ -1,5 +1,6 @@
 ---
 title: Home
+layout: layouts/basic-2col.njk
 hideTitle: true
 ---
 

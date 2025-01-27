@@ -1,5 +1,6 @@
 ---
 title: Victory
+layout: layouts/basic-2col.njk
 theme: halloween
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Updates
+layout: layouts/basic-2col.njk
 lightbox: true
 ---
 

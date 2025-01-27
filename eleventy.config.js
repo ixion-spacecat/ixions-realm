@@ -96,7 +96,7 @@ export const config = {
   dir: {
     input: "content",
     output: "_site",
-    includes: "../structure",
+    includes: "../includes",
     data: "../data",
   },
   pathPrefix: "/",

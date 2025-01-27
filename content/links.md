@@ -1,5 +1,6 @@
 ---
 title: Links
+layout: layouts/basic-2col.njk
 ---
 
 # Links

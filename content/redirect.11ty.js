@@ -1,6 +1,7 @@
 // Based on the "Eleventy Redirect From" template here: https://brianm.me/posts/eleventy-redirect-from/
 
 export const data = {
+  layout: "layouts/basic-2col.njk",
   pagination: {
     data: "collections.all",
     size: 1,

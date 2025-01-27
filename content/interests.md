@@ -1,5 +1,6 @@
 ---
 title: Interests
+layout: layouts/basic-2col.njk
 ---
 
 # Interests

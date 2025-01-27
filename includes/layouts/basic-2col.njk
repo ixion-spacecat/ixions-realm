@@ -1,0 +1,25 @@
+{% extends "core/base.njk" %}
+
+{%- block page_content -%}
+<aside class="navbar region flex-stretch">
+  <div class="navbar--title region--title">
+    {#  #}
+  </div>
+  <div class="navbar--content region--content">
+    {%- block nav_content -%}
+      {% include 'global/navigation.njk' %}
+    {%- endblock %}
+  </div>
+</aside>
+
+<main class="main region flex-stretch">
+  <div class="main--title region--title">
+    {#  #}
+  </div>
+  <div class="main--content region--content">
+    {%- block main_content -%}
+      {{- content | safe -}}
+    {%- endblock %}
+  </div>
+</main>
+{%- endblock %}

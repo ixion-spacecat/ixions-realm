@@ -1,5 +1,6 @@
 ---
 title: Treats
+layout: layouts/basic-2col.njk
 theme: halloween
 ---
 

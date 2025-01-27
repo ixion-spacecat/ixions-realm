@@ -2,12 +2,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>{{ title | safe + ' ~ ' if title and not hideTitle }}{{ metadata.title }}</title>
 <meta name="description" content="{{ description | safe if description else metadata.description }}"/>
-<meta name="robots" content="noindex"/>
 <meta name="generator" content="{{ eleventy.generator }}"/>
-<meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate"/>
+<meta
+http-equiv="Cache-Control" content="max-age=3600, must-revalidate"/> {# #}
 <link rel="icon" href="/favicon.ico?v={{ pkg.version }}" sizes="32x32"/>
 <link rel="icon" href="/icon.svg?v={{ pkg.version }}" type="image/svg+xml"/>
-<link rel="apple-touch-icon" href="/apple-touch-icon.png?v={{ pkg.version }}"/>
+<link
+rel="apple-touch-icon" href="/apple-touch-icon.png?v={{ pkg.version }}"/>
+
+<!-- Image Galleries -->
 {% if lightbox %}
   <link rel="stylesheet" href="/css/glightbox.min.css"/>
   <script type="module">
@@ -17,12 +20,16 @@
     );
   </script>
 {% endif %}
+
+<!-- Prevent white flash on page load -->
 <style>
   body {
     background-color: black;
     color-scheme: dark;
   }
 </style>
+
+<!-- Theme picker -->
 <script>{% include '../scripts/theme-picker.js' %}</script>
 <noscript>
   <style>
@@ -31,3 +38,6 @@
     }
   </style>
 </noscript>
+
+<!-- Style sheet -->
+<link rel="stylesheet" href="/css/styles.css?v={{ pkg.version }}"/>

@@ -1,5 +1,6 @@
 ---
 title: Terminal Frog
+layout: layouts/basic-2col.njk
 lightbox: true
 lightboxDesc: right
 ---
