@@ -6,26 +6,29 @@
   {%- endblock %}
 
   {%- block main_list -%}
-  <ul class="blog--list">
-    {%- for post in collections.posts | reverse -%}
-      <li class="blog--item">
-        <div class="blog--item--container">
-          <div class="blog--item--title">
-            <a href="{{ post.page.url }}">{{ post.data.title }}</a>
+    <ul class="blog--list">
+      {%- for post in collections.posts | reverse -%}
+        <li class="blog--item">
+          <div class="blog--item--container">
+            <div class="blog--item--title">
+              <a href="{{ post.page.url }}">{{ post.data.title }}</a>
+            </div>
+            <div class="blog--item--date">
+              {%- if post.data.draft %}
+                DRAFT
+              {%- else %}
+                {{ post.page.date | readableDate }}
+              {%- endif %}
+            </div>
+            <div class="blog--item--description">
+              {{ post.data.description }}
+            </div>
+            <div class="blog--item--readtime readtime">
+              {{ post.content | readingTime }} read
+            </div>
           </div>
-          <div class="blog--item--date">
-            {%- if post.data.draft %}
-              DRAFT
-            {%- else %}
-              {{ post.page.date | readableDate }}
-            {%- endif %}
-          </div>
-          <div class="blog--item--description">{{ post.data.description }}</div>
-          <div class="blog--item--readtime readtime">{{ post.content | readingTime }} read</div>
-        </div>
-      </li>
-    {%- endfor -%}
-  </ul>
+        </li>
+      {%- endfor -%}
+    </ul>
   {%- endblock %}
-
 {%- endblock %}

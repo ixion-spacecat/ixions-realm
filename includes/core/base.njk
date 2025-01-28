@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ metadata.language }}" {% if theme %} data-theme="{{ theme }}" {% endif %}>
+<html
+  lang="{{ metadata.language }}"
+  {% if theme %}
+    data-theme="{{ theme }}"
+  {% endif %}
+>
   <head>
     {% include '../core/_head.njk' %}
   </head>
@@ -7,7 +12,6 @@
     {% include '../components/neko.njk' %}
 
     <div class="page">
-
       {% block page_background %}
         <div class="background-overlay"></div>
         <div class="background-decor">

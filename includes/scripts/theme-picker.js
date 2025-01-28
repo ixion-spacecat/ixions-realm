@@ -6,7 +6,7 @@
   const DEFAULT_THEME = "default";
   const cachedTheme = localStorage.getItem(THEME_KEY);
   const cachedThemeSelectedDate = Date.parse(
-    localStorage.getItem(THEME_SELECTED_DATE_KEY)
+    localStorage.getItem(THEME_SELECTED_DATE_KEY),
   );
   if (cachedTheme) {
     THEME_OWNER.dataset[THEME_KEY] = cachedTheme;

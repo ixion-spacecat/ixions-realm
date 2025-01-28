@@ -101,7 +101,6 @@ This is my submission for the 32 bit cafe {%link "https://32bit.cafe/newyear25/"
 
 Thank you to xandra and the entire team at 32-bit Cafe! Doing this exercise has given me a new appreciation for the good things that happened last year! 😊
 
-
 Sources:
 
 - {%link "https://www.reddit.com/r/PewdiepieSubmissions/comments/bdb39j/my_dad_made_a_meme_today_in_honor_of_the_titanic/" %}titanic meme{%endlink%}

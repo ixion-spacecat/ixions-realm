@@ -37,7 +37,7 @@ export function render(data) {
     <meta name="robots" content="noindex" />
     <h1>Redirecting&hellip;</h1>
     <a href="${this.url(
-      data.redirect.to
+      data.redirect.to,
     )}">Click here if you are not redirected</a>
   `;
 }
