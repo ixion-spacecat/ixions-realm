@@ -11,7 +11,9 @@
   "description": "My personal website",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "exif-be-gone": "^1.5.1"
+    "exif-be-gone": "^1.5.1",
+    "prettier": "3.4.2",
+    "prettier-plugin-jinja-template": "2.0.0"
   },
   "dependencies": {
     "eleventy-plugin-reading-time": "^0.0.1",

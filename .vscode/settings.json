@@ -1,4 +1,12 @@
 {
+  "editor.tabSize": 2,
+  "files.associations": {
+    "*.njk": "njk"
+  },
+  "[nunjucks]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.documentSelectors": ["**/*.njk"],
   "cSpell.words": [
     "ADHD",
     "Airbender",
@@ -7,10 +15,12 @@
     "Castlevania",
     "catacorn",
     "Coldplay",
+    "commandline",
     "cYsmix",
     "demi",
     "endgallery",
     "endlink",
+    "exif",
     "freehanding",
     "fursona",
     "gameplay",
@@ -19,12 +29,14 @@
     "hyperfixating",
     "Idiocracy",
     "Inkcaps",
+    "ixions",
     "jetpack",
     "K'Nex",
     "Kalechips",
     "Krita",
     "Kubbi",
     "Lolo",
+    "luxon",
     "Mandalorian",
     "mecha",
     "Meshi",
@@ -47,8 +59,10 @@
     "Sheeran",
     "Shortcode",
     "sona",
+    "spacecat",
     "Speks",
     "Sunhaven",
+    "undoable",
     "Vectorman",
     "Voxels",
     "Wolfgun",
