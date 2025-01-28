@@ -55,9 +55,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
 
   eleventyConfig.addPassthroughCopy({ "./assets/": "/" });
-  eleventyConfig.addPassthroughCopy(
-    "./content/events/2024/halloween/game/**/*"
-  );
   eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
 
   console.log("process.env.ELEVENTY_RUN_MODE", process.env.ELEVENTY_RUN_MODE);
@@ -74,17 +71,17 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
     return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
-      format || "LLLL dd, yyyy"
+      format || "LLLL dd, yyyy",
     );
   });
   eleventyConfig.addFilter("monthAndDay", (dateObj, format, zone) => {
     return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
-      format || "LLLL dd"
+      format || "LLLL dd",
     );
   });
   eleventyConfig.addFilter("hyphenatedDate", (dateObj, format, zone) => {
     return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
-      format || "yyyy-LL-dd"
+      format || "yyyy-LL-dd",
     );
   });
 }
