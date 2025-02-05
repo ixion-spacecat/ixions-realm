@@ -3,10 +3,12 @@ title: Ixion's Blog
 redirect_from: /posts
 ---
 
-{% extends "layouts/blog-list.njk" %}
-{% set postlist = collections.posts %}
+{% extends "layouts/basic-2col.njk" %}
 
-{%- block main_top -%}
+{%- block main -%}
   <h1>Ixion's Blog</h1>
   <p>Where I talk about web development and whatever I want ^.^</p>
+
+  {% set postlist = collections.posts %}
+  {% include "components/blog-list.njk" %}
 {%- endblock %}

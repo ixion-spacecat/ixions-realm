@@ -693,14 +693,13 @@ h3 {
 
   .changelog--item--title {
     flex-basis: 100%;
-    font-size: 1em;
+    font-size: 1.4em;
     line-height: 1.7em;
     margin-top: 0.2rem;
   }
 
   .changelog--item--date {
-    order: 3;
-    flex-basis: 50%;
+    flex-basis: 100%;
     font-size: 1em;
     text-align: left;
   }

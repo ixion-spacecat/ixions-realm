@@ -3,9 +3,11 @@ title: Change Log
 redirect_from: /updates
 ---
 
-{% extends "layouts/change-list.njk" %}
-{% set changelist = collections.changes %}
+{% extends "layouts/basic-2col.njk" %}
 
-{%- block main_top -%}
+{%- block main -%}
   <h1>Change Log</h1>
+
+  {% set changelist = collections.changes %}
+  {% include "components/change-list.njk" %}
 {%- endblock %}
