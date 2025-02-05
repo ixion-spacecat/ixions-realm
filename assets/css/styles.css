@@ -476,6 +476,11 @@ ul.changelog--list > li {
   padding: 0 1rem;
 }
 
+ul.changelog--list > li ul {
+  list-style: initial;
+  padding-left: 2rem;
+}
+
 ul.changelog--list > hr {
   margin: 0;
 }

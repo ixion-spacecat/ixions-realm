@@ -1,6 +1,6 @@
 {
   "name": "ixions-realm",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "scripts": {
     "start": "node remove-exif.js && npx @11ty/eleventy --serve",
