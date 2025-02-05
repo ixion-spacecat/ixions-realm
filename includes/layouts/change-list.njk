@@ -1,0 +1,29 @@
+{% extends "layouts/basic-2col.njk" %}
+
+{%- block main -%}
+
+  {%- block main_top -%}
+  {%- endblock %}
+
+  {%- block main_list -%}
+    <ul class="changelog--list">
+      {%- for change in changelist | reverse -%}
+        <li class="changelog--item">
+          <div class="changelog--item--container">
+            <div class="changelog--item--title">{{ change.data.title }}</div>
+            <div class="changelog--item--date">
+              {%- if change.data.draft %}
+                DRAFT
+              {%- else %}
+                {{ change.page.date | readableDate }}
+              {%- endif %}
+            </div>
+            <div class="changelog--item--content">
+              {{ change.content | safe }}
+            </div>
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endblock %}
+{%- endblock %}

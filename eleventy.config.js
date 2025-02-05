@@ -84,6 +84,12 @@ export default function (eleventyConfig) {
       format || "yyyy-LL-dd",
     );
   });
+  eleventyConfig.addFilter("first", function (array, count = 1) {
+    return array.slice(0, count);
+  });
+  eleventyConfig.addFilter("last", function (array, count = 1) {
+    return array.slice(-count);
+  });
 }
 
 export const config = {

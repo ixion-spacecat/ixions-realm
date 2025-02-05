@@ -367,13 +367,13 @@ ul.blog--list {
   margin: 0;
 }
 
-ul.blog--list li {
+ul.blog--list > li {
   list-style: none;
   padding-inline-start: 0;
   padding: 0 1rem;
 }
 
-ul.blog--list hr {
+ul.blog--list > hr {
   margin: 0;
 }
 
@@ -457,6 +457,50 @@ ul.blog--list hr {
 
 .blog--post--next {
   min-width: 30%;
+  text-align: right;
+  color: var(--text-light);
+}
+
+ul.changelog--list {
+  padding-left: 0;
+  border: solid var(--item-border);
+  border-width: 1px;
+  margin: 0;
+}
+
+ul.changelog--list > li {
+  list-style: none;
+  padding-inline-start: 0;
+  padding: 0 1rem;
+}
+
+ul.changelog--list > hr {
+  margin: 0;
+}
+
+.changelog--item {
+  border: solid var(--item-border);
+  border-width: 1px;
+  background-color: var(--item-bg);
+}
+
+.changelog--item--container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.changelog--item--title {
+  flex-basis: 70%;
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.changelog--item--date {
+  font-size: 1.1em;
+  flex-basis: 30%;
   text-align: right;
   color: var(--text-light);
 }
@@ -632,17 +676,6 @@ h3 {
     text-align: left;
   }
 
-  /* .blog--post--title {
-    font-size: 2em;
-    line-height: 1.7em;
-    margin-top: 0.2rem;
-  } */
-
-  /* .blog--post--meta {
-    flex-basis: 50%;
-    font-size: 1em;
-  } */
-
   .blog--post--date {
     flex-basis: 100%;
     font-size: 1em;
@@ -650,6 +683,24 @@ h3 {
 
   .blog--post--readtime {
     flex-basis: 100%;
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .changelog--item--container {
+    padding: 0.4rem 0;
+  }
+
+  .changelog--item--title {
+    flex-basis: 100%;
+    font-size: 1em;
+    line-height: 1.7em;
+    margin-top: 0.2rem;
+  }
+
+  .changelog--item--date {
+    order: 3;
+    flex-basis: 50%;
     font-size: 1em;
     text-align: left;
   }

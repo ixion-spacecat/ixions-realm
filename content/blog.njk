@@ -4,6 +4,7 @@ redirect_from: /posts
 ---
 
 {% extends "layouts/blog-list.njk" %}
+{% set postlist = collections.posts %}
 
 {%- block main_top -%}
   <h1>Ixion's Blog</h1>
