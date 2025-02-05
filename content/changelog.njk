@@ -8,6 +8,12 @@ redirect_from: /updates
 {%- block main -%}
   <h1>Change Log</h1>
 
+  <p>
+    This is a list of the more notable changes's I've made to the website. Small
+    changes may not be mentioned here, but the full commit history is available
+    on {% link metadata.github %}github{% endlink %}.
+  </p>
+
   {% set changelist = collections.changes %}
   {% include "components/change-list.njk" %}
 {%- endblock %}

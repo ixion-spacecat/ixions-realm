@@ -8,5 +8,6 @@ export default {
     email: "ixionspacecat@proton.me",
   },
   copyright: `© ${new Date().getFullYear()} Ixion SpaceCat`,
+  github: `https://github.com/ixion-spacecat/ixions-realm`,
   neocities: `https://neocities.org/site/ixion`,
 };
