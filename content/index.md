@@ -12,11 +12,11 @@ I'm **Ixion**, and this is my little corner of the internet!
 
 I'm on a personal mission to rediscover the creative spark that burned inside me as a kid. Somewhere along the way, I forgot it existed. Now I'm ready to get it back!
 
-## Yay Blog! 📖
+## Latest Blog Post 📝
 
-I have a [blog](/blog/) now!!!
+[January Recap](/blog/2025/january-recap/)<br/>started a blog, went outside, found a bird
 
-My first [post](/blog/2025/2024-in-summary/) is a summary of 2024 and my goals for the year to come.
+[More Posts...](/blog/)
 
 ## Halloween Mini-Game 🎃
 
