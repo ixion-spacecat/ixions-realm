@@ -14,6 +14,7 @@
   --item-bg: #18122bee;
   --item-border: #080713; /* 403555ee */
   --text: #cecece;
+  --text-subtle: #aeadc0;
   --text-light: #636694;
   --title-text: #101332;
   --accent: #4f9eff;
@@ -27,6 +28,7 @@ html[data-theme="halloween"] {
   --bg: #291a41ee;
   --border: #412b2c;
   --text: #baa0d8;
+  --text-subtle: #baa0d8;
   --text-light: #716085;
   --accent: #ff8135;
   --header-border: #4f9eff;
@@ -403,7 +405,7 @@ ul.blog--list > hr {
 .blog--item--description {
   flex-basis: 70%;
   font-size: 1.1em;
-  color: rgb(174, 173, 192);
+  color: var(--text-subtle);
 }
 
 .blog--item--date {
@@ -503,6 +505,14 @@ ul.changelog--list > hr {
   flex-basis: 30%;
   text-align: right;
   color: var(--text-light);
+}
+
+.changelog--item--content {
+  color: var(--text-subtle);
+}
+
+.changelog--item--content p {
+  margin: 0.5em 0;
 }
 
 .readtime::before {
@@ -657,20 +667,20 @@ h3 {
   }
 
   .blog--item--description {
-    order: 2;
+    order: 4;
     flex-basis: 100%;
     font-size: 1em;
     padding-bottom: 0.4rem;
   }
 
   .blog--item--readtime {
-    order: 4;
+    order: 3;
     flex-basis: 50%;
     font-size: 1em;
   }
 
   .blog--item--date {
-    order: 3;
+    order: 2;
     flex-basis: 50%;
     font-size: 1em;
     text-align: left;
