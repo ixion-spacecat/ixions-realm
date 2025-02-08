@@ -1,0 +1,19 @@
+@use "mixins" as mix;
+
+.main {
+  flex-grow: 1;
+}
+
+.main--title {
+  text-align: center;
+}
+
+.main--title::after {
+  content: "⋆✧:°* ⛧★☆(=^ｪ^=)☆★⛧ *°:✧⋆";
+}
+
+.main--content {
+  @include mix.respond-to(tablet) {
+    min-width: 360px;
+  }
+}

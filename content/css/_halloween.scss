@@ -1,0 +1,72 @@
+/* Theme Overrides */
+html[data-theme="halloween"] {
+  --bg: #291a41ee;
+  --border: #412b2c;
+  --text: #baa0d8;
+  --text-subtle: #baa0d8;
+  --text-light: #716085;
+  --accent: #ff8135;
+  --header-border: #4f9eff;
+}
+
+html[data-theme="halloween"] body {
+  background-image: url("/images/common/castlebrick.jpg");
+}
+
+html[data-theme="halloween"] .main--title::after {
+  content: "🎃🦇👻🍬(=^ｪ^=)🍭🐈‍⬛🪦🥀";
+}
+
+html[data-theme="halloween"] .background-overlay {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(132, 250, 244),
+    rgb(79, 84, 92),
+    rgb(153, 17, 17)
+  );
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+
+html[data-theme="halloween"] .page__top-left-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/images/common/spiderweb-corner-left.png");
+  width: 200px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+
+html[data-theme="halloween"] .page__top-right-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("/images/common/spiderweb-corner-right.png");
+  width: 200px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+html[data-theme="halloween"] .region--title {
+  background-image: url("/images/common/metal-title-bar-orange.png");
+}
+
+@font-face {
+  font-family: "CFHalloween";
+  src: url(/fonts/CFHalloween-Regular.ttf);
+}
+
+.halloween-font {
+  font-family: CFHalloween;
+  text-transform: uppercase;
+  color: var(--accent);
+}

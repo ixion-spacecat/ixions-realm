@@ -1,0 +1,22 @@
+.background-overlay {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(132, 183, 250),
+    rgb(118, 126, 138),
+    rgb(126, 19, 197)
+  );
+  mix-blend-mode: multiply;
+  z-index: -2;
+}
+
+.background-decor {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}

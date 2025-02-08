@@ -1,0 +1,57 @@
+@use "mixins" as mix;
+
+.page {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include mix.respond-to(tablet) {
+    gap: 0;
+  }
+}
+
+.page__header {
+  align-self: stretch;
+}
+
+.page__layout {
+  display: flex;
+  gap: 20px;
+
+  @include mix.respond-to(tablet) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.region {
+  display: flex;
+  flex-direction: column;
+}
+
+.region--title {
+  background-image: url("/images/common/metal-title-bar.png");
+  min-height: 36px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  padding: 0 1rem;
+  color: var(--title-text);
+
+  @include mix.respond-to(mobile) {
+    padding: 0;
+  }
+}
+
+.region--content {
+  border: 2px solid var(--border);
+  background: var(--bg);
+  padding: 1rem;
+  flex-grow: 1;
+}

@@ -1,0 +1,81 @@
+@use "mixins" as mix;
+
+.blog--post--meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 0 2rem 0;
+}
+
+.blog--post--title {
+  margin: 0;
+}
+
+.blog--post--date {
+  font-size: 1.1em;
+  flex-basis: 70%;
+  color: var(--text-light);
+
+  @include mix.respond-to(mobile) {
+    flex-basis: 100%;
+    font-size: 1em;
+  }
+}
+
+.blog--post--readtime {
+  font-size: 1em;
+  flex-basis: 30%;
+  text-align: right;
+  color: var(--text-light);
+
+  @include mix.respond-to(mobile) {
+    flex-basis: 100%;
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+.blog--post--bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.blog--post--previous {
+  min-width: 30%;
+  color: var(--text-light);
+}
+
+.blog--post--next {
+  min-width: 30%;
+  text-align: right;
+  color: var(--text-light);
+}
+
+.previous-link::before {
+  display: inline-block;
+  inline-size: 1em;
+  block-size: 1em;
+  margin-right: 0.1em;
+  content: "";
+  background-color: currentColor;
+  mask-image: url("/images/phosphor-icons/caret-left-fill.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100%;
+  transform: translateY(0.18em);
+}
+
+.next-link::after {
+  display: inline-block;
+  inline-size: 1em;
+  block-size: 1em;
+  margin-left: 0.1em;
+  content: "";
+  background-color: currentColor;
+  mask-image: url("/images/phosphor-icons/caret-right-fill.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100%;
+  transform: translateY(0.18em);
+}

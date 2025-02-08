@@ -1,0 +1,106 @@
+@use "mixins" as mix;
+
+ul.blog--list {
+  padding-left: 0;
+  border: solid var(--item-border);
+  border-width: 1px;
+  margin: 0;
+}
+
+ul.blog--list > li {
+  list-style: none;
+  padding-inline-start: 0;
+  padding: 0 1rem;
+}
+
+ul.blog--list > hr {
+  margin: 0;
+}
+
+.blog--item {
+  border: solid var(--item-border);
+  border-width: 1px;
+  background-color: var(--item-bg);
+}
+
+.blog--item--container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+
+  @include mix.respond-to(mobile) {
+    padding: 0.4rem 0;
+  }
+}
+
+.blog--item--title {
+  flex-basis: 70%;
+  margin: 0;
+
+  @include mix.respond-to(mobile) {
+    flex-basis: 100%;
+    font-size: 1em;
+    line-height: 1.7em;
+    margin-top: 0.2rem;
+  }
+}
+
+.blog--item--title a {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.blog--item--description {
+  flex-basis: 70%;
+  font-size: 1.1em;
+  color: var(--text-subtle);
+
+  @include mix.respond-to(mobile) {
+    order: 4;
+    flex-basis: 100%;
+    font-size: 1em;
+    padding-bottom: 0.4rem;
+  }
+}
+
+.blog--item--date {
+  font-size: 1.1em;
+  flex-basis: 30%;
+  text-align: right;
+  color: var(--text-light);
+
+  @include mix.respond-to(mobile) {
+    order: 2;
+    flex-basis: 50%;
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+.blog--item--readtime {
+  font-size: 1em;
+  flex-basis: 30%;
+  text-align: right;
+  color: var(--text-light);
+
+  @include mix.respond-to(mobile) {
+    order: 3;
+    flex-basis: 50%;
+    font-size: 1em;
+  }
+}
+
+.readtime::before {
+  display: inline-block;
+  inline-size: 1em;
+  block-size: 1em;
+  margin-right: 0.2em;
+  content: "";
+  background-color: currentColor;
+  mask-image: url("/images/phosphor-icons/clock.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100%;
+  transform: translateY(0.18em);
+}

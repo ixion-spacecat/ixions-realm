@@ -1,0 +1,86 @@
+@use "mixins" as mix;
+
+.navbar {
+  min-width: 220px;
+  font-size: 1.4rem;
+  line-height: 2;
+  flex-grow: 0;
+}
+
+.navbar ul {
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0.5rem;
+
+  @include mix.respond-to(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: center;
+    line-height: 1;
+    gap: 20px;
+  }
+}
+
+.navbar a {
+  margin: 1rem 1rem 0 0;
+  color: var(--text) !important;
+  padding: 0 1rem;
+
+  @include mix.respond-to(tablet) {
+    border: none;
+    padding-left: 0.5rem;
+  }
+}
+
+.navbar a:hover {
+  color: var(--accent) !important;
+}
+
+.navbar a:last-child {
+  margin-right: 0;
+}
+
+.theme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include mix.respond-to(tablet) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
+.navbar--subheading {
+  font-style: italic;
+  font-variant: small-caps;
+
+  @include mix.respond-to(tablet) {
+    display: none;
+  }
+}
+
+.navbar--content {
+  @include mix.respond-to(tablet) {
+    font-size: 1rem;
+  }
+}
+
+.navbar--theme-label {
+  display: none;
+
+  @include mix.respond-to(tablet) {
+    display: inherit;
+    margin-right: 0.25em;
+  }
+}
+
+.theme-picker {
+  @include mix.respond-to(tablet) {
+    max-width: 3em;
+  }
+}
