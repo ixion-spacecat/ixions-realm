@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "eleventy-plugin-reading-time": "^0.0.1",
-    "luxon": "^3.5.0"
+    "luxon": "^3.5.0",
+    "sass": "^1.83.4"
   }
 }

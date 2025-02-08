@@ -1,3 +1,5 @@
+import sass from "sass";
+import path from "path";
 import { DateTime } from "luxon";
 import readingTime from "eleventy-plugin-reading-time";
 
@@ -53,6 +55,25 @@ function outlinkShortcode(content, url) {
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
+
+  eleventyConfig.addTemplateFormats("scss");
+
+  eleventyConfig.addExtension("scss", {
+    outputFileExtension: "css",
+    compile: async function (inputContent, inputPath) {
+      let parsed = path.parse(inputPath);
+      if (parsed.name.startsWith("_")) {
+        return;
+      }
+      let result = sass.compileString(inputContent, {
+        loadPaths: [parsed.dir || ".", this.config.dir.includes],
+      });
+      this.addDependencies(inputPath, result.loadedUrls);
+      return async (data) => {
+        return result.css;
+      };
+    },
+  });
 
   eleventyConfig.addPassthroughCopy({ "./assets/": "/" });
   eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
