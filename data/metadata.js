@@ -1,6 +1,6 @@
 export default {
   title: "Ixion's Realm",
-  url: "https://ixion.neocities.org/",
+  url: "https://ixion.neocities.org",
   language: "en",
   description: "Ixion SpaceCat's personal website",
   author: {
