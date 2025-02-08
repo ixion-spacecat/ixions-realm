@@ -9,7 +9,6 @@
   color: var(--text);
   display: flex;
   flex-direction: column;
-  gap: 20px;
 
   @include mix.respond-to(tablet) {
     gap: 0;
@@ -23,6 +22,7 @@
 .page__layout {
   display: flex;
   gap: 20px;
+  margin: 20px 0;
 
   @include mix.respond-to(tablet) {
     flex-direction: column;
