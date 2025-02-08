@@ -54,3 +54,9 @@ I'm on a personal mission to rediscover the creative spark that burned inside me
 - More games
 - Shrines
 - More cool things TBD
+
+---
+
+I try to make this site accessible for desktop, mobile, and screen readers. I'm still new at this so if you see any ways I can improve accessibility please [contact](/contact/) me.
+
+This site uses javascript for the theme switcher and a few widgets and games. I use {%link "https://ixions-realm.goatcounter.com/help/privacy" %}GoatCounter{%endlink%} to estimate site visits.
