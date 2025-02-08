@@ -12,14 +12,6 @@
   border: 2px solid var(--border2);
 }
 
-.flex-last {
-  flex-grow: 1;
-}
-
-.flex-stretch {
-  align-self: stretch;
-}
-
 .flip-horizontally {
   transform: scaleX(-1);
 }

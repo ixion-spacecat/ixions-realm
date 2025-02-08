@@ -1,10 +1,13 @@
 @use "mixins" as mix;
+@use "region" as *;
 
 .navbar {
+  @extend %region;
   min-width: 220px;
   font-size: 1.4rem;
   line-height: 2;
   flex-grow: 0;
+  align-self: stretch;
 }
 
 .navbar ul {
@@ -42,6 +45,10 @@
   margin-right: 0;
 }
 
+.navbar--title {
+  @extend %region--title;
+}
+
 .theme-container {
   display: flex;
   flex-direction: column;
@@ -65,6 +72,8 @@
 }
 
 .navbar--content {
+  @extend %region--content;
+
   @include mix.respond-to(tablet) {
     font-size: 1rem;
   }

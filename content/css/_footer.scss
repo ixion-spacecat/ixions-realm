@@ -1,4 +1,7 @@
+@use "region" as *;
+
 .page__footer {
+  @extend %region--content;
   color: var(--text-light);
   font-size: 0.9rem;
   text-align: center;

@@ -7,6 +7,7 @@ html[data-theme="halloween"] {
   --text-light: #716085;
   --accent: #ff8135;
   --header-border: #4f9eff;
+  --title-bar-bg: url("/images/common/metal-title-bar-orange.png");
 }
 
 html[data-theme="halloween"] body {
@@ -54,10 +55,6 @@ html[data-theme="halloween"] .page__top-right-corner {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
-}
-
-html[data-theme="halloween"] .region--title {
-  background-image: url("/images/common/metal-title-bar-orange.png");
 }
 
 @font-face {

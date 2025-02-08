@@ -1,10 +1,13 @@
 @use "mixins" as mix;
+@use "region" as *;
 
 .main {
   flex-grow: 1;
+  align-self: stretch;
 }
 
 .main--title {
+  @extend %region--title;
   text-align: center;
 }
 
@@ -13,6 +16,7 @@
 }
 
 .main--content {
+  @extend %region--content;
   @include mix.respond-to(tablet) {
     min-width: 360px;
   }

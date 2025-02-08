@@ -22,6 +22,7 @@
   --accent: #4f9eff;
   --logo-color: #4f9eff;
   --header-border: #4f9eff;
+  --title-bar-bg: url("/images/common/metal-title-bar.png");
   color-scheme: dark;
 
   @include mix.respond-to(mobile) {
