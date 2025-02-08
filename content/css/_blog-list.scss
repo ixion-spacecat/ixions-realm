@@ -92,15 +92,7 @@ ul.blog--list > hr {
 }
 
 .readtime::before {
-  display: inline-block;
-  inline-size: 1em;
-  block-size: 1em;
+  @include mix.icon("/images/phosphor-icons/clock.svg");
   margin-right: 0.2em;
-  content: "";
-  background-color: currentColor;
-  mask-image: url("/images/phosphor-icons/clock.svg");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 100%;
   transform: translateY(0.18em);
 }

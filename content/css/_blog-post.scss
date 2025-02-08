@@ -53,29 +53,13 @@
 }
 
 .previous-link::before {
-  display: inline-block;
-  inline-size: 1em;
-  block-size: 1em;
-  margin-right: 0.1em;
-  content: "";
-  background-color: currentColor;
-  mask-image: url("/images/phosphor-icons/caret-left-fill.svg");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 100%;
+  @include mix.icon("/images/phosphor-icons/caret-left-fill.svg");
   transform: translateY(0.18em);
+  margin-right: 0.1em;
 }
 
 .next-link::after {
-  display: inline-block;
-  inline-size: 1em;
-  block-size: 1em;
+  @include mix.icon("/images/phosphor-icons/caret-right-fill.svg");
   margin-left: 0.1em;
-  content: "";
-  background-color: currentColor;
-  mask-image: url("/images/phosphor-icons/caret-right-fill.svg");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 100%;
   transform: translateY(0.18em);
 }

@@ -85,13 +85,7 @@ a:hover {
 }
 
 a[rel*="external"]:not(:has(img))::after {
-  display: inline-block;
-  inline-size: 1em;
-  block-size: 1em;
-  content: "";
+  @include mix.icon("/images/common/external-link.svg");
   background-color: var(--text-light);
-  mask-image: url("/images/common/external-link.svg");
-  mask-repeat: no-repeat;
-  mask-position: center;
   mask-size: 60% auto;
 }
