@@ -1,6 +1,7 @@
 @use "mixins" as mix;
 
 ul.blog--list {
+  list-style: none;
   padding-left: 0;
   border: solid var(--item-border);
   border-width: 1px;
@@ -8,7 +9,6 @@ ul.blog--list {
 }
 
 ul.blog--list > li {
-  list-style: none;
   padding-inline-start: 0;
   padding: 0 1rem;
 }
