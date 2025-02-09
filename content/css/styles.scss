@@ -1,25 +1,22 @@
-//
-@use "reset" as *;
-
-// Abstracts
-@use "utilities" as *;
-
 // Base
+@use "reset" as *;
 @use "base" as *;
+@use "utilities" as *;
 
 // Layout
 @use "layout" as *;
 @use "background" as *;
 @use "header" as *;
 @use "navbar" as *;
-@use "main" as *;
 @use "footer" as *;
 
 // Components
+@use "theme-picker" as *;
 @use "gallery" as *;
 @use "blog-list" as *;
 @use "blog-post" as *;
 @use "changelog" as *;
 
 // Themes
+@use "default" as *;
 @use "halloween" as *;

@@ -1,98 +1,90 @@
 @use "mixins" as mix;
 
-ul.blog--list {
+ul.post-list {
   list-style: none;
   padding-left: 0;
   border: solid var(--item-border);
   border-width: 1px;
   margin: 0;
+
+  & > hr {
+    margin: 0;
+  }
 }
 
-ul.blog--list > li {
-  padding-inline-start: 0;
-  padding: 0 1rem;
-}
-
-ul.blog--list > hr {
-  margin: 0;
-}
-
-.blog--item {
+.post-item {
   border: solid var(--item-border);
   border-width: 1px;
   background-color: var(--item-bg);
-}
-
-.blog--item--container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1rem 0;
+  padding: 1rem;
 
   @include mix.respond-to(mobile) {
-    padding: 0.4rem 0;
+    padding: 0.4rem 1rem;
   }
-}
 
-.blog--item--title {
-  flex-basis: 70%;
-  margin: 0;
+  &__title {
+    flex-basis: 70%;
+    margin: 0;
 
-  @include mix.respond-to(mobile) {
-    flex-basis: 100%;
+    @include mix.respond-to(mobile) {
+      flex-basis: 100%;
+      font-size: 1em;
+      line-height: 1.7em;
+      margin-top: 0.2rem;
+    }
+
+    & > a {
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+  }
+
+  &__description {
+    flex-basis: 70%;
+    font-size: 1.1em;
+    color: var(--text-subtle);
+
+    @include mix.respond-to(mobile) {
+      order: 4;
+      flex-basis: 100%;
+      font-size: 1em;
+      padding-bottom: 0.4rem;
+    }
+  }
+
+  &__date {
+    font-size: 1.1em;
+    flex-basis: 30%;
+    text-align: right;
+    color: var(--text-light);
+
+    @include mix.respond-to(mobile) {
+      order: 2;
+      flex-basis: 50%;
+      font-size: 1em;
+      text-align: left;
+    }
+  }
+
+  &__read-time {
     font-size: 1em;
-    line-height: 1.7em;
-    margin-top: 0.2rem;
+    flex-basis: 30%;
+    text-align: right;
+    color: var(--text-light);
+
+    @include mix.respond-to(mobile) {
+      order: 3;
+      flex-basis: 50%;
+      font-size: 1em;
+    }
+
+    &::before {
+      @include mix.icon("/images/phosphor-icons/clock.svg");
+      margin-right: 0.2em;
+      transform: translateY(0.18em);
+    }
   }
-}
-
-.blog--item--title a {
-  font-size: 1.4em;
-  font-weight: bold;
-}
-
-.blog--item--description {
-  flex-basis: 70%;
-  font-size: 1.1em;
-  color: var(--text-subtle);
-
-  @include mix.respond-to(mobile) {
-    order: 4;
-    flex-basis: 100%;
-    font-size: 1em;
-    padding-bottom: 0.4rem;
-  }
-}
-
-.blog--item--date {
-  font-size: 1.1em;
-  flex-basis: 30%;
-  text-align: right;
-  color: var(--text-light);
-
-  @include mix.respond-to(mobile) {
-    order: 2;
-    flex-basis: 50%;
-    font-size: 1em;
-    text-align: left;
-  }
-}
-
-.blog--item--readtime {
-  font-size: 1em;
-  flex-basis: 30%;
-  text-align: right;
-  color: var(--text-light);
-
-  @include mix.respond-to(mobile) {
-    order: 3;
-    flex-basis: 50%;
-    font-size: 1em;
-  }
-}
-
-.readtime::before {
-  @include mix.icon("/images/phosphor-icons/clock.svg");
-  margin-right: 0.2em;
-  transform: translateY(0.18em);
 }

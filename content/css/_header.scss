@@ -1,89 +1,80 @@
 @use "mixins" as mix;
 
-.header--container {
-  display: grid;
-  width: 100%;
-  background: url("/images/common/purplediamond-gradient.png");
-}
-
-.header--container > * {
-  grid-row: 1;
-  grid-column: 1;
-}
-
-.header__planet--container {
-  display: flex;
-  flex-direction: row-reverse;
+.header {
+  position: relative;
   z-index: 0;
-}
-
-.header__planet--image {
-  background-image: url("/images/common/earth-surface.png");
-  image-rendering: pixelated;
   width: 100%;
-  max-width: 820px;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
-}
-
-.header__lightning--container {
-  display: flex;
-  flex-direction: row;
-  z-index: 1;
-  padding-left: 50%;
-}
-
-.header__lightning--image {
-  background-image: url("/images/common/sonic-electric-arc-1.png");
-  image-rendering: pixelated;
-  width: 60px;
   min-height: 140px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transform: skewX(-10deg);
-  margin-left: 220px;
+  background: url("/images/common/purplediamond-gradient.png");
 
   @include mix.respond-to(mobile) {
-    display: none;
-  }
-}
-
-.header__content {
-  padding: 1rem 1rem 2rem 2rem;
-  min-height: 140px;
-  display: flex;
-  align-items: center;
-  border-bottom: 4px solid var(--header-border);
-  z-index: 2;
-
-  @include mix.respond-to(mobile) {
-    justify-content: center;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     min-height: 80px;
   }
-}
 
-.header__content h1 {
-  margin: 0;
-  font-size: 4rem;
-  letter-spacing: 0.05em;
-
-  @include mix.respond-to(mobile) {
-    font-size: 2.2em;
-    line-height: 1;
+  &__planet {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 820px;
+    background: url("/images/common/earth-surface.png") bottom right/contain
+      no-repeat;
+    image-rendering: pixelated;
   }
-}
 
-.header__content a {
-  color: var(--logo-color) !important;
-  font-style: italic;
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
-}
+  &__lightning {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 60px;
+    background: url("/images/common/sonic-electric-arc-1.png") center/contain
+      no-repeat;
+    image-rendering: pixelated;
+    transform: skewX(-10deg) translate(220px);
 
-.header__content a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
+    @include mix.respond-to(mobile) {
+      display: none;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+    min-height: inherit;
+    padding: 1rem 1rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid var(--header-border);
+
+    @include mix.respond-to(mobile) {
+      justify-content: center;
+      padding: 0.5rem;
+    }
+  }
+
+  & h1 {
+    margin: 0;
+    font-size: 4rem;
+    letter-spacing: 0.05em;
+
+    @include mix.respond-to(mobile) {
+      font-size: 2.53rem; // To match legacy h1 behavior
+      line-height: 1;
+    }
+  }
+
+  & a {
+    color: var(--logo-color) !important;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+
+    &:hover {
+      text-decoration-thickness: 4px;
+    }
+  }
 }

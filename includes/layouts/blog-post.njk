@@ -2,38 +2,36 @@
 {% set previousPost = collections.posts | getPreviousCollectionItem %}
 {% set nextPost = collections.posts | getNextCollectionItem %}
 
-{%- block main -%}
-  <h1 class="blog--post--title">
-    {% if displayTitle %}{{ displayTitle }}{% else %}{{ title }}{% endif %}
-  </h1>
-  <div class="blog--post--meta">
-    <div class="blog--post--date">
-      {%- if draft and false %}
-        DRAFT
-      {%- else %}
-        Published {{ page.date | readableDate }}
-      {%- endif %}
+{%- block content -%}
+  <article class="post">
+    <h1 class="post__title">
+      {% if displayTitle %}{{ displayTitle }}{% else %}{{ title }}{% endif %}
+    </h1>
+    <div class="post__meta">
+      <div class="post__date">
+        {%- if draft and false %}
+          <span>DRAFT</span>
+        {%- else %}
+          <span>Published {{ page.date | readableDate }}</span>
+        {%- endif %}
+      </div>
+      <div class="post__read-time">
+        <span>{{ content | readingTime }} to read</span>
+      </div>
     </div>
-    <div class="blog--post--readtime readtime">
-      {{ content | readingTime }} to read
-    </div>
-  </div>
 
-  {{- content | safe -}}
+    {{- content | safe -}}
+  </article>
 
-  <div class="blog--post--bottom-nav">
-    <div class="blog--post--previous">
+  <div class="post-footer">
+    <div class="post-footer__previous">
       {% if previousPost %}
-        <a class="previous-link" href="{{ previousPost.url }}"
-          >{{ previousPost.data.title }}</a
-        >
+        <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
       {% endif %}
     </div>
-    <div class="blog--post--next">
+    <div class="post-footer__next">
       {% if nextPost %}
-        <a class="next-link" href="{{ nextPost.url }}"
-          >{{ nextPost.data.title }}</a
-        >
+        <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
       {% endif %}
     </div>
   </div>

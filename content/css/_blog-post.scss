@@ -1,65 +1,73 @@
 @use "mixins" as mix;
 
-.blog--post--meta {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 0 2rem 0;
-}
+.post {
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 0 2rem 0;
+  }
 
-.blog--post--title {
-  margin: 0;
-}
+  &__title {
+    margin: 0;
+  }
 
-.blog--post--date {
-  font-size: 1.1em;
-  flex-basis: 70%;
-  color: var(--text-light);
+  &__date {
+    font-size: 1.1em;
+    flex-basis: 70%;
+    color: var(--text-light);
 
-  @include mix.respond-to(mobile) {
-    flex-basis: 100%;
+    @include mix.respond-to(mobile) {
+      flex-basis: 100%;
+      font-size: 1em;
+    }
+  }
+
+  &__read-time {
     font-size: 1em;
+    flex-basis: 30%;
+    text-align: right;
+    color: var(--text-light);
+
+    @include mix.respond-to(mobile) {
+      flex-basis: 100%;
+      font-size: 1em;
+      text-align: left;
+    }
+
+    &::before {
+      @include mix.icon("/images/phosphor-icons/clock.svg");
+      margin-right: 0.2em;
+      transform: translateY(0.18em);
+    }
   }
 }
 
-.blog--post--readtime {
-  font-size: 1em;
-  flex-basis: 30%;
-  text-align: right;
-  color: var(--text-light);
-
-  @include mix.respond-to(mobile) {
-    flex-basis: 100%;
-    font-size: 1em;
-    text-align: left;
-  }
-}
-
-.blog--post--bottom-nav {
+.post-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
-}
 
-.blog--post--previous {
-  min-width: 30%;
-  color: var(--text-light);
-}
+  &__previous {
+    min-width: 30%;
+    color: var(--text-light);
 
-.blog--post--next {
-  min-width: 30%;
-  text-align: right;
-  color: var(--text-light);
-}
+    & a::before {
+      @include mix.icon("/images/phosphor-icons/caret-left-fill.svg");
+      transform: translateY(0.18em);
+      margin-right: 0.1em;
+    }
+  }
 
-.previous-link::before {
-  @include mix.icon("/images/phosphor-icons/caret-left-fill.svg");
-  transform: translateY(0.18em);
-  margin-right: 0.1em;
-}
+  &__next {
+    min-width: 30%;
+    text-align: right;
+    color: var(--text-light);
 
-.next-link::after {
-  @include mix.icon("/images/phosphor-icons/caret-right-fill.svg");
-  margin-left: 0.1em;
-  transform: translateY(0.18em);
+    & a::after {
+      @include mix.icon("/images/phosphor-icons/caret-right-fill.svg");
+      margin-left: 0.1em;
+      transform: translateY(0.18em);
+    }
+  }
 }

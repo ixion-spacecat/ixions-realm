@@ -13,7 +13,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    const themePicker = document.getElementById("theme-picker");
+    const themePicker = document.getElementById("theme-select");
     if (!themePicker) {
       return;
     }

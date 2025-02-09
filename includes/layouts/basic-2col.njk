@@ -4,40 +4,42 @@
   <div class="page">
     <div class="page__background">
       {%- block background %}
-        {%- include '../global/background.njk' %}
+        {%- include "../global/background.njk" %}
       {%- endblock %}
     </div>
 
-    <header class="page__header">
-      {%- block header %}
-        {%- include '../global/header.njk' %}
-      {%- endblock %}
-    </header>
+    <div class="page__inner">
+      <div class="page__header">
+        {%- block header %}
+          {%- include "../global/header.njk" %}
+        {%- endblock %}
+      </div>
 
-    <div class="page__layout">
-      <aside class="navbar">
-        <div class="navbar--title"></div>
-        <div class="navbar--content">
+      <div class="page__nav">
+        <div class="page__nav-header"></div>
+        <div class="page__nav-content">
           {%- block nav %}
-            {%- include 'global/navigation.njk' %}
+            {%- include "../global/navigation.njk" %}
           {%- endblock %}
         </div>
-      </aside>
+      </div>
 
-      <main class="main">
-        <div class="main--title"></div>
-        <div class="main--content">
-          {%- block main %}
-            {{- content | safe }}
-          {%- endblock %}
+      <div class="page__main">
+        <div class="page__main-header"></div>
+        <div class="page__main-content">
+          <main>
+            {%- block content %}
+              {{ content | safe }}
+            {%- endblock %}
+          </main>
         </div>
-      </main>
+      </div>
+
+      <div class="page__footer">
+        {%- block footer %}
+          {%- include "../global/footer.njk" %}
+        {%- endblock %}
+      </div>
     </div>
-
-    <footer class="page__footer">
-      {%- block footer %}
-        {%- include '../global/footer.njk' %}
-      {%- endblock %}
-    </footer>
   </div>
 {%- endblock %}

@@ -1,0 +1,20 @@
+html:not(data-theme) {
+  & .background {
+    background-image: url("/images/common/black-grid-background.png");
+    background-size: 48px;
+  }
+
+  & .background__overlay {
+    background: linear-gradient(
+      to bottom,
+      rgb(132, 183, 250),
+      rgb(118, 126, 138),
+      rgb(126, 19, 197)
+    );
+    mix-blend-mode: multiply;
+  }
+
+  & page__main-header::after {
+    content: "⋆✧:°* ⛧★☆(=^ｪ^=)☆★⛧ *°:✧⋆";
+  }
+}
