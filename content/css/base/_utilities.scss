@@ -1,0 +1,56 @@
+@use "abstracts/mixins" as mix;
+
+.float-right {
+  float: right;
+
+  @include mix.respond-to(mobile) {
+    float: none;
+  }
+}
+
+.border-image {
+  border: 2px solid var(--border2);
+}
+
+.flip-horizontally {
+  transform: scaleX(-1);
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pixelart {
+  image-rendering: pixelated;
+}
+
+.max100 {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.image-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.inline-image-row {
+  > img {
+    display: inline;
+  }
+}

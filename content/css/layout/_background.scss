@@ -1,0 +1,32 @@
+.background {
+  height: 100%;
+  background-color: black;
+
+  &__overlay {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  &__frame {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+
+  &__frame-tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__frame-tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

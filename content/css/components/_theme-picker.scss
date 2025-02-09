@@ -1,0 +1,31 @@
+@use "abstracts/mixins" as mix;
+
+.theme-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include mix.respond-to(tablet) {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  &__label {
+    display: none;
+
+    @include mix.respond-to(tablet) {
+      display: inherit;
+      margin-right: 0.25em;
+    }
+  }
+
+  &__select {
+    font-family: revert;
+    font-size: revert;
+
+    @include mix.respond-to(tablet) {
+      max-width: 3em;
+    }
+  }
+}

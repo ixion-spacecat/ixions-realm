@@ -1,0 +1,38 @@
+{% extends "layouts/basic-2col.njk" %}
+{% set previousPost = collections.posts | getPreviousCollectionItem %}
+{% set nextPost = collections.posts | getNextCollectionItem %}
+
+{%- block content -%}
+  <article class="post">
+    <h1 class="post__title">
+      {% if displayTitle %}{{ displayTitle }}{% else %}{{ title }}{% endif %}
+    </h1>
+    <div class="post__meta">
+      <div class="post__date">
+        {%- if draft and false %}
+          <span>DRAFT</span>
+        {%- else %}
+          <span>Published {{ page.date | readableDate }}</span>
+        {%- endif %}
+      </div>
+      <div class="post__read-time">
+        <span>{{ content | readingTime }} to read</span>
+      </div>
+    </div>
+
+    {{- content | safe -}}
+  </article>
+
+  <div class="post-footer">
+    <div class="post-footer__previous">
+      {% if previousPost %}
+        <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+      {% endif %}
+    </div>
+    <div class="post-footer__next">
+      {% if nextPost %}
+        <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+      {% endif %}
+    </div>
+  </div>
+{%- endblock %}

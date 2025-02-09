@@ -1,0 +1,88 @@
+@use "abstracts/mixins" as mix;
+
+/* Global variables. */
+:root {
+  /* Set sans-serif & mono fonts */
+  --sans-font: "Atkinson Hyperlegible", "Tahoma", sans-serif;
+  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+  /* Theme (dark) */
+  --body-bg: #26316e;
+  --bg: #211a41ee;
+  --border: #292172;
+  --border2: #080713;
+  --gallery-bg: #312e46ee;
+  --gallery-border: #0d0b1aee;
+  --item-bg: #18122bee;
+  --item-border: #080713; /* 403555ee */
+  --text: #cecece;
+  --text-subtle: #aeadc0;
+  --text-light: #636694;
+  --title-text: #101332;
+  --accent: #4f9eff;
+  --logo-color: #4f9eff;
+  --header-border: #4f9eff;
+  --title-bar-bg: url("/images/common/metal-title-bar.png");
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--sans-font);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: var(--text);
+
+  @include mix.respond-to(mobile) {
+    // font-size: 1.15rem;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 0.67em; // To match legacy h1 behavior
+
+  @include mix.respond-to(mobile) {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  font-size: 1.75em;
+
+  @include mix.respond-to(mobile) {
+    font-size: 1.5em;
+  }
+}
+
+h3 {
+  font-size: 1.25em;
+
+  @include mix.respond-to(mobile) {
+    font-size: 1.2em;
+  }
+}
+
+a,
+a:visited {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a[rel*="external"]:not(:has(img))::after {
+  @include mix.icon("/images/common/external-link.svg");
+  background-color: var(--text-light);
+  mask-size: 60% auto;
+}

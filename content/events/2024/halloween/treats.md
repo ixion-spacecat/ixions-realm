@@ -12,6 +12,7 @@ Feel free to download these images and use them on your own site
 
 ## Sprites
 
+<div class="inline-image-row">
 <img src="/images/share/ghost.gif" alt="">
 <img src="/images/share/candy-spin.gif" alt="">
 <img src="/images/share/pumpkin1.png" alt="">
@@ -26,17 +27,22 @@ Feel free to download these images and use them on your own site
 <img src="/images/share/flag-halloween.gif" alt="">
 <img src="/images/share/flag-checkpoint.gif" alt="">
 <img src="/images/share/flag-finish.gif" alt="">
+</div>
 
 ## Background
 
+<div class="inline-image-row">
 <img src="/images/share/graveyard-background.png" alt="">
+</div>
 
 ## Ixi and Ellie
 
+<div class="inline-image-row">
 <img src="/images/share/ellie-halloween-wave.gif" alt="">
 <img src="/images/share/ixi-halloween-wave.gif" alt="">
 <img src="/images/share/ellie-halloween-dance.gif" alt="">
 <img src="/images/share/ixi-halloween-dance.gif" alt="">
+</div>
 
 Ixion and Ellie are my OC's that belong to my partner and I. You can download these sprites but I ask that you only use my OC's to directly reference me or my page ^.^
 

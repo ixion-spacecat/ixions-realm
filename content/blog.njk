@@ -5,10 +5,10 @@ redirect_from: /posts
 
 {% extends "layouts/basic-2col.njk" %}
 
-{%- block main -%}
+{%- block content -%}
   <h1>Ixion's Blog</h1>
   <p>Where I talk about web development and whatever I want ^.^</p>
 
   {% set postlist = collections.posts %}
-  {% include "components/blog-list.njk" %}
+  {% include "components/post-list.njk" %}
 {%- endblock %}

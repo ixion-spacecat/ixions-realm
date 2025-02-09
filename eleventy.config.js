@@ -1,3 +1,5 @@
+import * as sass from "sass";
+import path from "path";
 import { DateTime } from "luxon";
 import readingTime from "eleventy-plugin-reading-time";
 
@@ -22,21 +24,21 @@ function galleryImageShortcode(src, title, description) {
       data-title="${title}"
       data-description="${description}"
     >
-      <img src="${src}" alt="${title}" class="gallery-item-image"/>
+      <img src="${src}" alt="${title}" class="gallery-item__image"/>
     </a>
   `;
   const titleElement = title
-    ? `<p class="gallery-item-title">${title}</p>`
+    ? `<p class="gallery-item__title">${title}</p>`
     : "";
   const descriptionElement = description
-    ? `<p class="gallery-item-description">${description}</p>`
+    ? `<p class="gallery-item__description">${description}</p>`
     : "";
   const element = `
     <div class="gallery-item">
-      <div class="gallery-item-image-container">
+      <div class="gallery-item__content">
         ${imageElement}
       </div>
-      <div class="gallery-item-text-container">
+      <div class="gallery-item__caption">
         ${titleElement}
         ${descriptionElement}
       </div>
@@ -53,6 +55,25 @@ function outlinkShortcode(content, url) {
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
+
+  eleventyConfig.addTemplateFormats("scss");
+
+  eleventyConfig.addExtension("scss", {
+    outputFileExtension: "css",
+    compile: async function (inputContent, inputPath) {
+      let parsed = path.parse(inputPath);
+      if (parsed.name.startsWith("_")) {
+        return;
+      }
+      let result = sass.compileString(inputContent, {
+        loadPaths: [parsed.dir || ".", this.config.dir.includes],
+      });
+      this.addDependencies(inputPath, result.loadedUrls);
+      return async (data) => {
+        return result.css;
+      };
+    },
+  });
 
   eleventyConfig.addPassthroughCopy({ "./assets/": "/" });
   eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");

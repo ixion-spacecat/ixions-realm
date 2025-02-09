@@ -1,0 +1,22 @@
+@use "sass:map";
+@use "variables" as *;
+
+@mixin respond-to($breakpoint) {
+  @media only screen and (max-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin icon($icon-path, $size: 1em) {
+  display: inline-block;
+  inline-size: $size;
+  block-size: $size;
+  content: "";
+  background-color: currentColor;
+  mask: {
+    image: url($icon-path);
+    repeat: no-repeat;
+    position: center;
+    size: 100%;
+  }
+}
