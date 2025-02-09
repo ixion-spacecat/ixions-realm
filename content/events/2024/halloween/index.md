@@ -51,8 +51,10 @@ theme: halloween
 
 from Ixi and Ellie!
 
-<img src="/images/share/ixi-halloween-wave.gif" alt="" width=120 class="pixelart">
-<img src="/images/share/ellie-halloween-wave.gif" alt="" width=120 class="pixelart">
+<div class="inline-image-row">
+  <img src="/images/share/ixi-halloween-wave.gif" alt="" width=120 class="pixelart">
+  <img src="/images/share/ellie-halloween-wave.gif" alt="" width=120 class="pixelart">
+</div>
 
 <p class="font-big3">we invite you to play our halloween mini-game!!</p>
 
@@ -75,7 +77,7 @@ by Ixion" width=512 class="game-screenshot center max100">
   <li>✨ requires JavaScript</li>
 </ul>
 
-<div>
+<div class="inline-image-row">
 <img src="/images/web/candlew2l.gif" alt="">
 <img src="/images/web/hg7.gif" alt="">
 <img src="/images/web/hg11.gif" alt="">

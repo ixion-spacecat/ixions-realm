@@ -40,7 +40,7 @@ I'm on a personal mission to rediscover the creative spark that burned inside me
 - A list of my [special interests](/interests/) (there's a lot of them 🤯)
 - An unsatisfactory explanation of [why I am the way that I am](/about/)
 - A [halloween mini-game](/events/2024/halloween/) I made last year with original pixel-art
-<div>
+<div class="inline-image-row">
   <img src="/images/share/ghost.gif" alt="">
   <img src="/images/share/pumpkin1.png" alt="">
   <img src="/images/share/zombie.gif" alt="">

@@ -2,6 +2,7 @@
 @use "region" as *;
 
 .main {
+  @extend %region;
   flex-grow: 1;
   align-self: stretch;
 }

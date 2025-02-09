@@ -88,6 +88,9 @@
 }
 
 .theme-picker {
+  font-family: revert;
+  font-size: revert;
+
   @include mix.respond-to(tablet) {
     max-width: 3em;
   }
