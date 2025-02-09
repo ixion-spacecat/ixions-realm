@@ -1,5 +1,5 @@
 {
-  "layout": "layouts/blog-post.njk",
+  "layout": "layouts/post.njk",
   "tags": ["posts"],
   "date": "DRAFT"
 }

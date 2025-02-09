@@ -1,4 +1,4 @@
-@use "mixins" as mix;
+@use "abstracts/mixins" as mix;
 
 .gallery {
   border: 2px solid var(--gallery-border);

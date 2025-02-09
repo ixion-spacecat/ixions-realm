@@ -19,7 +19,7 @@ I'm on a personal mission to rediscover the creative spark that burned inside me
 ## Latest Blog Post
 
 {% set postlist = collections.posts | last %}
-{% include "components/blog-list.njk" %}
+{% include "components/post-list.njk" %}
 
 [More Posts...](/blog/)
 

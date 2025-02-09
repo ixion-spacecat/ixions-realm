@@ -1,22 +1,22 @@
 // Base
-@use "reset" as *;
-@use "base" as *;
-@use "utilities" as *;
+@use "base/reset" as *;
+@use "base/base" as *;
+@use "base/utilities" as *;
 
 // Layout
-@use "layout" as *;
-@use "background" as *;
-@use "header" as *;
-@use "navbar" as *;
-@use "footer" as *;
+@use "layout/page" as *;
+@use "layout/background" as *;
+@use "layout/header" as *;
+@use "layout/nav" as *;
+@use "layout/footer" as *;
 
 // Components
-@use "theme-picker" as *;
-@use "gallery" as *;
-@use "blog-list" as *;
-@use "blog-post" as *;
-@use "changelog" as *;
+@use "components/theme-picker" as *;
+@use "components/gallery" as *;
+@use "components/post-list" as *;
+@use "components/post" as *;
+@use "components/change-list" as *;
 
 // Themes
-@use "default" as *;
-@use "halloween" as *;
+@use "themes/default" as *;
+@use "themes/halloween" as *;
