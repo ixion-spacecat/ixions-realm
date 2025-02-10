@@ -20,6 +20,7 @@ I'm on a personal mission to rediscover the creative spark that burned inside me
 
 {% set announcementlist = collections.announcements | last %}
 {% include "components/announcement-list.njk" %}
+
 [All Announcements...](/announcements/)
 
 ## Latest Blog Post

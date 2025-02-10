@@ -1,5 +1,5 @@
 <ul class="announcement-list" role="list">
-  {%- for announcement in announcementlist | reverse %}
+  {%- for announcement in announcementlist | reverse -%}
     <li class="announcement-item">
       <div class="announcement-item__title">{{ announcement.data.title }}</div>
       <div class="announcement-item__date">
@@ -13,5 +13,5 @@
         {{ announcement.content | safe }}
       </div>
     </li>
-  {%- endfor %}
+  {%- endfor -%}
 </ul>

@@ -1,5 +1,5 @@
 <ul class="post-list" role="list">
-  {%- for post in postlist | reverse %}
+  {%- for post in postlist | reverse -%}
     <li class="post-item">
       <div class="post-item__title">
         <a href="{{ post.page.url }}">{{ post.data.title }}</a>
@@ -16,5 +16,5 @@
         <span>{{ post.content | readingTime }} read</span>
       </div>
     </li>
-  {%- endfor %}
+  {%- endfor -%}
 </ul>
