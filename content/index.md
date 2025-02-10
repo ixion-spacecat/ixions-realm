@@ -16,18 +16,19 @@ I'm on a personal mission to rediscover the creative spark that burned inside me
 
 ---
 
+## What's New?
+
+{% set announcementlist = collections.announcements | last %}
+{% include "components/announcement-list.njk" %}
+
+[All Announcements...](/announcements/)
+
 ## Latest Blog Post
 
 {% set postlist = collections.posts | last %}
 {% include "components/post-list.njk" %}
 
 [More Posts...](/blog/)
-
-## Recent Updates
-
-{% set changelist = collections.changes | last(2) %}
-{% include "components/change-list.njk" %}
-[Full Changelog...](/changelog/)
 
 <br>
 

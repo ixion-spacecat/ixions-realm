@@ -1,0 +1,22 @@
+---
+title: Announcements
+---
+
+{% extends "layouts/basic-2col.njk" %}
+
+{%- block content -%}
+  <h1>Announcements</h1>
+
+  <p>
+    This is a collection of all announcements that where previously featured on
+    the homepage. It also contains listings from the old "updates" page.
+  </p>
+
+  <p>
+    You can find the more detailed update history in the
+    <a href="/changelog/">changelog</a>.
+  </p>
+
+  {% set announcementlist = collections.announcements %}
+  {% include "components/announcement-list.njk" %}
+{%- endblock %}

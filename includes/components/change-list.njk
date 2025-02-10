@@ -1,5 +1,5 @@
 <ul class="change-list" role="list">
-  {%- for change in changelist | reverse %}
+  {%- for change in changelist | reverse -%}
     <li class="change-item">
       <div class="change-item__title">{{ change.data.title }}</div>
       <div class="change-item__date">
@@ -11,5 +11,5 @@
       </div>
       <div class="change-item__content">{{ change.content | safe }}</div>
     </li>
-  {%- endfor %}
+  {%- endfor -%}
 </ul>

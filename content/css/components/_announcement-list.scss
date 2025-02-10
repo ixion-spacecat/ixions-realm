@@ -1,0 +1,67 @@
+@use "abstracts/mixins" as mix;
+
+ul.announcement-list {
+  list-style: none;
+  padding-left: 0;
+  border: solid var(--item-border);
+  border-width: 1px;
+  margin: 0;
+
+  & > li ul {
+    list-style: initial;
+    padding-left: 2rem;
+  }
+
+  & > hr {
+    margin: 0;
+  }
+}
+
+.announcement-item {
+  border: solid var(--item-border);
+  border-width: 1px;
+  background-color: var(--item-bg);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+
+  @include mix.respond-to(mobile) {
+    padding: 0.4rem 1rem;
+  }
+
+  &__title {
+    flex-basis: 70%;
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+
+    @include mix.respond-to(mobile) {
+      flex-basis: 100%;
+      font-size: 1.4em;
+      line-height: 1.7em;
+      margin-top: 0.2rem;
+    }
+  }
+
+  &__date {
+    font-size: 1.1em;
+    flex-basis: 30%;
+    text-align: right;
+    color: var(--text-light);
+
+    @include mix.respond-to(mobile) {
+      flex-basis: 100%;
+      font-size: 1em;
+      text-align: left;
+    }
+  }
+
+  &__content {
+    color: var(--text-subtle);
+
+    & p {
+      margin: 0.5em 0;
+    }
+  }
+}

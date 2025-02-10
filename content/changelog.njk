@@ -9,9 +9,32 @@ redirect_from: /updates
   <h1>Change Log</h1>
 
   <p>
-    This is a list of the more notable changes's I've made to the website. Small
-    changes may not be mentioned here, but the full commit history is available
-    on {% link metadata.github %}github{% endlink %}.
+    This is the history of site updates. It should roughly corresponding to the
+    "updates" list on neocities. If you'd rather see a high-level summary of
+    important changes, check out the
+    <a href="/announcements/">announcements</a> page. Full commit history is
+    available on {% link metadata.github %}github{% endlink %}.
+  </p>
+
+  <h2>Version Numbers</h2>
+  <p>
+    My updates try to follow a
+    {% link "https://semver.org/" %}semantic versioning{% endlink %} scheme. For
+    example the current version is v{{ pkg.version }}. This is broken down as
+    "v[major].[minor].[patch]".<br />
+  </p>
+
+  <ul>
+    <li>major: redesign of the layout or site structure; links may break</li>
+    <li>
+      minor: new feature or minor reorganization; links should stay intact
+    </li>
+    <li>patch: Smaller incremental changes</li>
+  </ul>
+
+  <p>
+    Older updates were not using regular numbering so these use a 4th "-" number
+    to differentiate between them.
   </p>
 
   {% set changelist = collections.changes %}
