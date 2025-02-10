@@ -1,0 +1,17 @@
+<ul class="announcement-list" role="list">
+  {%- for announcement in announcementlist | reverse %}
+    <li class="announcement-item">
+      <div class="announcement-item__title">{{ announcement.data.title }}</div>
+      <div class="announcement-item__date">
+        {%- if announcement.data.draft %}
+          <span>DRAFT</span>
+        {%- else %}
+          <span>{{ announcement.page.date | readableDate }}</span>
+        {%- endif %}
+      </div>
+      <div class="announcement-item__content">
+        {{ announcement.content | safe }}
+      </div>
+    </li>
+  {%- endfor %}
+</ul>
