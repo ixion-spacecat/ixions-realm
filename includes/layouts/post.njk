@@ -19,6 +19,10 @@
         <span>{{ content | readingTime }} to read</span>
       </div>
     </div>
+    {% if description -%}
+      <p class="post__description">{{ description }}</p>
+    {%- endif -%}
+    <hr class="post__header-divider" />
 
     {% block postContent %}
       {{- content | safe -}}
