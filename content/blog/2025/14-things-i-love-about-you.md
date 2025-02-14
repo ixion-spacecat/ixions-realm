@@ -1,6 +1,7 @@
 ---
-title: Valentines Day
-description: 14 things I love about you (a letter to myself)
+title: 14 things I love about you
+description: A letter to myself
+date: 2025-02-14
 layout: "blog/valentine-2025.njk"
 ---
 
