@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 0 2rem 0;
+    padding: 0;
   }
 
   &__title {
@@ -40,6 +40,15 @@
       margin-right: 0.2em;
       transform: translateY(0.18em);
     }
+  }
+
+  &__description {
+    font-size: 1.2em;
+    color: var(--text-subtle);
+  }
+
+  &__header-divider {
+    margin: 0 0 2rem 0;
   }
 }
 

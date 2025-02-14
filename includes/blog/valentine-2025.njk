@@ -1,0 +1,55 @@
+{% extends "layouts/post.njk" %}
+
+{%- block postContent -%}
+  <style>
+    .valentine {
+      display: grid;
+      grid-template-areas: "left content right";
+      grid-template-columns: 32px 1fr 32px;
+      gap: 0;
+    }
+
+    .valentine-left {
+      grid-area: left;
+      background: url(/images/blog/heart-paper-edge.png);
+      background-size: 32px;
+    }
+    .valentine-right {
+      grid-area: right;
+      background: url(/images/blog/heart-paper-edge.png);
+      background-size: 32px;
+      transform: scaleX(-1);
+    }
+    .valentine-content {
+      grid-area: content;
+      background: #b674a0;
+      color: #3a1626;
+      padding: 0.5rem 1rem;
+      font-size: 1.3em;
+      font-weight: 600;
+      font-family: "Brush Script MT", cursive, "Times New Roman", Times, serif;
+    }
+    @media only screen and (max-width: 600px) {
+      .valentine-content {
+        font-size: 1em;
+        font-family: "Times New Roman", Times, serif;
+      }
+    }
+  </style>
+
+  <p class="text-subtle">
+    This is my submission to the
+    {% link "https://32bit.cafe/vday25/" -%}
+      32-Bit Cafe 2025 Valentine's Day Event
+    {%- endlink %}.
+    The prompt was to make a digital Valentie's day gift dedicated to myself.
+    This was surprisingly difficult, but it was a wonderful exercise in
+    practicing self-love this February 14th.
+  </p>
+
+  <div class="valentine">
+    <div class="valentine-left"></div>
+    <div class="valentine-content">{{- content | safe -}}</div>
+    <div class="valentine-right"></div>
+  </div>
+{%- endblock %}
