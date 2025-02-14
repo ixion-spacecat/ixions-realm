@@ -27,20 +27,27 @@
       padding: 0.5rem 1rem;
       font-size: 1.3em;
       font-weight: 600;
-      font-family: cursive, "Times New Roman", Times, serif;
+      font-family: "Brush Script MT", cursive, "Times New Roman", Times, serif;
+    }
+    @media only screen and (max-width: 600px) {
+      .valentine-content {
+        font-size: 1em;
+        font-family: "Times New Roman", Times, serif;
+      }
     }
   </style>
+
+  <p class="text-subtle">
+    This is my submission to the
+    {% link "https://32bit.cafe/vday25/" -%}
+      32-Bit Cafe 2025 Valentine's Day Event
+    {%- endlink %}.
+    The prompt was to make a digital Valentie's day gift dedicated to myself.
+  </p>
 
   <div class="valentine">
     <div class="valentine-left"></div>
     <div class="valentine-content">{{- content | safe -}}</div>
     <div class="valentine-right"></div>
   </div>
-  <hr />
-  <p class="text-subtle">
-    This is my submission to the
-    {% link "https://32bit.cafe/vday25/" -%}
-      32-Bit Cafe 2025 Valentine's Day Event
-    {%- endlink %}.
-  </p>
 {%- endblock %}
