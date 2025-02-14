@@ -20,7 +20,9 @@
       </div>
     </div>
 
-    {{- content | safe -}}
+    {% block postContent %}
+      {{- content | safe -}}
+    {% endblock %}
   </article>
 
   <div class="post-footer">
