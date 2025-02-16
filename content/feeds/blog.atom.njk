@@ -20,19 +20,20 @@
   <author>
     <name>{{ metadata.author.name }}</name>
   </author>
-  {%- for post in collections.posts | reverse %}
-  {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
+  {%- for item in collections.posts | reverse %}
+  {%- set absolutePostUrl %}{{ item.url | htmlBaseUrl(metadata.base) }}{% endset %}
   <entry>
-    <title>{{ post.data.title }}</title>
+    <title>{{ item.data.title }}</title>
     <link href="{{ absolutePostUrl }}" />
     <category term="blog" scheme="{{metadata.base}}/types"/>
-    <published>{{ post.date | dateToRfc3339 }}</published>
+    <published>{{ item.date | dateToRfc3339 }}</published>
+    <updated>{% if item.data.updated %}{{ item.data.updated | dateToRfc3339 }}{% else %}{{ item.date | dateToRfc3339 }}{% endif %}</updated>
     <id>{{ absolutePostUrl }}</id>
-    {%- if post.data.description %}
-    <summary>{{ post.data.description }}</summary>
+    {%- if item.data.description %}
+    <summary>{{ item.data.description }}</summary>
     {%- endif %}
     <content type="html">
-      {{ post.content | renderTransforms(post.data.page, metadata.base) }}
+      {{ item.content | renderTransforms(item.data.page, metadata.base) }}
     </content>
   </entry>
   {%- endfor %}

@@ -1,6 +1,6 @@
 ---
 title: Started a Blog
-date: 2025-01-15
+date: 2025-01-15T00:00:01Z
 ---
 
 I have a [blog](/blog/) now!!!
