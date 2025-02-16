@@ -1,5 +1,5 @@
 {
   "layout": "layouts/announcement.njk",
-  "tags": ["announcements"],
+  "tags": ["feed", "announcements"],
   "date": "DRAFT"
 }

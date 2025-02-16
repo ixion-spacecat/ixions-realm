@@ -1,11 +1,21 @@
 export default {
-  title: "Ixion's Realm",
-  url: "https://ixion.neocities.org",
+  base: "https://ixion.neocities.org",
   language: "en",
-  description: "Ixion SpaceCat's personal website",
   author: {
     name: "Ixion SpaceCat",
     email: "ixionspacecat@proton.me",
+  },
+  site: {
+    title: "Ixion's Realm",
+    description: "Ixion SpaceCat's personal website",
+  },
+  blog: {
+    title: "Ixion's Blog",
+    description: "Where I talk about web development and whatever I want ^.^",
+  },
+  announcements: {
+    title: "Ixion's Realm Announcements",
+    description: "Announcements from Ixion's Realm",
   },
   copyright: `© ${new Date().getFullYear()} Ixion SpaceCat`,
   github: `https://github.com/ixion-spacecat/ixions-realm`,
