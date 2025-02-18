@@ -4,141 +4,152 @@ layout: layouts/basic-2col.njk
 ---
 
 <style>
-  .question,
-  .result {
+  /* Hide all sections by default */
+  .quiz-section,
+  .start-content {
+    display: none;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  /* Show start content by default */
+  .start-content {
+    display: block;
+  }
+
+  /* Show targeted section */
+  .quiz-section:target {
+    display: block;
+  }
+
+  /* Hide start content when any section is targeted */
+  :target ~ .start-content {
     display: none;
   }
-  label {
+
+  .nav-button {
     display: inline-block;
     margin: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #363636;
-    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
   }
-  label:hover {
+
+  .nav-button:hover {
     background-color: #636363;
-  }
-  input[type="radio"] {
-    display: none;
-  }
-  #start:checked ~ #q1,
-  #red:checked ~ #q2,
-  #blue:checked ~ #q2,
-  #green:checked ~ #q2 {
-    display: block;
-  }
-  #red:checked ~ #q2 #toy-red,
-  #blue:checked ~ #q2 #toy-blue,
-  #green:checked ~ #q2 #toy-green {
-    display: block;
-  }
-  #red-bear:checked ~ #result-red-bear,
-  #red-car:checked ~ #result-red-car,
-  #red-lego:checked ~ #result-red-lego,
-  #blue-bear:checked ~ #result-blue-bear,
-  #blue-car:checked ~ #result-blue-car,
-  #blue-lego:checked ~ #result-blue-lego,
-  #green-bear:checked ~ #result-green-bear,
-  #green-car:checked ~ #result-green-car,
-  #green-lego:checked ~ #result-green-lego {
-    display: block;
   }
 </style>
 
-<h1>Color and Toy Quiz</h1>
-<p>Choose your favorite color, then your favorite toy to see your result!</p>
-
-<input type="radio" name="quiz" id="start" checked />
-<input type="radio" name="quiz" id="red" />
-<input type="radio" name="quiz" id="blue" />
-<input type="radio" name="quiz" id="green" />
-<input type="radio" name="quiz" id="red-bear" />
-<input type="radio" name="quiz" id="red-car" />
-<input type="radio" name="quiz" id="red-lego" />
-<input type="radio" name="quiz" id="blue-bear" />
-<input type="radio" name="quiz" id="blue-car" />
-<input type="radio" name="quiz" id="blue-lego" />
-<input type="radio" name="quiz" id="green-bear" />
-<input type="radio" name="quiz" id="green-car" />
-<input type="radio" name="quiz" id="green-lego" />
-
-<div id="q1" class="question">
-  <h2>Step 1: Choose your favorite color</h2>
-  <label for="red">Red</label>
-  <label for="blue">Blue</label>
-  <label for="green">Green</label>
-</div>
-
-<div id="q2" class="question">
-  <h2>Step 2: Choose your favorite toy</h2>
-  <div id="toy-red" class="question">
-    <label for="red-bear">Teddy Bear</label>
-    <label for="red-car">Toy Car</label>
-    <label for="red-lego">Lego</label>
+<div class="quiz-container" id="quiz">
+  <div id="q1" class="quiz-section">
+    <h2>Step 1: Choose your favorite color</h2>
+    <a href="#q2-red" class="nav-button">Red</a>
+    <a href="#q2-blue" class="nav-button">Blue</a>
+    <a href="#q2-green" class="nav-button">Green</a>
   </div>
-  <div id="toy-blue" class="question">
-    <label for="blue-bear">Teddy Bear</label>
-    <label for="blue-car">Toy Car</label>
-    <label for="blue-lego">Lego</label>
-  </div>
-  <div id="toy-green" class="question">
-    <label for="green-bear">Teddy Bear</label>
-    <label for="green-car">Toy Car</label>
-    <label for="green-lego">Lego</label>
-  </div>
-</div>
 
-<div id="result-red-bear" class="result">
-  <p>
-    Result: You're warm-hearted and cuddly! You love comfort and making others
-    feel safe.
-  </p>
-</div>
-<div id="result-red-car" class="result">
-  <p>
-    Result: You're energetic and love adventure! Always ready for the next
-    exciting journey.
-  </p>
-</div>
-<div id="result-red-lego" class="result">
-  <p>
-    Result: You're creative with a fiery passion! You love building and bringing
-    ideas to life.
-  </p>
-</div>
-<div id="result-blue-bear" class="result">
-  <p>
-    Result: You're calm and compassionate. You provide a soothing presence to
-    those around you.
-  </p>
-</div>
-<div id="result-blue-car" class="result">
-  <p>
-    Result: You're cool and collected, yet always ready for an adventure on the
-    open road.
-  </p>
-</div>
-<div id="result-blue-lego" class="result">
-  <p>
-    Result: You're a deep thinker with endless imagination. You love creating
-    and problem-solving.
-  </p>
-</div>
-<div id="result-green-bear" class="result">
-  <p>
-    Result: You're nurturing and in tune with nature. You bring growth and
-    comfort to others.
-  </p>
-</div>
-<div id="result-green-car" class="result">
-  <p>
-    Result: You're balanced and always moving forward. You navigate life's
-    journey with ease.
-  </p>
-</div>
-<div id="result-green-lego" class="result">
-  <p>
-    Result: You're innovative and environmentally conscious. You love building a
-    better world.
-  </p>
+  <div id="q2-red" class="quiz-section">
+    <h2>Step 2: Choose your favorite toy</h2>
+    <a href="#result-red-bear" class="nav-button">Teddy Bear</a>
+    <a href="#result-red-car" class="nav-button">Toy Car</a>
+    <a href="#result-red-lego" class="nav-button">Lego</a>
+  </div>
+
+  <div id="q2-blue" class="quiz-section">
+    <h2>Step 2: Choose your favorite toy</h2>
+    <a href="#result-blue-bear" class="nav-button">Teddy Bear</a>
+    <a href="#result-blue-car" class="nav-button">Toy Car</a>
+    <a href="#result-blue-lego" class="nav-button">Lego</a>
+  </div>
+
+  <div id="q2-green" class="quiz-section">
+    <h2>Step 2: Choose your favorite toy</h2>
+    <a href="#result-green-bear" class="nav-button">Teddy Bear</a>
+    <a href="#result-green-car" class="nav-button">Toy Car</a>
+    <a href="#result-green-lego" class="nav-button">Lego</a>
+  </div>
+
+  <div id="result-red-bear" class="quiz-section">
+    <h2>Your Result</h2>
+    <p>
+      You're warm-hearted and cuddly! You love comfort and making others feel
+      safe.
+    </p>
+  </div>
+
+  <div id="result-red-car" class="quiz-section">
+    <h2>Your Result</h2>
+    <p>
+      You're energetic and love adventure! Always ready for the next exciting
+      journey.
+    </p>
+  </div>
+
+  <div id="result-red-lego" class="quiz-section">
+    <h2>Your Result</h2>
+    <p>
+      You're creative with a fiery passion! You love building and bringing ideas
+      to life.
+    </p>
+  </div>
+
+  <div id="result-blue-bear" class="quiz-section">
+    <h2>Your Result</h2>
+    <p>
+      You're calm and compassionate. You provide a soothing presence to those
+      around you.
+    </p>
+  </div>
+
+  <div id="result-blue-car" class="quiz-section">
+    <h2>Your Result</h2>
+    <p>
+      You're cool and collected, yet always ready for an adventure on the open
+      road.
+    </p>
+  </div>
+
+  <div id="result-blue-lego" class="quiz-section">
+    <h2>Your Result</h2>
+    <p>
+      You're a deep thinker with endless imagination. You love creating and
+      problem-solving.
+    </p>
+  </div>
+
+  <div id="result-green-bear" class="quiz-section">
+    <h2>Your Result</h2>
+    <p>
+      You're nurturing and in tune with nature. You bring growth and comfort to
+      others.
+    </p>
+  </div>
+
+  <div id="result-green-car" class="quiz-section">
+    <h2>Your Result</h2>
+    <p>
+      You're balanced and always moving forward. You navigate life's journey
+      with ease.
+    </p>
+  </div>
+
+  <div id="result-green-lego" class="quiz-section">
+    <h2>Your Result</h2>
+    <p>
+      You're innovative and environmentally conscious. You love building a
+      better world.
+    </p>
+  </div>
+
+  <div class="start-content">
+    <h1>Color and Toy Quiz</h1>
+    <p>
+      Choose your favorite color, then your favorite toy to see your result!
+    </p>
+    <a href="#q1" class="nav-button">Start Quiz</a>
+  </div>
 </div>
