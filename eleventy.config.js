@@ -1,6 +1,7 @@
 import * as sass from "sass";
 import path from "path";
 import { DateTime } from "luxon";
+import yaml from "js-yaml";
 import readingTime from "eleventy-plugin-reading-time";
 
 const removeLineBreaks = (text) => text.replaceAll(/(\r\n|\n|\r)/gm, "");
@@ -56,6 +57,7 @@ function outlinkShortcode(content, url) {
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
 
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
   eleventyConfig.addTemplateFormats("scss");
 
   eleventyConfig.addExtension("scss", {
