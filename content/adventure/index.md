@@ -4,4 +4,4 @@ layout: layouts/immersive.njk
 theme: terminal
 ---
 
-[Start](/adventure/room3/)
+- [start](/adventure/room3/)

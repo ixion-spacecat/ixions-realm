@@ -35,6 +35,45 @@ html[data-theme="terminal"] {
         color: white;
       }
     }
+
+    & details > summary {
+      list-style: none;
+      color: var(--accent);
+      cursor: pointer;
+    }
+
+    & details > summary > a {
+      color: revert;
+    }
+
+    & details > summary > a:hover {
+      color: revert;
+    }
+
+    & details > summary:hover {
+      color: white;
+    }
+
+    & details > summary:before {
+      content: "> ";
+    }
+
+    & details[open] > summary {
+      color: revert;
+      cursor: revert;
+    }
+
+    & ul {
+      padding-left: 0;
+    }
+
+    & li {
+      list-style: none;
+    }
+
+    & li:before {
+      content: "> ";
+    }
   }
 }
 

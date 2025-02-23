@@ -8,4 +8,4 @@ You tip the barrel over, dumping the water onto the floor. The key slides out an
 
 You rush after it but the water is too fast. You manage to grab the end of the chain but the key has already gone down the drain.
 
-[pull the chain](/adventure/room3/pull)
+- [pull the chain](/adventure/room3/pull)

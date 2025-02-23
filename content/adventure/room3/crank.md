@@ -10,6 +10,10 @@ Suddenly there's a loud "SNAP!" and the crank breaks off in your hand. The chain
 
 Looking into the barrel, you see the key is underwater still attached to the chain.
 
-[reach into the barrel](/adventure/room3/reach)
-
-[dump out the barrel](/adventure/room3/dump)
+<ul>
+<details>
+  <summary><a>reach into barrel</a></summary>
+  <p>You reach into the barrel but it's too deep and you can't reach the bottom. You've only succeeded in getting your arm wet.</p>
+</details>
+<a href="/adventure/room3/dump"><li>dump out barrel</li></a>
+</ul>
