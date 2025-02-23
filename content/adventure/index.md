@@ -1,7 +1,7 @@
 ---
 title: Text Adventure
 layout: layouts/immersive.njk
-immersive: true
+theme: terminal
 ---
 
 [Start](/adventure/room3/)

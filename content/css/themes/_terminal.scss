@@ -1,0 +1,44 @@
+html[data-theme="terminal"] {
+  & {
+    --bg: #17262eee;
+    --border: #2b3d41;
+    --text: #93c4ad;
+    --text-subtle: #baa0d8;
+    --text-light: #716085;
+    --accent: #2ac76b;
+    --header-border: #4f9eff;
+  }
+
+  & .background {
+    background: black;
+    background-size: 48px;
+  }
+
+  & .background__overlay {
+    background: linear-gradient(
+      to bottom,
+      rgb(132, 250, 244),
+      rgb(79, 84, 92),
+      rgb(153, 17, 17)
+    );
+    mix-blend-mode: multiply;
+  }
+
+  & .page__main-inner--immersive {
+    font-family: var(--mono-font);
+    font-family: "Telegrama", var(--mono-font);
+
+    & a {
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+@font-face {
+  font-family: "Telegrama";
+  src: url(/fonts/telegrama_render.otf);
+}

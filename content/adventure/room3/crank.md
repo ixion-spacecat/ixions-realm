@@ -1,6 +1,7 @@
 ---
 title: Adventure
 layout: layouts/immersive.njk
+theme: terminal
 ---
 
 The crank is in pretty bad shape, but you manage to turn it and the key begins to lower.
