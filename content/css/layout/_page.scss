@@ -1,25 +1,31 @@
 @use "abstracts/mixins" as mix;
 
-@mixin region-header {
-  background-image: var(--title-bar-bg);
-  min-height: 36px;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: bold;
-  padding: 0 1rem;
-  color: var(--title-text);
-}
-
-@mixin region-content {
-  border: 2px solid var(--border);
-  background: var(--bg);
-  padding: 1rem;
-  flex-grow: 1;
-}
-
 .page {
-  position: relative;
-  min-height: 100vh;
+  @mixin base {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  @mixin region-header {
+    background-image: var(--title-bar-bg);
+    min-height: 36px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 0 1rem;
+    color: var(--title-text);
+  }
+
+  @mixin region-content {
+    border: 2px solid var(--border);
+    background: var(--bg);
+    padding: 1rem;
+    flex-grow: 1;
+  }
+
+  & {
+    @include base;
+  }
 
   &__background {
     position: absolute;
@@ -31,27 +37,41 @@
   }
 
   &__inner {
-    max-width: 1060px;
-    margin: 0 auto;
-    padding: 0;
+    @mixin base {
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 0;
+      display: grid;
+    }
 
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "nav    main"
-      "footer footer";
-    grid-template-columns: 220px 1fr;
-    grid-template-rows: auto 1fr auto;
-    gap: 20px;
+    & {
+      @include base;
+      grid-template-areas:
+        "header header"
+        "nav    main"
+        "footer footer";
+      grid-template-columns: 220px 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
 
-    @include mix.respond-to(tablet) {
+      @include mix.respond-to(tablet) {
+        grid-template-areas:
+          "header"
+          "nav"
+          "main"
+          "footer";
+        gap: 0;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &--immersive {
+      @include base;
       grid-template-areas:
         "header"
-        "nav"
-        "main"
-        "footer";
+        "main";
+      grid-template-rows: auto 1fr;
       gap: 0;
-      grid-template-columns: 1fr;
     }
   }
 
@@ -102,9 +122,30 @@
   }
 
   &__main-content {
-    @include region-content;
-    @include mix.respond-to(tablet) {
-      min-width: 360px;
+    @mixin base {
+      @include region-content;
+      display: flex;
+      justify-content: center;
+    }
+
+    & {
+      @include base;
+      @include mix.respond-to(tablet) {
+        min-width: 360px;
+      }
+    }
+
+    &--immersive {
+      @include base;
+      min-height: 800px;
+    }
+  }
+
+  &__main-inner {
+    &--immersive {
+      @include base;
+      width: 100%;
+      max-width: 720px;
     }
   }
 

@@ -1,0 +1,30 @@
+{% extends "core/base.njk" %}
+{%- set immersive = true %}
+
+{%- block page %}
+  <div class="page">
+    <div class="page__background">
+      {%- block background %}
+        {%- include "../global/background.njk" %}
+      {%- endblock %}
+    </div>
+
+    <div class="page__inner--immersive">
+      <div class="page__header">
+        {%- block header %}
+          {%- include "../global/header-immersive.njk" %}
+        {%- endblock %}
+      </div>
+
+      <div class="page__main">
+        <div class="page__main-content--immersive">
+          <main class="page__main-inner--immersive">
+            {%- block content %}
+              {{ content | safe }}
+            {%- endblock %}
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endblock %}

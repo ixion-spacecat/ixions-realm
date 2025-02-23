@@ -1,6 +1,7 @@
 ---
 title: Text Adventure
-layout: layouts/basic-2col.njk
+layout: layouts/immersive.njk
+immersive: true
 ---
 
 [Start](/adventure/room3/)

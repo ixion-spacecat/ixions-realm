@@ -1,6 +1,6 @@
 ---
 title: Adventure
-layout: layouts/basic-2col.njk
+layout: layouts/immersive.njk
 ---
 
 The crank is in pretty bad shape, but you manage to turn it and the key begins to lower.

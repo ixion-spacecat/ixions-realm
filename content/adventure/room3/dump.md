@@ -1,6 +1,6 @@
 ---
 title: Adventure
-layout: layouts/basic-2col.njk
+layout: layouts/immersive.njk
 ---
 
 You tip the barrel over, dumping the water onto the floor. The key slides out and the water washes it away towards a drain on the side of the room.

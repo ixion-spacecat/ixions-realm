@@ -10,7 +10,9 @@
   </head>
   <body>
     {%- block page %}{%- endblock %}
-    {%- include '../components/neko.njk' %}
+    {%- if not immersive -%}
+      {%- include '../components/neko.njk' %}
+    {%- endif %}
     {%- include '../components/goatcounter.njk' %}
   </body>
 </html>

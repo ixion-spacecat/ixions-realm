@@ -1,14 +1,25 @@
 @use "abstracts/mixins" as mix;
 
 .header {
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  min-height: 140px;
-  background: url("/images/common/purplediamond-gradient.png");
+  @mixin base {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    background: url("/images/common/purplediamond-gradient.png");
+  }
 
-  @include mix.respond-to(mobile) {
-    min-height: 80px;
+  & {
+    @include base;
+    min-height: 140px;
+
+    @include mix.respond-to(mobile) {
+      min-height: 80px;
+    }
+  }
+
+  &--immersive {
+    @include base;
+    background: black;
   }
 
   &__planet {
@@ -42,39 +53,60 @@
   }
 
   &__content {
-    position: relative;
-    z-index: 3;
-    min-height: inherit;
-    padding: 1rem 1rem 2rem 2rem;
-    display: flex;
-    align-items: center;
-    border-bottom: 4px solid var(--header-border);
-
-    @include mix.respond-to(mobile) {
-      justify-content: center;
-      padding: 0.5rem;
+    @mixin base {
+      position: relative;
+      z-index: 3;
+      min-height: inherit;
+      padding: 1rem 1rem 2rem 2rem;
+      display: flex;
+      align-items: center;
+      border-bottom: 4px solid var(--header-border);
     }
-  }
 
-  & h1 {
-    margin: 0;
-    font-size: 4rem;
-    letter-spacing: 0.05em;
+    & {
+      @include base;
 
-    @include mix.respond-to(mobile) {
-      font-size: 2.53rem; // To match legacy h1 behavior
-      line-height: 1;
+      @include mix.respond-to(mobile) {
+        justify-content: center;
+        padding: 0.5rem;
+      }
+
+      & h1 {
+        margin: 0;
+        font-size: 4rem;
+        letter-spacing: 0.05em;
+
+        @include mix.respond-to(mobile) {
+          font-size: 2.53rem; // To match legacy h1 behavior
+          line-height: 1;
+        }
+      }
+
+      & a {
+        color: var(--logo-color) !important;
+        font-style: italic;
+        text-decoration: underline;
+        text-decoration-thickness: 4px;
+      }
     }
-  }
 
-  & a {
-    color: var(--logo-color) !important;
-    font-style: italic;
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
+    &--immersive {
+      @include base;
+      border-bottom-width: 0px;
+      padding: 0.2rem 1.1rem 0.2rem 1.1rem;
 
-    &:hover {
-      text-decoration-thickness: 4px;
+      & h1 {
+        font-style: italic;
+        margin: 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.05em;
+      }
+
+      & a {
+        color: var(--logo-color) !important;
+        filter: brightness(0.25) saturate(0.66);
+        text-decoration: none;
+      }
     }
   }
 }
