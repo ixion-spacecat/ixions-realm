@@ -3,4 +3,4 @@ title: Text Adventure
 layout: layouts/basic-2col.njk
 ---
 
-[Start](/adventure/quiz/)
+[Start](/adventure/room3/)
