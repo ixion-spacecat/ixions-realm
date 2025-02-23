@@ -1,0 +1,55 @@
+adventure:
+  base: /adventure
+  rooms:
+    - id: lock-room
+      name: Lock Room
+      states:
+        - id: index
+          description: >
+            You are standing in a round room facing a large metal door. The door is closed with a deadbolt secured by 3 padlocks. To the east, a door is open.
+          choices:
+            - text: go east
+              goto: barrel-room
+
+    - id: barrel-room
+      name: Barrel Room
+      states:
+        - id: index
+          description: >
+            You are standing in a stone room with a large wooden barrel in the center. A key with the inscription "determination" is suspended from a chain above the barrel. The key is too high up for you to reach. The chain wraps around a pulley in the ceiling that is connected to a rusty old crank on the right side of the room.
+          choices:
+            - text: look in barrel
+              details: The barrel is full of water.
+            - text: take key
+              details: It's too high up to reach.
+            - text: turn crank
+              goto: ./crank
+
+        - id: crank
+          name: turn crank
+          description: >
+            The crank is in pretty bad shape, but you manage to turn it and the key begins to lower.
+
+            Suddenly there's a loud "SNAP!" and the crank breaks off in your hand. The chain slips off the pulley and the key falls into the barrel.
+
+            Looking into the barrel, you see the key is underwater still attached to the chain.
+          choices:
+            - text: reach into barrel
+              details: You reach into the barrel but it's too deep and you can't reach the bottom. You've only succeeded in getting your arm wet.
+            - text: dump out barrel
+              goto: ./dump
+
+        - id: dump
+          name: dump out barrel
+          description: >
+            You tip the barrel over, dumping the water onto the floor. The key slides out and the water washes it away towards a drain on the side of the room.
+
+            You rush after it but the water is too fast. You manage to grab the end of the chain but the key has already gone down the drain.
+          choices:
+            - text: pull chain
+              goto: ./pull
+
+        - id: pull
+          name: pull chain
+          description: >
+            You pull the chain up but the key is stuck on something just below the surface of the drain.

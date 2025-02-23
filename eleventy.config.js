@@ -92,6 +92,13 @@ export default function (eleventyConfig) {
   eleventyConfig.addShortcode("galleryImage", galleryImageShortcode);
   eleventyConfig.addPairedShortcode("link", outlinkShortcode);
 
+  eleventyConfig.addFilter("linesToParagraphs", function (text) {
+    const lines = text.split("\n");
+    return lines
+      .filter((x) => x)
+      .map((line) => `<p>${line}</p>`)
+      .join("\n");
+  });
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
     return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
       format || "LLLL dd, yyyy",
