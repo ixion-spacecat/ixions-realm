@@ -14,7 +14,7 @@
         room.states.map(state => ({
           id: `${room.id}/${state.id}`,
           title: room.name,
-          displayTitle: state.name ? `> ${state.name}` : state.id === 'index' ? room.name : '',
+          displayTitle: state.name ? `> ${state.name}` : state.id === 'index' || state.showRoomName ? room.name : '',
           roomName: room.name,
           description: state.description,
           choices: (state.choices ?? []).map(choice => ({
