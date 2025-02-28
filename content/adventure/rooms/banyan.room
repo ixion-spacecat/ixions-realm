@@ -1,4 +1,3 @@
-id: banyan-room
 name: Banyan Room
 states:
   - id: index

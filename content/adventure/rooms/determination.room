@@ -1,4 +1,3 @@
-id: determination
 name: Determination
 states:
   - id: index

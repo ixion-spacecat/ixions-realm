@@ -78,27 +78,29 @@ export default function (eleventyConfig) {
     },
   });
 
-  // Add a global data object that reads from your custom directory
-  eleventyConfig.addGlobalData("rooms", function () {
-    const roomsDir = "content/adventure/rooms";
-    const roomFiles = fs
-      .readdirSync(roomsDir)
-      .filter((file) => file.endsWith(".yaml"));
-
-    // Read each YAML file and combine into an array
-    return roomFiles.map((filename) => {
-      const fileContent = fs.readFileSync(
-        path.join(roomsDir, filename),
-        "utf8",
-      );
-      const roomData = yaml.load(fileContent);
-
-      // Add the filename (without extension) as an ID if not already present
+  // Custom template format for text adventure rooms
+  eleventyConfig.addTemplateFormats("room");
+  eleventyConfig.addExtension("room", {
+    read: false,
+    getData: true,
+    getInstanceFromInputPath: function (inputPath) {
+      const content = fs.readFileSync(inputPath, "utf8");
+      const id = path.basename(inputPath, ".room");
+      const room = yaml.load(content);
       return {
-        id: path.basename(filename, ".yaml"),
-        ...roomData,
+        data: {
+          room: {
+            id,
+            ...room,
+          },
+        },
       };
-    });
+    },
+    compile: async (inputContent, inputPath) => {
+      return async () => {
+        return inputContent;
+      };
+    },
   });
 
   eleventyConfig.addPassthroughCopy({ "./assets/": "/" });
