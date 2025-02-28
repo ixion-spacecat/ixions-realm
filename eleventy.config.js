@@ -1,6 +1,7 @@
 import * as sass from "sass";
 import path from "path";
 import { DateTime } from "luxon";
+import * as fs from "node:fs";
 import yaml from "js-yaml";
 import readingTime from "eleventy-plugin-reading-time";
 
@@ -75,6 +76,29 @@ export default function (eleventyConfig) {
         return result.css;
       };
     },
+  });
+
+  // Add a global data object that reads from your custom directory
+  eleventyConfig.addGlobalData("rooms", function () {
+    const roomsDir = "content/adventure/rooms";
+    const roomFiles = fs
+      .readdirSync(roomsDir)
+      .filter((file) => file.endsWith(".yaml"));
+
+    // Read each YAML file and combine into an array
+    return roomFiles.map((filename) => {
+      const fileContent = fs.readFileSync(
+        path.join(roomsDir, filename),
+        "utf8",
+      );
+      const roomData = yaml.load(fileContent);
+
+      // Add the filename (without extension) as an ID if not already present
+      return {
+        id: path.basename(filename, ".yaml"),
+        ...roomData,
+      };
+    });
   });
 
   eleventyConfig.addPassthroughCopy({ "./assets/": "/" });

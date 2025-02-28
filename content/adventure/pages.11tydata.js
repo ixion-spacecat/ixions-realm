@@ -3,7 +3,7 @@ export default {
   theme: "terminal",
   title: "Adventure",
   pagination: {
-    data: "collections.rooms",
+    data: "rooms",
     size: 1,
     alias: "page",
     before,
@@ -13,9 +13,8 @@ export default {
   eleventyExcludeFromCollections: true,
 };
 
-function before(roomCollection) {
+function before(rooms) {
   const world = { url: "/adventure" };
-  const rooms = roomCollection.map((roomDocument) => roomDocument.data.room);
   const pages = rooms.flatMap((room) =>
     room.states.map((state) => createPage(world, room, state)),
   );

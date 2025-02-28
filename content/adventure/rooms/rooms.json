@@ -1,4 +1,4 @@
 {
   "permalink": false,
-  "tags": ["rooms"]
+  "eleventyExcludeFromCollections": true
 }

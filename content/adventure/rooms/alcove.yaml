@@ -1,0 +1,17 @@
+id: alcove
+name: Shady Alcove
+states:
+  - id: index
+    description: >
+      You are standing in an alcove, separated from the main room by a series of stone columns. To the west are three arched doorways labeled "curiosity", "courage", and "determination". The doorway labeled "determination" is open. The other doorways are sealed shut.
+    choices:
+      - text: enter "determination" room
+        goto: determination
+
+  - id: 2
+    showRoomName: true
+    description: >
+      You are standing in an alcove, separated from the main room by a series of stone columns. To the west are three arched doorways labeled "curiosity", "courage", and "determination". All 3 doorways are sealed shut.
+    choices:
+      - text: go to banyan room
+        goto: banyan-room/2
