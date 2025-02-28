@@ -1,0 +1,52 @@
+---
+room:
+  id: banyan-room
+  name: Banyan Room
+  states:
+    - id: index
+      description: >
+        You are standing in a large circular room dominated by an enormous banyan tree. Its thick trunk rises through an opening in the ceiling high above, while its sprawling roots stretch across the ground from wall to wall. Beneath the tangled mass, a white marble statue is enveloped by the great tree; only it's face is partially exposed.
+
+        To the east there is a large metal door secured by a series of locks. To the west, a shady alcove branches off, its stone columns framing three separate doorways.
+      choices:
+        - text: look at tree
+          details: The banyan tree has grown large and covered the entire room in a tangle of branches.
+        - text: look at statue
+          details: The statue is barely visible beneath the mass of the tree. Roots and branches cover it entirely and only half the face can be seen.
+        - text: look at metal door
+          details: >
+            The door is secured by a heavy metal bolt that is held in place by 3 padlocks. Each padlock is labeled with a word: "routine", "fear", and "setbacks".
+        - text: go to alcove
+          goto: alcove
+
+    - id: 2
+      showRoomName: true
+      description: >
+        You are back in the room with the banyan tree. Surprisingly, it seems slightly smaller than before. Its thick trunk still rises up through the hole in the ceiling, but the sprawling roots seem to have loosened their stranglehold upon the ground. Beneath the roots, the upper torso of the statue is now visible with the lower half still held beneath the vines.
+
+        To the east there is a large metal door secured by a series of locks. To the west, a shady alcove branches off, its stone columns framing three separate doorways.
+      choices:
+        - text: look at tree
+          details: The banyan tree seems slightly smaller than before. It's roots are still spread across the ground but are now less constricting.
+        - text: look at statue
+          details: A white marble statue of a youthful figure protrudes from the vines. The lower half is still covered in roots and branches.
+        - text: approach metal door
+          goto: ./2-door
+
+    - id: 2-door
+      name: approach metal door
+      description: >
+        The door is secured by a heavy metal bolt that is held in place by 3 padlocks. Each padlock is labeled with a word: "routine", "fear", and "setbacks".
+      choices:
+        - text: use "determination" key on "routine" lock
+          details: The key doesn't fit.
+        - text: use "determination" key on "fear" lock
+          details: The key doesn't fit.
+        - text: use "determination" key on "setbacks" lock
+          goto: ./2-unlock
+
+    - id: 2-unlock
+      name: use "determination" key on "setbacks" lock
+      description: >
+        The key fits! You remove the "setbacks" padlock!
+---

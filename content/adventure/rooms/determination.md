@@ -1,0 +1,91 @@
+---
+room:
+  id: determination
+  name: Determination
+  states:
+    - id: index
+      description: >
+        You are standing in a stone room with a large wooden barrel in the center. A key is suspended from a chain above the barrel. The key is too high up for you to reach. The chain wraps around a pulley in the ceiling that is connected to a rusty old crank on the right side of the room.
+      choices:
+        - text: look at key
+          details: A skeleton key with the word "determination" inscribed on the shaft. It's too high up for you to reach.
+        - text: look in barrel
+          details: The barrel is full of water.
+        - text: turn crank
+          goto: ./crank
+
+    - id: crank
+      name: turn crank
+      description: >
+        The crank is in pretty bad shape, but you manage to turn it. The key begins to lower. You encounter some resistance and it becomes very hard to turn.
+
+      choices:
+        - text: turn crank harder
+          goto: ./crank-harder
+
+    - id: crank-harder
+      name: turn crank harder
+      description: >
+        You try to force it. The rusty crank breaks off the wall with a loud "SNAP!" The chain slips and the key falls into the barrel with a soft "plunk".
+      choices:
+        - text: look in barrel
+          details: The barrel is full of water. The key lies at the bottom, with the chain still attached and coiled up next to it.
+        - text: reach into barrel
+          details: You reach into the barrel and put your hand into the water. The barrel is too tall and you can't reach the bottom. You pull your arm back out in frustration, now soaking wet.
+        - text: dump out barrel
+          goto: ./dump
+
+    - id: dump
+      name: dump out barrel
+      description: >
+        You tip the barrel over, dumping the water onto the floor. The key slides out as the water rushes towards a drain on the side of the room. Before you can react, the key is washed across the room and headed straight for the drain.
+
+        You watch in horror as the key disappears. When the water finally drains, you can see that the end of the chain is still there lying on the ground, with the other end presumably still attached to the key beneath the drain.
+      choices:
+        - text: pull chain
+          details: You pull the chain up but the key is stuck on something just below the surface of the drain.
+        - text: look around the room
+          goto: ./look
+
+    - id: look
+      name: look around the room
+      description: >
+        You look around the room for anything that can help you get the key out of the drain. Now that the barrel is tipped over, you can see that there's a small prybar attached to the bottom.
+      choices:
+        - text: take prybar
+          goto: ./take-prybar
+
+    - id: take-prybar
+      name: take prybar
+      description: >
+        You take the prybar from the bottom of the barrel.
+      choices:
+        - text: use prybar on drain
+          goto: ./use-prybar
+
+    - id: use-prybar
+      name: use prybar on drain
+      description: >
+        You use the prybar to remove the drain cover. The chain comes out of the drain and the key is within reach.
+      choices:
+        - text: take key
+          goto: ./take-key
+
+    - id: take-key
+      name: take key
+      description: >
+        You take the key off the chain and finally hold it in your hand.
+
+        You now have a skeleton key with the word "determination" inscribed on the shaft.
+      choices:
+        - text: return to alcove
+          goto: ./exit
+
+    - id: exit
+      name: return to alcove
+      description: >
+        You leave the "determination" room, key in hand. The door closes and seals shut behind you.
+      choices:
+        - text: continue
+          goto: alcove/2
+---
