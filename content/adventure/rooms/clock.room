@@ -1,0 +1,34 @@
+name: Clock Room
+states:
+  - id: index
+    description: >
+      You are standing in a gray room with a large clock high up on the wall. The clock is too high for you to reach it. There is a step stool in the corner of the room.
+    choices:
+      - text: look at clock
+        details: A large clock on the wall shows the time is 6:00. It's too high to reach it.
+      - text: take stool
+        goto: ./take-stool
+
+  - id: take-stool
+    name: take stool
+    description: >
+      You pick up the step stool. You can use it to reach the clock.
+    choices:
+      - text: adjust clock
+        goto: ./adjust-clock
+
+  - id: adjust-clock
+    name: adjust clock
+    description: >
+      You move the hour hand from 6:00 to 12:00.
+    choices:
+      - text: go outside
+        goto: ./go-outside
+
+  - id: go-outside
+    name: go outside
+    description: >
+      You go back to the courtyard and find that it's dark outside. A metal gate closes behind you.
+    choices:
+      - text: continue
+        goto: courtyard-night

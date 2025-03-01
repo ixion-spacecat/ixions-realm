@@ -1,0 +1,10 @@
+name: Courtyard
+states:
+  - id: index
+    description: >
+      You are standing in the courtyard at night. The moon is high in the sky. A big tree in the center casts a dark shadow in the moonlight.
+
+      To the west the clock room has been sealed shut with a metal gate.
+    choices:
+      - text: look at tree
+        details: A tall oak tree stands in the middle of the courtyard. It casts a dark shadow in the moonlight.

@@ -1,0 +1,12 @@
+name: Courtyard
+states:
+  - id: index
+    description: >
+      You are standing outside in a grassy courtyard at sunset. A big tree in the center casts a long shadow.
+
+      To the west there is a doorway labeled "clock room"
+    choices:
+      - text: look at tree
+        details: A tall oak tree stands in the middle of the courtyard. It casts a long shadow in the light from the setting sun.
+      - text: go west
+        goto: clock
