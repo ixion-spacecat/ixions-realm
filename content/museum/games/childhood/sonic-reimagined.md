@@ -4,7 +4,7 @@ layout: layouts/basic-2col.njk
 lightbox: true
 ---
 
-# 🔵 Sonic: Reimagined
+# <span aria-hidden="true">🔵</span> Sonic: Reimagined
 
 <img src="/images/museum/sonic-happy.jpg" alt="Childish drawing of Sonic the Hedgehog smiling" width=350px/>
 

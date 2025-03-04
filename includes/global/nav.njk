@@ -1,12 +1,30 @@
 <nav class="nav">
   <ul role="list">
     <li class="nav__subheading">pages</li>
-    <li>🎑<a href="/">home</a></li>
-    <li>📝<a href="/blog/">blog</a></li>
-    <li>🌠<a href="/interests/">interests</a></li>
-    <li>🎨<a href="/art/">art</a></li>
-    <li>🔗<a href="/links/">links</a></li>
-    <li>🦄<a href="/about/">about</a></li>
+    <li>
+      <span aria-hidden="true">🎑</span>
+      <a href="/">home</a>
+    </li>
+    <li>
+      <span aria-hidden="true">📝</span>
+      <a href="/blog/">blog</a>
+    </li>
+    <li>
+      <span aria-hidden="true">🌠</span>
+      <a href="/interests/">interests</a>
+    </li>
+    <li>
+      <span aria-hidden="true">🎨</span>
+      <a href="/art/">art</a>
+    </li>
+    <li>
+      <span aria-hidden="true">🔗</span>
+      <a href="/links/">links</a>
+    </li>
+    <li>
+      <span aria-hidden="true">🦄</span>
+      <a href="/about/">about</a>
+    </li>
     {% if not theme %}
       <li class="nav__subheading" style="margin-top: 1em">theme</li>
       <li>{% include 'components/theme.njk' %}</li>

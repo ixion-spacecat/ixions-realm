@@ -1,5 +1,5 @@
 ---
-title: 14 things I love about you ❤️
+title: 14 things I love about you
 description: Some self-love on valentine's day
 date: 2025-02-14
 layout: "blog/valentine-2025.njk"
