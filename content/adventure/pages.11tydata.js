@@ -26,11 +26,12 @@ function createPage(world, room, state) {
   const id = `${room.id}/${state.id}`;
   const title = room.name;
   const displayTitle = state.name
-    ? `> ${state.name}`
+    ? `${room.name} > ${state.name}`
     : state.id === "index" || state.showRoomName
       ? room.name
       : "";
   const roomName = room.name;
+  const stateName = state.name;
   const description = state.description;
   const choices = (state.choices ?? []).map((choice) =>
     createChoice(world, room, state, choice),
@@ -41,6 +42,7 @@ function createPage(world, room, state) {
     title,
     displayTitle,
     roomName,
+    stateName,
     description,
     choices,
   };

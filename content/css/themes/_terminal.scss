@@ -28,6 +28,21 @@ html[data-theme="terminal"] {
     font-family: var(--mono-font);
     font-family: "Telegrama", var(--mono-font);
 
+    & h1 {
+      font-size: 1.5em;
+      margin: 0.66em 0;
+    }
+
+    & h2 {
+      font-size: 1.25em;
+      margin: 0.8em 0;
+    }
+
+    & p {
+      font-size: 1em;
+      margin: 1em 0;
+    }
+
     & a {
       text-decoration: none;
 
@@ -64,7 +79,7 @@ html[data-theme="terminal"] {
     }
 
     & details {
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
     }
 
     & ul {
@@ -73,7 +88,7 @@ html[data-theme="terminal"] {
 
     & li {
       list-style: none;
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
     }
 
     & li:before {

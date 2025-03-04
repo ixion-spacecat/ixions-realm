@@ -1,20 +1,23 @@
 <div>
   {%- if page.displayTitle -%}
-    <p>{{ page.displayTitle }}</p>
+    <h1>{{ page.displayTitle }}</h1>
   {%- endif %}
   {%- if page.description -%}
     {{ page.description | linesToParagraphs | safe }}
   {%- endif %}
   <ul>
-    {%- for choice in page.choices -%}{%- if choice.goto -%}
-      <a href="{{ choice.url | url }}">
-        <li>{{ choice.text | safe }}</li>
-      </a>
-    {%- elif choice.details %}
-      <details>
-        <summary><a>{{ choice.text | safe }}</a></summary>
-        <p>{{ choice.details }}</p>
-      </details>
-    {%- endif -%}{%- endfor %}
+    {%- if page.choices -%}
+      <h2>What will you do?</h2>
+      {%- for choice in page.choices -%}{%- if choice.goto -%}
+        <a href="{{ choice.url | url }}">
+          <li>{{ choice.text | safe }}</li>
+        </a>
+      {%- elif choice.details %}
+        <details>
+          <summary><a>{{ choice.text | safe }}</a></summary>
+          <p>{{ choice.details }}</p>
+        </details>
+      {%- endif -%}{%- endfor %}
+    {%- endif %}
   </ul>
 </div>
