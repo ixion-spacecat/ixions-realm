@@ -5,6 +5,18 @@ date: 2025-02-14
 layout: "blog/valentine-2025.njk"
 ---
 
+This is my submission to the
+{% link "https://32bit.cafe/vday25/" -%}
+32-Bit Cafe 2025 Valentine's Day Event
+{%- endlink %}.
+The prompt was to make a digital Valentie's day gift dedicated to myself.
+This was surprisingly difficult, but it was a wonderful exercise in
+practicing self-love this February 14th.
+
+<div class="valentine">
+  <div class="valentine-left"></div>
+  <div class="valentine-content">
+  
 Dear Ixion,
 
 I know this past year has been hard for you. You've been going through a period of change and self-discovery. I just want to take a moment to remind you that you are loved.
@@ -44,3 +56,7 @@ You are worthy of love.
 No matter what this valenties day brings, remember that. Give your love to others because they deserve to know how much you care. But don't forget to receive it as well. You are loved and you deserve to be loved.
 
 With Love <3,<br/>-- Ixion
+
+  </div>
+  <div class="valentine-right"></div>
+</div>
