@@ -34,8 +34,8 @@
     {%- endif %}
     <content type="html">
       {%- if item.data.description %}
-      <p>{{ item.data.description }}</p>
-      <p>{{ "---" }}</p>
+      {{ "<p>" + item.data.description + "</p>" }}
+      {{ "<p>---</p>" }}
       {%- endif %}
       {{ item.content | renderTransforms(item.data.page, metadata.base) }}
     </content>
