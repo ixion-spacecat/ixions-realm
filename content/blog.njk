@@ -8,7 +8,7 @@ redirect_from: /posts
 {%- block content -%}
   <h1>Ixion's Blog</h1>
   <p>Where I talk about web development and whatever I want ^.^</p>
-
+  <p><a href="/feeds/" class="a--feed">RSS (atom) feed</a></p>
   {% set postlist = collections.posts %}
   {% include "components/post-list.njk" %}
 {%- endblock %}

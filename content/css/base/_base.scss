@@ -86,3 +86,9 @@ a[rel*="external"]:not(:has(img))::after {
   background-color: var(--text-light);
   mask-size: 60% auto;
 }
+
+a.a--feed::after {
+  @include mix.icon("/images/phosphor-icons/rss.svg", 1.25em);
+  margin-right: 0.2em;
+  transform: translateY(0.25em);
+}
