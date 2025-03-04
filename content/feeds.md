@@ -5,11 +5,16 @@ layout: layouts/basic-2col.njk
 
 # Feeds
 
-[blog.xml](/feeds/blog.xml) -- only blog posts
+I decided to split this into 3 separate feeds. You can choose based on how you organize them in your feed reader.
 
-[announcements.xml](/feeds/announcements.xml) -- when I add stuff to the site (every few weeks)
+### Everything
 
-[feed.xml](/feeds/feed.xml) -- blog + announcements (you can filter by "category" in your feed reader)
+- [feed.xml](/feeds/feed.xml) -- blog + announcements (you can filter by "category" in your feed reader)
+
+### Separate Feeds
+
+- [blog.xml](/feeds/blog.xml) -- only blog posts
+- [announcements.xml](/feeds/announcements.xml) -- new features or website content (every few weeks)
 
 ## Problems?
 
