@@ -86,3 +86,24 @@ a[rel*="external"]:not(:has(img))::after {
   background-color: var(--text-light);
   mask-size: 60% auto;
 }
+
+a.a--feed::after {
+  @include mix.icon("/images/phosphor-icons/rss.svg", 1.25em);
+  margin-right: 0.2em;
+  transform: translateY(0.25em);
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px; /* Off-screen by default */
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 8px;
+  padding-left: 40px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0; /* Appears on keyboard focus */
+}

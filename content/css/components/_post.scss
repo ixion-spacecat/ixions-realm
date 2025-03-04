@@ -53,12 +53,22 @@
 }
 
 .post-footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-areas: "left center right";
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 4rem;
 
+  @include mix.respond-to(mobile) {
+    grid-template-areas:
+      "left right"
+      "center center";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+
   &__previous {
-    min-width: 30%;
+    grid-area: left;
+    text-align: left;
     color: var(--text-light);
 
     & a::before {
@@ -69,7 +79,7 @@
   }
 
   &__next {
-    min-width: 30%;
+    grid-area: right;
     text-align: right;
     color: var(--text-light);
 
@@ -78,5 +88,11 @@
       margin-left: 0.1em;
       transform: translateY(0.18em);
     }
+  }
+
+  &__all {
+    grid-area: center;
+    text-align: center;
+    color: var(--text-light);
   }
 }

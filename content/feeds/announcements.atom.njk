@@ -1,0 +1,37 @@
+---json
+{
+  "permalink": "feeds/announcements.xml",
+  "eleventyExcludeFromCollections": true
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xml:lang="{{ metadata.language or page.lang }}"
+>
+  <title>{{ metadata.announcements.title }}</title>
+  <subtitle>{{ metadata.announcements.description }}</subtitle>
+  <link href="{{ permalink | htmlBaseUrl(metadata.base) }}" rel="self" />
+  <link href="{{ metadata.base | addPathPrefixToFullUrl }}" />
+  <updated
+    >{{ collections.announcements | getNewestCollectionItemDate | dateToRfc3339 }}</updated
+  >
+  <id>{{ metadata.base | addPathPrefixToFullUrl }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+  </author>
+  {%- for item in collections.announcements | reverse %}
+  {%- set absolutePostUrl %}{{ item.url | htmlBaseUrl(metadata.base) }}{% endset %}
+  <entry>
+    <title>{{ item.data.title }}</title>
+    <link href="{{ absolutePostUrl }}" />
+    <category term="announcements" scheme="{{metadata.base}}/types"/>
+    <published>{{ item.date | dateToRfc3339 }}</published>
+    <updated>{% if item.data.updated %}{{ item.data.updated | dateToRfc3339 }}{% else %}{{ item.date | dateToRfc3339 }}{% endif %}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">
+      {{ item.content | renderTransforms(item.data.page, metadata.base) }}
+    </content>
+  </entry>
+  {%- endfor %}
+</feed>

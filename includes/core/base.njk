@@ -7,8 +7,12 @@
 >
   <head>
     {%- include '../core/_head.njk' %}
+    {%- block style %}
+    {%- endblock %}
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#nav" class="skip-link">Skip to navigation</a>
     {%- block page %}{%- endblock %}
     {%- include '../components/neko.njk' %}
     {%- include '../components/goatcounter.njk' %}

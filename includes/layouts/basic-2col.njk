@@ -25,9 +25,9 @@
       </div>
 
       <div class="page__main">
-        <div class="page__main-header"></div>
+        <div class="page__main-header" aria-hidden="true"></div>
         <div class="page__main-content">
-          <main>
+          <main id="main">
             {%- block content %}
               {{ content | safe }}
             {%- endblock %}

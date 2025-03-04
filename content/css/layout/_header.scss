@@ -56,25 +56,26 @@
     }
   }
 
-  & h1 {
+  &__title {
     margin: 0;
     font-size: 4rem;
+    font-weight: bold;
     letter-spacing: 0.05em;
 
     @include mix.respond-to(mobile) {
       font-size: 2.53rem; // To match legacy h1 behavior
       line-height: 1;
     }
-  }
 
-  & a {
-    color: var(--logo-color) !important;
-    font-style: italic;
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-
-    &:hover {
+    & a {
+      color: var(--logo-color) !important;
+      font-style: italic;
+      text-decoration: underline;
       text-decoration-thickness: 4px;
+
+      &:hover {
+        text-decoration-thickness: 4px;
+      }
     }
   }
 }

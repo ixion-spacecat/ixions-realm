@@ -1,12 +1,11 @@
 <footer class="footer">
   <p>
-    <a href="/contact/">contact</a>
-    |
-    <a href="/credits/">credits</a>
-    |
+    <a href="/about/">about</a>
+    | {% link metadata.neocities %}neocities{% endlink %} |
+    {% link metadata.github %}github{% endlink %} |
     <a href="/changelog/">changelog</a>
-    | {% link metadata.github %}github{% endlink %} |
-    {% link metadata.neocities %}neocities{% endlink %}
+    |
+    <a href="/feeds/" class="a--feed">feeds</a>
   </p>
   <p>v{{ pkg.version }} | {{ metadata.copyright }}</p>
 </footer>

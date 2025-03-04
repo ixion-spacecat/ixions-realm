@@ -8,7 +8,7 @@ lightbox: true
 
 ---
 
-## 🖼️ Gallery
+## <span aria-hidden="true">🖼️</span> Gallery
 
 {% gallery "my-art" %}
 {% galleryImage "/images/art/ixion-portrait.png", "Self Portrait of Ixion SpaceCat", "This took me about 30 hours including revisions. 100% hand-painted in Krita. AI was used only to create reference images for pose and lighting." %}
@@ -18,7 +18,7 @@ lightbox: true
 
 ---
 
-## 🏛️ Museum of Childhood Game Designs
+## <span aria-hidden="true">🏛️</span> Museum of Childhood Game Designs
 
 When I was a kid, I dreamed of being a game developer. Now that I'm an adult, I'm working as a programmer in a different industry.
 

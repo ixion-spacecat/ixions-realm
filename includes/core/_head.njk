@@ -2,17 +2,17 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>
-  {{ '(Redirecting) ' if redirect }}{{ title | safe + ' ~ ' if title and not hideTitle }}{{ metadata.title }}
+  {{ '(Redirecting) ' if redirect }}{{ title | safe + ' ~ ' if title and not hideTitle }}{{ metadata.site.title }}
 </title>
 <meta
   name="description"
-  content="{{ description | safe if description else metadata.description }}"
+  content="{{ description | safe if description else metadata.site.description }}"
 />
 <meta name="generator" content="{{ eleventy.generator }}" />
 
 {# Redirect #}
 {% if redirect %}
-  <link rel="canonical" href="{{ metadata.url + redirect.to | url }}" />
+  <link rel="canonical" href="{{ metadata.base + redirect.to | url }}" />
   {# prettier-ignore-start #}
   <script>
     location = "{{redirect.to}}";
@@ -21,7 +21,7 @@
   <meta http-equiv="refresh" content="0; url={{ redirect.to | url }}" />
   <meta name="robots" content="noindex" />
 {% else %}
-  <link rel="canonical" href="{{ metadata.url + page.url | url }}" />
+  <link rel="canonical" href="{{ metadata.base + page.url | url }}" />
 {% endif %}
 
 {# Limit caching to 1 hour #}

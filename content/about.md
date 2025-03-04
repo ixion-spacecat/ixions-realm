@@ -36,3 +36,9 @@ By day I'm a programmer. At night, I do this... or game development, or whatever
 I don't want to give the wrong impression. I'm doing pretty well all things considered. I have a good job, financial stability, and a loving partner. I may not be a cat-boy IRL but I am a cat dad to our two fur babies and they mean the world to me.
 
 I'm sure there's a lot more but I'll save the rest for my therapist (or future blog posts 😊).
+
+## About the Website
+
+- {% link metadata.github %}github{% endlink %} - source code for this website. Made with {%link "https://www.11ty.dev/" %}eleventy{%endlink%}
+- [credits](/credits/) - sources for any borrowed assets
+- [contact](/contact/) - send me a message ^.^

@@ -1,6 +1,6 @@
 {% extends "layouts/basic-2col.njk" %}
-{% set previousPost = collections.posts | getPreviousCollectionItem %}
-{% set nextPost = collections.posts | getNextCollectionItem %}
+{% set previousAnnouncement = collections.announcements | getPreviousCollectionItem %}
+{% set nextAnnouncement = collections.announcements | getNextCollectionItem %}
 
 {%- block content -%}
   <article class="post">
@@ -15,32 +15,29 @@
           <span>Published {{ page.date | readableDate }}</span>
         {%- endif %}
       </div>
-      <div class="post__read-time">
-        <span>{{ content | readingTime }} to read</span>
-      </div>
     </div>
-    {% if description -%}
-      <p class="post__description">{{ description }}</p>
-    {%- endif -%}
-    <hr class="post__header-divider" />
 
-    {% block postContent %}
+    {% block announcementContent %}
       {{- content | safe -}}
     {% endblock %}
   </article>
 
   <div class="post-footer">
     <div class="post-footer__previous">
-      {% if previousPost %}
-        <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+      {% if previousAnnouncement %}
+        <a href="{{ previousAnnouncement.url }}"
+          >{{ previousAnnouncement.data.title }}</a
+        >
       {% endif %}
     </div>
     <div class="post-footer__all">
-      <a href="/blog/">Blog</a>
+      <a href="/announcements/">Announcements</a>
     </div>
     <div class="post-footer__next">
-      {% if nextPost %}
-        <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+      {% if nextAnnouncement %}
+        <a href="{{ nextAnnouncement.url }}"
+          >{{ nextAnnouncement.data.title }}</a
+        >
       {% endif %}
     </div>
   </div>
