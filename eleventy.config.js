@@ -4,6 +4,7 @@ import { DateTime } from "luxon";
 import * as fs from "node:fs";
 import yaml from "js-yaml";
 import readingTime from "eleventy-plugin-reading-time";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 
 const removeLineBreaks = (text) => text.replaceAll(/(\r\n|\n|\r)/gm, "");
 
@@ -57,6 +58,7 @@ function outlinkShortcode(content, url) {
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
+  eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
   eleventyConfig.addTemplateFormats("scss");

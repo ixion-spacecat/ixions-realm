@@ -1,6 +1,6 @@
 {% extends "layouts/post.njk" %}
 
-{%- block postContent -%}
+{%- block style -%}
   <style>
     .valentine {
       display: grid;
@@ -36,20 +36,4 @@
       }
     }
   </style>
-
-  <p class="text-subtle">
-    This is my submission to the
-    {% link "https://32bit.cafe/vday25/" -%}
-      32-Bit Cafe 2025 Valentine's Day Event
-    {%- endlink %}.
-    The prompt was to make a digital Valentie's day gift dedicated to myself.
-    This was surprisingly difficult, but it was a wonderful exercise in
-    practicing self-love this February 14th.
-  </p>
-
-  <div class="valentine">
-    <div class="valentine-left"></div>
-    <div class="valentine-content">{{- content | safe -}}</div>
-    <div class="valentine-right"></div>
-  </div>
 {%- endblock %}

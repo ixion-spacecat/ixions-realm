@@ -71,9 +71,10 @@
         padding: 0.5rem;
       }
 
-      & h1 {
+      & .header__title {
         margin: 0;
         font-size: 4rem;
+        font-weight: bold;
         letter-spacing: 0.05em;
 
         @include mix.respond-to(mobile) {
@@ -95,10 +96,11 @@
       border-bottom-width: 0px;
       padding: 0.2rem 1.1rem 0.2rem 1.1rem;
 
-      & h1 {
+      & .header__title {
         font-style: italic;
         margin: 0;
         font-size: 1.5rem;
+        font-weight: bold;
         letter-spacing: 0.05em;
       }
 
