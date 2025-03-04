@@ -2,12 +2,22 @@ name: Clock Room
 states:
   - id: index
     description: >
-      You are standing in a gray room with a large clock high up on the wall. The clock is too high for you to reach it. There is a step stool in the corner of the room.
+      You are standing in a gray room with an enormous grandfather clock showing the time is six-o-clock. The clock face is too high for you to reach it. There is a step stool in the corner of the room.
     choices:
-      - text: look at clock
-        details: A large clock on the wall shows the time is 6:00. It's too high to reach it.
+      - text: examine clock
+        goto: ./examine-clock
       - text: take stool
         goto: ./take-stool
+      - text: go east to courtyard
+        goto: courtyard
+
+  - id: examine-clock
+    name: examine clock
+    description: >
+      It's a dark wooden grandfather clock is so large it nearly touches the ceiling. The pendulum swings below with a slow tick-tock sound. The clock hands are exposed and you think you could adjust the time if you could reach the clock face.
+    choices:
+      - text: step back
+        goto: ./
 
   - id: take-stool
     name: take stool
@@ -20,13 +30,13 @@ states:
   - id: adjust-clock
     name: adjust clock
     description: >
-      You move the hour hand from 6:00 to 12:00.
+      You place the stepstool in front of the clock and step up on it to reach the clock face. You move the hour hand clockwise from the 6 all the way up to the 12.
     choices:
-      - text: go outside
-        goto: ./go-outside
+      - text: go east to courtyard
+        goto: ./go-east
 
-  - id: go-outside
-    name: go outside
+  - id: go-east
+    name: go east to courtyard
     description: >
       You go back to the courtyard and find that it's dark outside. A metal gate closes behind you.
     choices:

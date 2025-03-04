@@ -12,11 +12,6 @@
         <a href="{{ choice.url | url }}">
           <li>{{ choice.text | safe }}</li>
         </a>
-      {%- elif choice.details %}
-        <details>
-          <summary><a>{{ choice.text | safe }}</a></summary>
-          <p>{{ choice.details }}</p>
-        </details>
       {%- endif -%}{%- endfor %}
     {%- endif %}
   </ul>

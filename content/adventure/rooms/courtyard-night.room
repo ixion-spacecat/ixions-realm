@@ -1,10 +1,18 @@
-name: Courtyard
+name: Courtyard (Night)
 states:
   - id: index
     description: >
-      You are standing in the courtyard at night. The moon is high in the sky. A big tree in the center casts a dark shadow in the moonlight.
+      You are standing in the courtyard at night. The moon is high in the sky. The big tree now bears a crescent moon sigil that glows blue in the moonlight.
 
       To the west the clock room has been sealed shut with a metal gate.
     choices:
-      - text: look at tree
-        details: A tall oak tree stands in the middle of the courtyard. It casts a dark shadow in the moonlight.
+      - text: examine tree
+        goto: ./examine-tree
+
+  - id: examine-tree
+    name: examine tree
+    description: >
+      It's a tall oak tree. There is a glowing blue crescent-moon sigil engraved on the trunk that wasn't visible in the daylight.
+    choices:
+      - text: step back
+        goto: ./

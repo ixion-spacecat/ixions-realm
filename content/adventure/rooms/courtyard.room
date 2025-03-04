@@ -6,7 +6,15 @@ states:
 
       To the west there is a doorway labeled "clock room"
     choices:
-      - text: look at tree
-        details: A tall oak tree stands in the middle of the courtyard. It casts a long shadow in the light from the setting sun.
-      - text: go west
+      - text: examine tree
+        goto: ./examine-tree
+      - text: go west to clock room
         goto: clock
+
+  - id: examine-tree
+    name: examine tree
+    description: >
+      It's a tall oak tree. You examine the roots and trunk of the tree but don't find anything unusual.
+    choices:
+      - text: step back
+        goto: ./
